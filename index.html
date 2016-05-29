@@ -5,8 +5,143 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="header">
+      <div class="logo">
+        <img src="http://placehold.it/75x22" alt="">
+      </div>
+      <div class="main-menu main-menu--closed">
+        <a href="" class="main-menu__switch"></a>
+        <ul class="main-menu__items">
+          <li class="main-menu__item main-menu__item--active"><a>Главная</a></li>
+          <li class="main-menu__item"><a href="">Фотографии</a></li>
+          <li class="main-menu__item"><a href="">Конкурс</a></li>
+          <li class="main-menu__item"><a href=""></a>HTML Academy</li>
+        </ul>
+      </div>
+    </header>
+    <div class="columns">
+      <div class="apps">
+        <div class="apps__download"><a href="">Скачать приложение</a></div>
+        <div class="apps__logos">
+          <div class="apps__logo apps__logo--mac">
+            <a href=""><img src="http://placehold.it/47x56" alt="App Store"></a>
+          </div>
+          <div class="apps__logo apps__logo--android">
+            <a href=""><img src="http://placehold.it/42x47" alt="Google Play"></a>
+          </div>
+          <div class="apps__logo apps__logo--windows">
+            <a href=""><img src="http://placehold.it/44x41" alt="Windows Store"></a>
+          </div>
+          <div class="apps__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+        </div>
+      </div>
+      <div class="promo">
+        <div class="promo__header">
+          <p>Устали от серости мегаполиса?</p>
+          <p>Нам есть, что вам предложить!</p>
+        </div>
+        <div class="promo__actions">
+            <div class="promo__action promo__action--1">
+              <h3>Поднимает настроение</h3>
+              <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="promo__action promo__action--2">
+              <h3>Меняет мир вокруг</h3>
+              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="promo__action promo__action--3">
+              <h3>Заводит новых друзей</h3>
+              <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+          </div>
+          <div class="promo__footer"><img src="http://placehold.it/157x277"></div>
+      </div>
+      <div class="reviews">
+        <div class="slider">
+          <div class="reviews__items">
+            <div class="reviews__item reviews__item--1">
+              <h3>Николай Петров</h3>
+              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
+            <div class="reviews__item reviews__item--2">
+              <h3></h3>
+              <p></p>
+            </div>
+            <div class="reviews__item reviews__item--3">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+          <input type="radio" name="review" id="review-1" class="slider__control" checked>
+          <input type="radio" name="review" id="review-2" class="slider__control">
+          <input type="radio" name="review" id="review-3" class="slider__control">
+          <div class="slider__switches">
+            <label for="review-1" class="slider__switch"></label>
+            <label for="review-2" class="slider__switch"></label>
+            <label for="review-3" class="slider__switch"></label>
+          </div>
+        </div>
+      </div>
+      <div class="price">
+        <div class="slider">
+          <table class="price__table">
+            <thead>
+              <tr class="price__row price__row--header">
+                <th class="price__column price__column--1"></th>
+                <th class="price__column price__column--2 price__column--hit">
+                  <span class="price__title">Стандарт</span><br>
+                  <span class="cost">3,99 USD</span>
+                </th>
+                <th class="price__column price__column--3"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="price__row">
+                <td class="price__column price__column--1 price__column--yes"></td>
+                <td class="price__column price__column--2 price__column--no">Розовый фильтр</td>
+                <td class="price__column price__column--3 price__column--no"></td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__column price__column--1 price__column--yes"></td>
+                <td class="price__column price__column--2 price__column--yes">Смайлики</td>
+                <td class="price__column price__column--3 price__column--no"></td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__column price__column--1 price__column--yes"></td>
+                <td class="price__column price__column--2 price__column--yes">Комментарии</td>
+                <td class="price__column price__column--3 price__column--yes"></td>
+              </tr>
+            </tbody>
+          </table>
+          <input type="radio" name="price" id="price-1" class="slider__control">
+          <input type="radio" name="price" id="price-2" class="slider__control" checked>
+          <input type="radio" name="price" id="price-3" class="slider__control">
+          <div class="slider__switches">
+            <label for="price-1" class="slider__switch"></label>
+            <label for="price-2" class="slider__switch"></label>
+            <label for="price-3" class="slider__switch"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="contacts">
+        <h3 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h3>
+        <div class="contacts__items">
+          <div class="contacts__item contacts__item--phone">
+            <h4 class="contacts__label"></h4>
+            <p class="contacts__data">+7 (812) 555-66-66</p>
+          </div>
+          <div class="contacts__item contacts__item--email">
+            <h4 class="contacts__label"></h4>
+            <p class="contacts__data">mail@htmlacademy.ru</p>
+          </div>
+          <div class="contacts__item contacts__item--address">
+            <h4 class="contacts__label"></h4>
+            <p class="contacts__data">ул. Большая<br>Конюшенная, 19/8</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
