@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__branding">
+        <div class="header__sitename  sitename">
+          <img src="http://placehold.it/75x22" alt="">
+        </div>
+      </div>
+      <div class="main-menu  main-menu--closed">
+        <a href="" class="main-menu__switch"></a>
+        <ul class="main-menu__items">
+          <li class="main-menu__item"><a href="/">Главная</a></li>
+          <li class="main-menu__item  main-menu__item--active"><a>Фотографии</a></li>
+          <li class="main-menu__item"><a href="/form.html">Конкурс</a></li>
+          <li class="main-menu__item"><a href="">HTML Academy</a></li>
+        </ul>
+      </div>
+      <h1 class="header__title">Фотографии пользователей</h1>
+      <p class="header__info">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+    </header>
+    <div class="columns">
+      <div class="columns__content">
+        <div class="panorama">
+          <div class="panorama__img">
+            <img src="http://placehold.it/320x137" alt="Панорама дня">
+          </div>
+          <div class="panorama__caption">Панорама дня</div>
+        </div>
+        <div class="user-photos">
+          <div class="user-photos__item">
+            <div class="user-photos__img">
+              <img src="http://placehold.it/280x180" alt="">
+              <div class="user-photos__user">
+                <span class="user-photos__name">Анна</span>
+                <span class="user-photos__date">(5 минут назад)</span>
+              </div>
+              <div class="user-photos__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</div>
+              <div class="user-photos__like">Нравится: 215</div>
+            </div>
+            <div class="user-photos__img">
+              <img src="http://placehold.it/280x180" alt="">
+              <div class="user-photos__user">
+                <span class="user-photos__name">Левон</span>
+                <span class="user-photos__date">(5 часов назад)</span>
+              </div>
+              <div class="user-photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+              <div class="user-photos__like">Нравится: 356</div>
+            </div>
+            <div class="user-photos__img">
+              <img src="http://placehold.it/280x180" alt="">
+              <div class="user-photos__user">
+                <span class="user-photos__name">Антон</span>
+                <span class="user-photos__date">(12 часов назад)</span>
+              </div>
+              <div class="user-photos__comment">Соседи будут рады!</div>
+              <div class="user-photos__like">Нравится: 666</div>
+            </div>
+            <div class="user-photos__img">
+              <img src="http://placehold.it/280x180" alt="">
+              <div class="user-photos__user">
+                <span class="user-photos__name">Борис</span>
+                <span class="user-photos__date">(20 часов назад)</span>
+              </div>
+              <div class="user-photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</div>
+              <div class="user-photos__like">Нравится: 215</div>
+            </div>
+            <div class="user-photos__img">
+              <img src="http://placehold.it/280x180" alt="">
+              <div class="user-photos__user">
+                <span class="user-photos__name">Сергей</span>
+                <span class="user-photos__date">(25 часов назад)</span>
+              </div>
+              <div class="user-photos__comment">Самая кубанская в мире!</div>
+              <div class="user-photos__like">Нравится: 4</div>
+            </div>
+            <div class="user-photos__img">
+              <img src="http://placehold.it/280x180" alt="">
+              <div class="user-photos__user">
+                <span class="user-photos__name">Максим</span>
+                <span class="user-photos__date">(40 часов назад)</span>
+              </div>
+              <div class="user-photos__comment">Где снег-то?</div>
+              <div class="user-photos__like">Нравится: 150</div>
+            </div>
+          </div>
+        </div>
+        <div class="photo-upload">
+          <form class="photo-upload__form">
+            <p class="photo-upload__info">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+            <div class="photo-upload__frame">
+              <img src="http://placehold.it/280x374" alt="Загрузка изображения">
+            </div>
+            <div class="photo-upload__controls">
+              <input type="button" value="Обрезка" class="photo-upload__control  photo-upload__control--crop photo-upload__control--active">
+              <input type="button" value="Заливка" class="photo-upload__control  photo-upload__control--fill">
+              <input type="button" value="Яркость" class="photo-upload__control  photo-upload__control--bright">
+            </div>
+            <div class="photo-upload__scale"><input type="range" name="upload-scale" id="upload-scale" class="photo-upload__range"></div>
+            <div class="photo-upload">
+              <div class="photo-upload__actions">
+                <input type="submit" value="Запостить" class="photo-upload__action  photo-upload__action--active  photo-upload__action--post">
+                <input type="reset" value="Отмена" class="photo-upload__action  photo-upload__action--cancel">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__branding">
+        <div class="footer__logo  logo">
+          <img src="http://placehold.it/61x40" alt="">
+        </div>
+        <div class="footer__sitename  sitename">
+          <img src="http://placehold.it/75x22" alt="">
+        </div>
+      </div>
+      <div class="footer__social  social">
+        <a href="https://twitter.com/htmlacademy" class="social__link  social__link--twitter">Мы в Twitter</a>
+        <a href="https://www.facebook.com/htmlacademy" class="social__link  social__link--fb">Мы в Facebook</a>
+        <a href="https://www.youtube.com/htmlacademy" class="social__link  social__link--youtube">Мы на Youtube</a>
+      </div>
+      <div class="footer__copyright">
+        <span>Разработано:</span><a href="https://htmlacademy.ru"></a>
+      </div>
+    </footer>
+  </body>
+</html>
