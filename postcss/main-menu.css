@@ -1,1 +1,20 @@
+.main-menu {
+  background-color: $medium_dark;
+}
+
+.main-menu__items {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.main-menu__item {
+  color: $page;
+  display: block;
+  padding: 16px $gutter;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
+
 

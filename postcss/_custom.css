@@ -1,2 +1,18 @@
-$text-color         : $000;
-$page               : $fff;
+$ultralight:        #f2f2f2;
+$green:             #2aab6d;
+$pink:              #d4315d;
+$light:             #e5e5e5;
+$medium_light:      #e9ebec;
+$ultradark:         #000;
+$medium_dark:       #283645;
+$darkest:           #1d2631;
+
+$page:              #ffffff;
+$text:              $medium-dark;
+$title:             $ultradark;
+$border:            $ultralight;
+
+
+$font:              'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+$gutter:            20px;

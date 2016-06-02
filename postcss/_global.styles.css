@@ -1,5 +1,12 @@
 body {
   background-color: $page;
-  color: green;
-  font-family: 'PT sans';
+  color: $text;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }

@@ -1,3 +1,5 @@
+@import "_custom.css";
+@import "_global.styles.css";
 @import "header.css";
 @import "app.css";
 @import "columns.css";
@@ -11,9 +13,6 @@
 @import "photo-upload.css";
 @import "price.css";
 @import "promo.css";
-@import "_global.styles.css";
 @import "reviews.css";
 @import "slider.css";
-@import "style.css";
 @import "user-photos.css";
-@import "_custom.css";
