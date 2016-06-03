@@ -1,9 +1,29 @@
 .user-photos {
-  &__item {}
-  &__image {}
+  &__item {
+    margin: 0 $gutter $gutter;
+  }
+  &__info {
+    background: $ultralight;
+    padding: 17px;
+    line-height: 24px;
+  }
+  &__image {
+    display: block;
+  }
   &__user {}
-  &__name {}
-  &__date {}
-  &__comment {}
-  &__like {}
+  &__name {
+    font-weight: 700;
+  }
+  &__date {
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &__comment {
+    margin-bottom: 10px;
+  }
+  &__like {
+    @mixin pink;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
 }

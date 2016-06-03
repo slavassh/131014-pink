@@ -1,4 +1,9 @@
 .header {
-  &__branding {}
-  &__logo {}
+  background-color: $medium_dark;
+  &__branding {
+
+  }
+  &__logo {
+    padding: 25px $gutter;
+  }
 }

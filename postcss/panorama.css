@@ -1,4 +1,13 @@
 .panorama {
-  &__image {}
-  &__caption {}
+  &__image {
+    display: block;
+  }
+  &__caption {
+    background-color: $pink;
+    color: $page;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-align: center;
+    line-height: 1;
+  }
 }

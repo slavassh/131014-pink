@@ -1,10 +1,48 @@
 .contest {
-  &__item {}
-  &__item--even {}
-  &__item--odd {}
-  &__label {}
-  &__textfield {}
-  &__desc {}
-  &__option {}
+  &__item {
+    border: none;
+    padding: 30px $gutter;
+    &--even {}
+    &--odd {
+      background-color: $ultralight;
+    }
+  }
+  &__label {
+    @mixin pink;
+    display: block;
+    margin: 5px 24px;
+    line-height: 1;
+    &--textarea {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  &__textfield {
+    margin-bottom: 20px;
+  }
+  &__desc {
+    @mixin pink;
+    text-align: center;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  &__option {
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    margin: 20px 0;
+  }
   &__checkbox {}
+  &__submit {
+    text-align: center;
+    margin: 20px $gutter;
+  }
+  &__star {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 $gutter 20px;
+    sup {
+      @mixin pink;
+    }
+  }
 }

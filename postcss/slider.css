@@ -1,7 +1,9 @@
 .slider {
   &__items {}
   &__item {}
-  &__switches {}
+  &__switches {
+    text-align: center;
+  }
   &__control {}
   &__switch {}
 }
