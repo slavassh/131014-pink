@@ -1,1 +1,8 @@
+.intro {
+  background: #fff url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
+}
+
+.intro__hand {
+  margin-top: 176px;
+}
 

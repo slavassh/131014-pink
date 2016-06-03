@@ -8,7 +8,7 @@ $medium_dark:       #283645;
 $darkest:           #1d2631;
 
 $page:              #ffffff;
-$text:              $medium-dark;
+$text:              $medium_dark;
 $title:             $ultradark;
 $border:            $ultralight;
 
