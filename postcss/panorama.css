@@ -1,1 +1,4 @@
-
+.panorama {
+  &__image {}
+  &__caption {}
+}

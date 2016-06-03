@@ -1,1 +1,28 @@
-
+.price {
+  background-color: $ultralight;
+  padding: 30px 0;
+  text-transform: uppercase;
+  &__table {}
+  &__column {}
+  &__item {
+    line-height: 1;
+    padding: 24px;
+    border-left: 2px solid $light;
+    border-bottom: 2px solid $light;
+    background-color: $page;
+    &--header {
+      line-height: 30px;
+      color: $page;
+      background-color: $medium_dark;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__cost {
+    font-size: 24px;
+  }
+}

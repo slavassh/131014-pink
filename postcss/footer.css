@@ -1,1 +1,6 @@
-
+.footer {
+  &__branding {}
+  &__logo {}
+  &__social {}
+  &__copyright {}
+}

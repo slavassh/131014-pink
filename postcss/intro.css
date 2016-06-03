@@ -1,8 +1,10 @@
 .intro {
-  background: #fff url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
+  background: $medium_dark url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
+  &__hand {
+    background: transparent url(../img/iphone-hand-mobile@1x.png) 0 100% no-repeat;
+    height: 286px;
+    padding-top: 176px;
+  }
+  &__title {}
+  &__info {}
 }
-
-.intro__hand {
-  margin-top: 176px;
-}
-

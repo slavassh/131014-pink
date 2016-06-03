@@ -1,0 +1,7 @@
+.social {
+  &__link {
+    &--twitter {}
+    &--fb {}
+    &--youtube {}
+  }
+}

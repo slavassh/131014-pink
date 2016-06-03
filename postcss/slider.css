@@ -1,1 +1,7 @@
-
+.slider {
+  &__items {}
+  &__item {}
+  &__switches {}
+  &__control {}
+  &__switch {}
+}

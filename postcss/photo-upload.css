@@ -1,1 +1,8 @@
-
+.photo-upload {
+  &__form {}
+  &__info {}
+  &__frame {}
+  &__controls {}
+  &__scale {}
+  &__actions {}
+}

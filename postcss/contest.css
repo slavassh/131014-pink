@@ -1,1 +1,10 @@
-
+.contest {
+  &__item {}
+  &__item--even {}
+  &__item--odd {}
+  &__label {}
+  &__textfield {}
+  &__desc {}
+  &__option {}
+  &__checkbox {}
+}

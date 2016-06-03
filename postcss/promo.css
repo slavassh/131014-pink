@@ -1,1 +1,30 @@
-
+.promo {
+  background-color: $ultralight;
+  text-align: center;
+  &__header {
+    font-size: 24px;
+    font-weight: 300px;
+    background-color: $page;
+    padding: 46px 58px 1px;
+    p {
+      margin: 0 0 30px;
+    }
+  }
+  &__actions {
+    padding: 40px $gutter 10px;
+  }
+  &__action {
+    line-height: 24px;
+    h3 {
+      color: $ultradark;
+      margin: 0 0 15px;
+    }
+    p {
+      margin: 0 0 30px;
+    }
+  }
+  &__footer {
+    background: transparent url(../img/iphone-screen-mobile@1x.png) 50% 0 no-repeat;
+    height: 277px;
+  }
+}
