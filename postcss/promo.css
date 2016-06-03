@@ -3,7 +3,7 @@
   text-align: center;
   &__header {
     font-size: 24px;
-    font-weight: 300px;
+    font-weight: 300;
     background-color: $page;
     padding: 46px 58px 1px;
     p {
