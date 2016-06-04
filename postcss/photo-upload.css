@@ -1,0 +1,20 @@
+.photo-upload {
+  text-align: center;
+  background-color: $ultralight;
+  &__form {}
+  &__info {
+    padding: 20px $gutter 40px;
+    background-color: $page;
+  }
+  &__frame {
+    padding: 20px $gutter;
+  }
+  &__controls {}
+  &__scale {
+    margin-bottom: 25px;
+  }
+  &__actions {
+    border-top: 1px solid $semilight;
+    padding: 30px $gutter;
+  }
+}

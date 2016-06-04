@@ -1,0 +1,27 @@
+.contacts {
+  background: $light url(../img/bg-map-mobile@1x.png) 0 100% no-repeat;
+  text-align: center;
+  padding-bottom: 200px;
+  &__inner {
+    padding: 40px $gutter;
+    background-color: $page;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  &__items {
+
+  }
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__label {
+    font-size: 18px;
+  }
+  &__data {
+    color: $pink;
+    font-size: 24px;
+  }
+}

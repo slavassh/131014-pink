@@ -1,0 +1,24 @@
+.apps {
+  background-color: $darkest;
+  text-align: center;
+  padding: 28px $gutter 35px;
+  &__download {
+    color: $page;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    border: 3px solid $page;
+    border-radius: 30px;
+    line-height: 1;
+    padding: 15px;
+    margin-bottom: 32px;
+  }
+  &__logos {
+    margin-bottom: 28px;
+  }
+  &__desc {
+    color: $page;
+    line-height: 24px;
+    margin: 0px;
+  }
+}

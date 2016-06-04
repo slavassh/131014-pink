@@ -1,0 +1,11 @@
+.reviews {
+  padding: 40px $gutter;
+  text-align: center;
+  &__items {}
+  &__item {
+    h3 {
+      color: $ultradark;
+      margin-bottom: 10px;
+    }
+  }
+}
