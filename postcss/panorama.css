@@ -2,12 +2,13 @@
   &__image {
     display: block;
   }
+
   &__caption {
-    background-color: $pink;
-    color: $page;
-    text-transform: uppercase;
     padding: 10px 20px;
+    background-color: $color-brand;
+    color: $color-page;
     text-align: center;
+    text-transform: uppercase;
     line-height: 1;
   }
 }

@@ -1,21 +1,23 @@
 .intro {
-  background: $medium_dark url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
+  background: $color-primary url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
   text-align: center;
-  &__hand {
-    background: transparent url(../img/iphone-hand-mobile@1x.png) 0 100% no-repeat;
-    height: 286px;
-    padding-top: 176px;
-  }
-  &__title {
-    font-size: 24px;
-    font-weight: 300;
-    color: $page;
-    height: 147px;
-    padding: 90px $gutter 0;
 
+  &__hand {
+    padding-top: 176px;
+    height: 286px;
+    background: transparent url(../img/iphone-hand-mobile@1x.png) 0 100% no-repeat;
   }
+
+  &__title {
+    padding: 90px $width-gutter 0;
+    height: 147px;
+    color: $color-page;
+    font-weight: 300;
+    font-size: 24px;
+  }
+
   &__info {
-    background-color: $page;
-    padding: 45px $gutter;
+    padding: 45px $width-gutter;
+    background-color: $color-page;
   }
 }

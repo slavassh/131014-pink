@@ -1,20 +1,26 @@
 .photo-upload {
+  background-color: $color-secondary;
   text-align: center;
-  background-color: $ultralight;
+
   &__form {}
+
   &__info {
-    padding: 20px $gutter 40px;
-    background-color: $page;
+    padding: 20px $width-gutter 40px;
+    background-color: $color-page;
   }
+
   &__frame {
-    padding: 20px $gutter;
+    padding: 20px $width-gutter;
   }
+
   &__controls {}
+
   &__scale {
     margin-bottom: 25px;
   }
+
   &__actions {
-    border-top: 1px solid $semilight;
-    padding: 30px $gutter;
+    padding: 30px $width-gutter;
+    border-top: 1px solid $color-border;
   }
 }

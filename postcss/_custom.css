@@ -1,25 +1,29 @@
-$ultralight:        #f2f2f2;
+$blue:              #283645;
 $green:             #2aab6d;
 $pink:              #d22856;
-$light:             #e5e5e5;
-$medium_light:      #e9ebec;
-$ultradark:         #000;
-$medium_dark:       #283645;
-$darkest:           #1d2631;
-$semilight:         #dddfe1;
+$gray:              #f2f2f2;
+$gray-darken:       #e5e5e5;
+$blue-darken:       #1d2631;
 
 
-$page:              #ffffff;
-$text:              $medium_dark;
-$title:             $ultradark;
-$border:            $ultralight;
+$color-page:        white;
+$color-title:       black;
+$color-primary:     $blue;
+$color-secondary:   $gray;
+$color-brand:       $pink;
+$color-bg-apps:     $blue-darken;
+$color-border:      $gray-darken;
 
 
-$font:              'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font:              'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 
-$gutter:            20px;
+$width-gutter:      20px;
 
 @define-mixin pink {
+  color: $color-brand;
   text-transform: uppercase;
-  color: $pink;
 }
+
+@custom-media --small-viewport (max-width: 30em);
+
+

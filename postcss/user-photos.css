@@ -1,29 +1,37 @@
 .user-photos {
   &__item {
-    margin: 0 $gutter $gutter;
+    margin: 0 $width-gutter $width-gutter;
   }
+
   &__info {
-    background: $ultralight;
     padding: 17px;
+    background: $color-secondary;
     line-height: 24px;
   }
+
   &__image {
     display: block;
   }
+
   &__user {}
+
   &__name {
     font-weight: 700;
   }
+
   &__date {
-    font-weight: 300;
     text-transform: uppercase;
+    font-weight: 300;
   }
+
   &__comment {
     margin-bottom: 10px;
   }
+
   &__like {
-    @mixin pink;
-    font-size: 12px;
     margin-bottom: 5px;
+    font-size: 12px;
+
+    @mixin pink;
   }
 }

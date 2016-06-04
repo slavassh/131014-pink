@@ -1,11 +1,13 @@
 .reviews {
-  padding: 40px $gutter;
+  padding: 40px $width-gutter;
   text-align: center;
+
   &__items {}
+
   &__item {
     h3 {
-      color: $ultradark;
       margin-bottom: 10px;
+      color: $color-title;
     }
   }
 }

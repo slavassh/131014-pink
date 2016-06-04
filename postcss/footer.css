@@ -1,11 +1,15 @@
 .footer {
   text-align: center;
+
   &__branding {}
+
   &__logo {
-    margin: 30px $gutter;
+    margin: 30px $width-gutter;
   }
+
   &__social {
     margin-bottom: 30px;
   }
+
   &__copyright {}
 }

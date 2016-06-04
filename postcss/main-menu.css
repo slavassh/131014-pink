@@ -1,16 +1,18 @@
 .main-menu {
-  background-color: $medium_dark;
+  background-color: $color-primary;
+
   &__items {
     list-style: none;
     text-transform: uppercase;
   }
+
   &__item {
-    color: $page;
     display: block;
-    padding: 16px $gutter;
+    padding: 16px $width-gutter;
+    color: $color-page;
     text-align: center;
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
     line-height: 1;
   }
 }
