@@ -10,7 +10,7 @@
     border: 3px solid $color-page;
     border-radius: 30px;
     color: $color-page;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     font-size: 18px;
     line-height: 1;
   }

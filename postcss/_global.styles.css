@@ -1,5 +1,5 @@
 @font-face {
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   font-style: normal;
   font-family: 'Open Sans';
   src: local('Open Sans'),
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   font-style: normal;
   font-family: 'Open Sans';
   src: local('Open Sans Bold'),
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-weight: 300;
+  font-weight: $font-weight-light;
   font-style: normal;
   font-family: 'Open Sans';
   src: local('Open Sans Light'),
@@ -34,7 +34,7 @@
 body {
   background-color: $color-page;
   color: $color-primary;
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   font-size: 14px;
   font-family: $font;
   line-height: 30px;

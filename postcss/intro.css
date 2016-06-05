@@ -2,6 +2,10 @@
   background: $color-primary url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
   text-align: center;
 
+  &__inner {
+
+  }
+
   &__hand {
     padding-top: 176px;
     height: 286px;
@@ -10,14 +14,24 @@
 
   &__title {
     padding: 90px $width-gutter 0;
-    height: 147px;
+    height: 237px;
     color: $color-page;
-    font-weight: 300;
+    font-weight: $font-weight-light;
     font-size: 24px;
+
+    @mixin page-width;
+  }
+
+  &__info-wrapper {
+    background-color: $color-page;
   }
 
   &__info {
+    display: block;
     padding: 45px $width-gutter;
-    background-color: $color-page;
+
+    @mixin page-width;
   }
 }
+
+

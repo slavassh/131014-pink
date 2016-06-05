@@ -11,7 +11,7 @@
     padding: 16px $width-gutter;
     color: $color-page;
     text-align: center;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     font-size: 18px;
     line-height: 1;
   }

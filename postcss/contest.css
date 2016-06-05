@@ -10,6 +10,10 @@
     }
   }
 
+  &__item-inner {
+    @mixin page-width;
+  }
+
   &__label {
     display: block;
     margin: 5px 24px;
@@ -37,11 +41,15 @@
   &__option {
     display: block;
     margin: 20px 0;
-    font-weight: 400;
+    font-weight: $font-weight-normal;
     font-size: 18px;
   }
 
   &__checkbox {}
+
+  &__action {
+    @mixin page-width;
+  }
 
   &__submit {
     margin: 20px $width-gutter;

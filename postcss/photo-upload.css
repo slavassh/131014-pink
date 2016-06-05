@@ -2,11 +2,18 @@
   background-color: $color-secondary;
   text-align: center;
 
-  &__form {}
+  &__info-wrapper {
+    background-color: $color-page;
+  }
 
   &__info {
     padding: 20px $width-gutter 40px;
-    background-color: $color-page;
+
+    @mixin page-width;
+  }
+
+  &__form {
+    @mixin page-width;
   }
 
   &__frame {

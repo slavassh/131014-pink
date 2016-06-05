@@ -2,19 +2,30 @@
   background-color: $color-secondary;
   text-align: center;
 
-  &__header {
-    padding: 46px 58px 1px;
+  &__header-wrapper {
     background-color: $color-page;
-    font-weight: 300;
+  }
+
+  &__header {
+    box-sizing: border-box;
+    padding: 46px 58px 1px;
+    font-weight: $font-weight-light;
     font-size: 24px;
 
+    @mixin page-width;
     p {
       margin: 0 0 30px;
     }
   }
 
+  &__actions-wrapper {
+  }
+
   &__actions {
+    box-sizing: border-box;
     padding: 40px $width-gutter 10px;
+
+    @mixin page-width;
   }
 
   &__action {

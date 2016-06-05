@@ -1,6 +1,7 @@
 .panorama {
   &__image {
     display: block;
+    width: 100%;
   }
 
   &__caption {

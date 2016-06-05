@@ -1,29 +1,79 @@
-$blue:              #283645;
-$green:             #2aab6d;
-$pink:              #d22856;
-$gray:              #f2f2f2;
-$gray-darken:       #e5e5e5;
-$blue-darken:       #1d2631;
+$blue:                       #283645;
+$green:                      #2aab6d;
+$pink:                       #d22856;
+$gray:                       #f2f2f2;
+$gray-darken:                #e5e5e5;
+$blue-darken:                #1d2631;
 
 
-$color-page:        white;
-$color-title:       black;
-$color-primary:     $blue;
-$color-secondary:   $gray;
-$color-brand:       $pink;
-$color-bg-apps:     $blue-darken;
-$color-border:      $gray-darken;
+$color-page:                 white;
+$color-title:                black;
+$color-primary:              $blue;
+$color-secondary:            $gray;
+$color-brand:                $pink;
+$color-bg-apps:              $blue-darken;
+$color-border:               $gray-darken;
 
 
-$font:              'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font:                       'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-weight-light:          300;
+$font-weight-normal:         400;
+$font-weight-bold:           700;
 
-$width-gutter:      20px;
+
+$width-gutter:               20px;
+$width-mobile:               320px;
+$width-tablet:               700px;
+$width-desktop:              1200px;
+$width-mobile-content:       calc($width-mobile - $width-gutter * 2);
+$width-mobile-content-minus: calc(($width-mobile - $width-gutter * 2) * -1);
+
+
+@custom-media --mobile-viewport (max-width: 699px);
+@custom-media --tablet-viewport (min-width: 700px) and (max-width: 1199px);
+@custom-media --desktop-viewport (min-width: 1200px);
+
 
 @define-mixin pink {
   color: $color-brand;
   text-transform: uppercase;
 }
 
-@custom-media --small-viewport (max-width: 30em);
 
+@define-mixin page-width {
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
 
+  @media (--mobile-viewport) {
+    width: $width-mobile;
+  }
+
+  @media (--tablet-viewport) {
+    width: $width-tablet;
+  }
+
+  @media (--desktop-viewport) {
+    width: $width-desktop;
+  }
+}
+
+/* @define-mixin page-width $block-name {
+  @media (--mobile-viewport) {
+    $block-name {
+      width: 320px;
+    }
+  }
+
+  @media (--mobile-viewport) {
+    $block-name {
+      width: 700px;
+    }
+  }
+
+  @media (--mobile-viewport) {
+    $block-name {
+      width: 1200px;
+    }
+  }
+} */

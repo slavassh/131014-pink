@@ -1,6 +1,11 @@
 .reviews {
-  padding: 40px $width-gutter;
   text-align: center;
+
+  &__inner {
+    padding: 40px $width-gutter;
+
+    @mixin page-width;
+  }
 
   &__items {}
 

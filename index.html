@@ -23,89 +23,105 @@
 
     <!-- index.html start -->
     <div class="intro">
-      <div class="intro__hand"></div>
-      <div class="apps">
-        <a href="/download.html" class="apps__download">Скачать приложение</a>
-        <div class="apps__logos">
-          <a href="/download.html" class="apps__logo  apps__logo--mac">App Store</a>
-          <a href="/download.html" class="apps__logo  apps__logo--android">Google Play</a>
-          <a href="/download.html" class="apps__logo  apps__logo--windows">Windows Store</a>
+      <div class="intro__inner">
+        <div class="intro__hand"></div>
+        <div class="apps">
+          <a href="/download.html" class="apps__download">Скачать приложение</a>
+          <div class="apps__logos">
+            <a href="/download.html" class="apps__logo  apps__logo--mac">App Store</a>
+            <a href="/download.html" class="apps__logo  apps__logo--android">Google Play</a>
+            <a href="/download.html" class="apps__logo  apps__logo--windows">Windows Store</a>
+          </div>
+          <div class="apps__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
         </div>
-        <div class="apps__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
       </div>
     </div>
     <div class="columns">
       <div class="promo">
-        <div class="promo__header">
-          <p>Устали от серости мегаполиса?</p>
-          <p>Нам есть, что вам предложить!</p>
+        <div class="promo__header-wrapper">
+          <div class="promo__header">
+            <p>Устали от серости мегаполиса?</p>
+            <p>Нам есть, что вам предложить!</p>
+          </div>
         </div>
-        <div class="promo__actions">
-          <div class="promo__action">
-            <h3>Поднимает настроение</h3>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </div>
-          <div class="promo__action">
-            <h3>Меняет мир вокруг</h3>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </div>
-          <div class="promo__action">
-            <h3>Заводит новых друзей</h3>
-            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="promo__actions-wrapper">
+          <div class="promo__actions">
+            <div class="promo__action">
+              <h3>Поднимает настроение</h3>
+              <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="promo__action">
+              <h3>Меняет мир вокруг</h3>
+              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="promo__action">
+              <h3>Заводит новых друзей</h3>
+              <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
           </div>
         </div>
         <div class="promo__footer"></div>
       </div>
       <div class="reviews">
-        <div class="slider">
-          <div class="reviews__items  slider__items">
-            <div class="reviews__item  slider__item">
-              <h3>Николай Петров</h3>
-              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <div class="reviews__inner">
+          <div class="slider">
+            <div class="reviews__items  slider__items">
+              <div class="reviews__item  slider__item">
+                <h3>Николай Петров</h3>
+                <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
             </div>
-          </div>
-          <div class="slider__switches">
-            <input type="radio" name="review" id="review-1" class="slider__control" checked>
-            <input type="radio" name="review" id="review-2" class="slider__control">
-            <input type="radio" name="review" id="review-3" class="slider__control">
-            <label for="review-1" class="slider__switch"></label>
-            <label for="review-2" class="slider__switch"></label>
-            <label for="review-3" class="slider__switch"></label>
+            <div class="slider__switches">
+              <input type="radio" name="review" id="review-1" class="slider__control" checked>
+              <input type="radio" name="review" id="review-2" class="slider__control">
+              <input type="radio" name="review" id="review-3" class="slider__control">
+              <label for="review-1" class="slider__switch"></label>
+              <label for="review-2" class="slider__switch"></label>
+              <label for="review-3" class="slider__switch"></label>
+            </div>
           </div>
         </div>
       </div>
       <div class="price">
-        <div class="slider">
-          <div class="price__table slider__items">
-            <div class="price__column  slider__item">
-              <div class="price__item  price__item--header"></div>
-              <div class="price__item  price__item--yes"></div>
-              <div class="price__item  price__item--no"></div>
-              <div class="price__item  price__item--no"></div>
-            </div>
-            <div class="price__column  slider__item">
-              <div class="price__item  price__item--header  price__item--hit">
-                <span class="price__title">Стандарт</span><br>
-                <span class="price__cost">3,99 USD</span>
+        <div class="price__inner">
+          <div class="slider">
+            <div class="price__table slider__items">
+              <div class="price__column  slider__item">
+                <div class="price__item  price__item--header">
+                  <span class="price__title">База</span><br>
+                  <span class="price__cost">1,99 USD</span>
+                </div>
+                <div class="price__item  price__item--yes">Розовый фильтр</div>
+                <div class="price__item  price__item--no">Смайлики</div>
+                <div class="price__item  price__item--no">Комментарии</div>
               </div>
-              <div class="price__item  price__item--yes">Розовый фильтр</div>
-              <div class="price__item  price__item--yes">Смайлики</div>
-              <div class="price__item  price__item--no">Комментарии</div>
+              <div class="price__column  slider__item">
+                <div class="price__item  price__item--header  price__item--hit">
+                  <span class="price__title">Стандарт</span><br>
+                  <span class="price__cost">3,99 USD</span>
+                </div>
+                <div class="price__item  price__item--yes">Розовый фильтр</div>
+                <div class="price__item  price__item--yes">Смайлики</div>
+                <div class="price__item  price__item--no">Комментарии</div>
+              </div>
+              <div class="price__column  slider__item">
+                <div class="price__item  price__item--header">
+                  <span class="price__title">Анлим</span><br>
+                  <span class="price__cost">9,99 USD</span>
+                </div>
+                <div class="price__item  price__item--yes">Розовый фильтр</div>
+                <div class="price__item  price__item--yes">Смайлики</div>
+                <div class="price__item  price__item--yes">Комментарии</div>
+              </div>
             </div>
-            <div class="price__column  slider__item">
-              <div class="price__item  price__item--header"></div>
-              <div class="price__item  price__item--yes"></div>
-              <div class="price__item  price__item--yes"></div>
-              <div class="price__item  price__item--yes"></div>
+            <div class="slider__switches">
+              <input type="radio" name="price" id="price-1" class="slider__control">
+              <input type="radio" name="price" id="price-2" class="slider__control" checked>
+              <input type="radio" name="price" id="price-3" class="slider__control">
+              <label for="price-1" class="slider__switch"></label>
+              <label for="price-2" class="slider__switch"></label>
+              <label for="price-3" class="slider__switch"></label>
             </div>
-          </div>
-          <div class="slider__switches">
-            <input type="radio" name="price" id="price-1" class="slider__control">
-            <input type="radio" name="price" id="price-2" class="slider__control" checked>
-            <input type="radio" name="price" id="price-3" class="slider__control">
-            <label for="price-1" class="slider__switch"></label>
-            <label for="price-2" class="slider__switch"></label>
-            <label for="price-3" class="slider__switch"></label>
           </div>
         </div>
       </div>
@@ -135,8 +151,12 @@
 
     <!-- photo.html start -->
     <div class="intro">
-      <h1 class="intro__title">Фотографии пользователей</h1>
-      <p class="intro__info">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+      <div class="intro__inner">
+        <h1 class="intro__title">Фотографии пользователей</h1>
+        <div class="intro__info-wrapper">
+          <p class="intro__info">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+        </div>
+      </div>
     </div>
     <div class="columns">
       <div class="columns__content">
@@ -223,8 +243,10 @@
           </div>
         </div>
         <div class="photo-upload">
-          <form class="photo-upload__form">
+          <div class="photo-upload__info-wrapper">
             <p class="photo-upload__info">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
+          <form class="photo-upload__form">
             <div class="photo-upload__frame">
               <img src="/img/photo-7-mobile@1x.jpg" alt="Загрузка изображения">
             </div>
@@ -246,56 +268,72 @@
 
     <!-- form.html start -->
     <div class="intro">
-      <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="intro__info">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <div class="intro__inner">
+        <h1 class="intro__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+        <div class="intro__info-wrapper">
+          <p class="intro__info">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        </div>
+      </div>
     </div>
     <div class="columns">
       <div class="columns__content">
         <form action="/post.html" class="contest">
           <fieldset class="contest__item contest__item--even">
-            <label for="contest-lastname" class="contest__label">Фамилия:</label>
-            <input type="text" name="contest-text" id="contest-lastname" placeholder="Укажите фамилию" class="contest__textfield">
-            <label for="contest-firstname" class="contest__label">Имя:</label>
-            <input type="text" name="contest-text" id="contest-firstname" placeholder="Введите ваше имя" class="contest__textfield">
-            <label for="contest-patronymic" class="contest__label">Отчество:</label>
-            <input type="text" name="contest-text" id="contest-patronymic" placeholder="Ну и отчество тоже" class="contest__textfield">
+            <div class="contest__item-inner">
+              <label for="contest-lastname" class="contest__label">Фамилия:</label>
+              <input type="text" name="contest-text" id="contest-lastname" placeholder="Укажите фамилию" class="contest__textfield">
+              <label for="contest-firstname" class="contest__label">Имя:</label>
+              <input type="text" name="contest-text" id="contest-firstname" placeholder="Введите ваше имя" class="contest__textfield">
+              <label for="contest-patronymic" class="contest__label">Отчество:</label>
+              <input type="text" name="contest-text" id="contest-patronymic" placeholder="Ну и отчество тоже" class="contest__textfield">
+            </div>
           </fieldset>
           <fieldset class="contest__item contest__item--odd">
-            <p class="contest__desc">Ваши безбашенные<br>достижения в путешествии</p>
-            <input type="checkbox" name="contest-check" id="contest-check-1" class="contest__checkbox" checked>
-            <label for="contest-check-1" class="contest__option">Сделал селфи с акулой</label>
-            <input type="checkbox" name="contest-check" id="contest-check-2" class="contest__checkbox" checked>
-            <label for="contest-check-2" class="contest__option">Обгорел на пляже</label>
-            <input type="checkbox" name="contest-check" id="contest-check-3" class="contest__checkbox">
-            <label for="contest-check-3" class="contest__option">Видел Чака Норриса</label>
-            <input type="checkbox" name="contest-check" id="contest-check-4" class="contest__checkbox">
-            <label for="contest-check-4" class="contest__option">Накупил сувениров</label>
-            <input type="checkbox" name="contest-check" id="contest-check-5" class="contest__checkbox" checked>
-            <label for="contest-check-5" class="contest__option">Удержал башню</label>
-            <input type="checkbox" name="contest-check" id="contest-check-6" class="contest__checkbox">
-            <label for="contest-check-6" class="contest__option">Разгромил отель</label>
+            <div class="contest__item-inner">
+              <p class="contest__desc">Ваши безбашенные<br>достижения в путешествии</p>
+              <input type="checkbox" name="contest-check" id="contest-check-1" class="contest__checkbox" checked>
+              <label for="contest-check-1" class="contest__option">Сделал селфи с акулой</label>
+              <input type="checkbox" name="contest-check" id="contest-check-2" class="contest__checkbox" checked>
+              <label for="contest-check-2" class="contest__option">Обгорел на пляже</label>
+              <input type="checkbox" name="contest-check" id="contest-check-3" class="contest__checkbox">
+              <label for="contest-check-3" class="contest__option">Видел Чака Норриса</label>
+              <input type="checkbox" name="contest-check" id="contest-check-4" class="contest__checkbox">
+              <label for="contest-check-4" class="contest__option">Накупил сувениров</label>
+              <input type="checkbox" name="contest-check" id="contest-check-5" class="contest__checkbox" checked>
+              <label for="contest-check-5" class="contest__option">Удержал башню</label>
+              <input type="checkbox" name="contest-check" id="contest-check-6" class="contest__checkbox">
+              <label for="contest-check-6" class="contest__option">Разгромил отель</label>
+            </div>
           </fieldset>
           <fieldset class="contest__item contest__item--even">
-            <label for="contest-phone" class="contest__label">Номер телефончика</label>
-            <input type="tel" name="contest-tel" id="contest-phone" placeholder="Номер, пожалуйста" class="contest__textfield">
-            <label for="contest-email" class="contest__label">Адресок почты</label>
-            <input type="email" name="contest-email" id="contest-email" placeholder="E-mail, пожалуйста" class="contest__textfield">
+            <div class="contest__item-inner">
+              <label for="contest-phone" class="contest__label">Номер телефончика</label>
+              <input type="tel" name="contest-tel" id="contest-phone" placeholder="Номер, пожалуйста" class="contest__textfield">
+              <label for="contest-email" class="contest__label">Адресок почты</label>
+              <input type="email" name="contest-email" id="contest-email" placeholder="E-mail, пожалуйста" class="contest__textfield">
+            </div>
           </fieldset>
           <fieldset class="contest__item contest__item--odd">
-            <p class="contest__desc">С каким приложением путешествовали?</p>
-            <input type="radio" name="contest-radio" id="contest-radio-1" class="contest__radiobtn" checked>
-            <label for="contest-check-1" class="contest__option">Pink для iOS</label>
-            <input type="radio" name="contest-radio" id="contest-radio-2" class="contest__radiobtn">
-            <label for="contest-check-2" class="contest__option">Pink на Android</label>
-            <input type="radio" name="contest-radio" id="contest-radio-3" class="contest__radiobtn">
-            <label for="contest-check-3" class="contest__option">Windows Phone</label>
+            <div class="contest__item-inner">
+              <p class="contest__desc">С каким приложением путешествовали?</p>
+              <input type="radio" name="contest-radio" id="contest-radio-1" class="contest__radiobtn" checked>
+              <label for="contest-check-1" class="contest__option">Pink для iOS</label>
+              <input type="radio" name="contest-radio" id="contest-radio-2" class="contest__radiobtn">
+              <label for="contest-check-2" class="contest__option">Pink на Android</label>
+              <input type="radio" name="contest-radio" id="contest-radio-3" class="contest__radiobtn">
+              <label for="contest-check-3" class="contest__option">Windows Phone</label>
+            </div>
           </fieldset>
           <fieldset class="contest__item contest__item--even">
-            <label for="contest-feedback" class="contest__label contest__label--textarea">Опишите свои эмоции</label>
-            <textarea name="contest-textarea" rows="10" id="contest-feedback" placeholder="Можно прям в красках, не стесняясь в выражениях" class="contest__textfield"></textarea>
+            <div class="contest__item-inner">
+              <label for="contest-feedback" class="contest__label contest__label--textarea">Опишите свои эмоции</label>
+              <textarea name="contest-textarea" rows="10" id="contest-feedback" placeholder="Можно прям в красках, не стесняясь в выражениях" class="contest__textfield"></textarea>
+            </div>
           </fieldset>
-          <button type="submit" class="contest__submit">Отправить форму</button>
-          <div class="contest__star"><sup>*</sup> - обязательные поля</div>
+          <div class="contest__action">
+            <button type="submit" class="contest__submit">Отправить форму</button>
+            <div class="contest__star"><sup>*</sup> - обязательные поля</div>
+          </div>
         </form>
       </div>
     </div>
