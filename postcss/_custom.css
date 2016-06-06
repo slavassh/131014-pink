@@ -13,6 +13,7 @@ $color-secondary:            $gray;
 $color-brand:                $pink;
 $color-bg-apps:              $blue-darken;
 $color-border:               $gray-darken;
+$color-button:               $green;
 
 
 $font:                       'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -21,17 +22,27 @@ $font-weight-normal:         400;
 $font-weight-bold:           700;
 
 
-$width-gutter:               20px;
+$width-gutter-mobile:        20px;
+$width-gutter-tablet:        calc($width-gutter-mobile * 2);
+$width-gutter-desktop:       calc($width-gutter-mobile * 6.5);
 $width-mobile:               320px;
 $width-tablet:               700px;
 $width-desktop:              1200px;
-$width-mobile-content:       calc($width-mobile - $width-gutter * 2);
-$width-mobile-content-minus: calc(($width-mobile - $width-gutter * 2) * -1);
+$width-mobile-content:       calc($width-mobile - $width-gutter-mobile * 2);
+$width-mobile-content-minus: calc(($width-mobile - $width-gutter-mobile * 2) * -1);
 
 
 @custom-media --mobile-viewport (max-width: 699px);
-@custom-media --tablet-viewport (min-width: 700px) and (max-width: 1199px);
+@custom-media --tablet-viewport (min-width: 700px);
 @custom-media --desktop-viewport (min-width: 1200px);
+
+
+@define-mixin mobile-plus $property, $mobile-value, $value {
+  $(property): $(mobile-value);
+  @media (--tablet-viewport) {
+    $(property): $(value);
+  }
+}
 
 
 @define-mixin pink {
@@ -40,7 +51,7 @@ $width-mobile-content-minus: calc(($width-mobile - $width-gutter * 2) * -1);
 }
 
 
-@define-mixin page-width {
+@define-mixin width-page {
   box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
@@ -58,22 +69,39 @@ $width-mobile-content-minus: calc(($width-mobile - $width-gutter * 2) * -1);
   }
 }
 
-/* @define-mixin page-width $block-name {
+
+@define-mixin width-gutter $property, $top, $bottom {
+  $(property)-top: $(top);
+  $(property)-bottom: $(bottom);
   @media (--mobile-viewport) {
-    $block-name {
-      width: 320px;
-    }
+    $(property)-left: $width-gutter-mobile;
+    $(property)-right: $width-gutter-mobile;
   }
 
-  @media (--mobile-viewport) {
-    $block-name {
-      width: 700px;
-    }
+  @media (--tablet-viewport) {
+    $(property)-left: $width-gutter-tablet;
+    $(property)-right: $width-gutter-tablet;
   }
 
-  @media (--mobile-viewport) {
-    $block-name {
-      width: 1200px;
-    }
+  @media (--desktop-viewport) {
+    $(property)-left: $width-gutter-desktop;
+    $(property)-right: $width-gutter-desktop;
   }
-} */
+}
+
+
+
+
+@define-mixin responsive-property $property, $value-mobile, $value-tablet, $value-desktop {
+  @media (--mobile-viewport) {
+    $(property): $(value-mobile);
+  }
+
+  @media (--tablet-viewport) {
+    $(property): $(value-tablet);
+  }
+
+  @media (--desktop-viewport) {
+    $(property): $(value-desktop);
+  }
+}

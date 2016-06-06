@@ -7,17 +7,16 @@
   }
 
   &__info {
-    padding: 20px $width-gutter 40px;
-
-    @mixin page-width;
+    @mixin width-gutter padding, 20px, 40px;
+    @mixin width-page;
   }
 
   &__form {
-    @mixin page-width;
+    @mixin width-page;
   }
 
   &__frame {
-    padding: 20px $width-gutter;
+    @mixin width-gutter padding, 20px, 20px;
   }
 
   &__controls {}
@@ -27,7 +26,8 @@
   }
 
   &__actions {
-    padding: 30px $width-gutter;
     border-top: 1px solid $color-border;
+
+    @mixin width-gutter padding, 30px, 30px;
   }
 }

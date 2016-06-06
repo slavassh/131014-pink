@@ -7,9 +7,6 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__branding">
-        <img class="header__logo" src="/img/logo-pink-white-mobile.svg" alt="">
-      </div>
       <div class="main-menu  main-menu--closed">
         <a href="" class="main-menu__switch"></a>
         <div class="main-menu__items">
@@ -20,22 +17,30 @@
         </div>
       </div>
     </header>
-
-    <!-- index.html start -->
-    <div class="intro">
+    <header class="header">
+      <div class="header__branding">
+        <img class="header__logo" src="/img/logo-pink-white-mobile.svg" alt="">
+      </div>
+      <div class="intro">
       <div class="intro__inner">
         <div class="intro__hand"></div>
         <div class="apps">
-          <a href="/download.html" class="apps__download">Скачать приложение</a>
-          <div class="apps__logos">
-            <a href="/download.html" class="apps__logo  apps__logo--mac">App Store</a>
-            <a href="/download.html" class="apps__logo  apps__logo--android">Google Play</a>
-            <a href="/download.html" class="apps__logo  apps__logo--windows">Windows Store</a>
+          <div class="apps__inner">
+            <a href="/download.html" class="apps__download">Скачать приложение</a>
+            <div class="apps__logos">
+              <a href="/download.html" class="apps__logo  apps__logo--mac">App Store</a>
+              <a href="/download.html" class="apps__logo  apps__logo--android">Google Play</a>
+              <a href="/download.html" class="apps__logo  apps__logo--windows">Windows Store</a>
+            </div>
+            <div class="apps__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
           </div>
-          <div class="apps__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
         </div>
       </div>
     </div>
+    </header>
+
+    <!-- index.html start -->
+
     <div class="columns">
       <div class="promo">
         <div class="promo__header-wrapper">
@@ -150,21 +155,24 @@
     <!-- index.html end -->
 
     <!-- photo.html start -->
-    <div class="intro">
-      <div class="intro__inner">
-        <h1 class="intro__title">Фотографии пользователей</h1>
-        <div class="intro__info-wrapper">
-          <p class="intro__info">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+    <header class="header">
+      <div class="intro">
+        <div class="intro__inner">
+          <h1 class="intro__title">Фотографии пользователей</h1>
+          <div class="intro__info-wrapper">
+            <p class="intro__info">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
     <div class="columns">
       <div class="columns__content">
-        <div class="panorama">
-          <img src="/img/panorama-mobile@1x.jpg" alt="Панорама дня" class="panorama__image">
-          <div class="panorama__caption">Панорама дня</div>
-        </div>
+
         <div class="user-photos">
+          <div class="user-photos__panorama-wrapper">
+            <img src="/img/panorama-mobile@1x.jpg" alt="Панорама дня" class="user-photos__panorama">
+            <div class="user-photos__caption">Панорама дня</div>
+          </div>
           <div class="user-photos__item">
             <div class="user-photos__info">
               <div class="user-photos__user">
@@ -267,14 +275,16 @@
     <!-- photo.html end -->
 
     <!-- form.html start -->
-    <div class="intro">
-      <div class="intro__inner">
-        <h1 class="intro__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
-        <div class="intro__info-wrapper">
-          <p class="intro__info">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+    <header class="header">
+      <div class="intro">
+        <div class="intro__inner">
+          <h1 class="intro__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+          <div class="intro__info-wrapper">
+            <p class="intro__info">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
     <div class="columns">
       <div class="columns__content">
         <form action="/post.html" class="contest">

@@ -1,7 +1,27 @@
 .apps {
-  padding: 28px $width-gutter 35px;
-  background-color: $darkest;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  background-color: $color-bg-apps;
   text-align: center;
+
+  @media (--tablet-viewport) {
+    width: 300px;
+  }
+
+  @media (--tablet-viewport) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__inner {
+    margin: 0 auto;
+
+    @media (--mobile-viewport) {
+      width: 280px;
+    }
+
+
+  }
 
   &__download {
     display: block;

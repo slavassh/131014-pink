@@ -8,11 +8,11 @@
 
   &__header {
     box-sizing: border-box;
-    padding: 46px 58px 1px;
     font-weight: $font-weight-light;
-    font-size: 24px;
 
-    @mixin page-width;
+    @mixin responsive-property font-size, 24px, 40px, 50px;
+    @mixin width-gutter padding, 45px, 1px;
+    @mixin width-page;
     p {
       margin: 0 0 30px;
     }
@@ -23,9 +23,9 @@
 
   &__actions {
     box-sizing: border-box;
-    padding: 40px $width-gutter 10px;
 
-    @mixin page-width;
+    @mixin width-gutter padding, 40px, 10px;
+    @mixin width-page;
   }
 
   &__action {
@@ -44,5 +44,10 @@
   &__footer {
     height: 277px;
     background: transparent url(../img/iphone-screen-mobile@1x.png) 50% 0 no-repeat;
+
+    @media (--tablet-viewport) {
+      float: left;
+      width: 200px;
+    }
   }
 }

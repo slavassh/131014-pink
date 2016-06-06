@@ -1,8 +1,8 @@
 .contest {
   &__item {
-    padding: 30px $width-gutter;
     border: none;
 
+    @mixin width-gutter padding, 30px, 30px;
     &--even {}
 
     &--odd {
@@ -11,7 +11,7 @@
   }
 
   &__item-inner {
-    @mixin page-width;
+    @mixin width-page;
   }
 
   &__label {
@@ -48,19 +48,20 @@
   &__checkbox {}
 
   &__action {
-    @mixin page-width;
+    @mixin width-page;
   }
 
   &__submit {
-    margin: 20px $width-gutter;
     text-align: center;
+
+    @mixin width-gutter margin, 20px, 20px;
   }
 
   &__star {
-    padding: 0 $width-gutter 20px;
     text-align: center;
     text-transform: uppercase;
 
+    @mixin width-gutter padding, 0, 20px;
     sup {
       @mixin pink;
     }

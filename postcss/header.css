@@ -1,11 +1,11 @@
 .header {
-  background-color: $color-primary;
+  background: $color-primary url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
 
   &__branding {
 
   }
 
   &__logo {
-    padding: 25px $width-gutter;
+    @mixin width-gutter padding, 25px, 25px;
   }
 }

@@ -4,7 +4,7 @@
   &__branding {}
 
   &__logo {
-    margin: 30px $width-gutter;
+    @mixin width-gutter margin, 30px, 30px;
   }
 
   &__social {

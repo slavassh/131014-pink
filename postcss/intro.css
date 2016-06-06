@@ -1,25 +1,41 @@
 .intro {
-  background: $color-primary url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
+  box-sizing: border-box;
+  margin: 0 auto;
   text-align: center;
 
-  &__inner {
+  @media (--tablet-viewport) {
+    padding: 0 $width-gutter-tablet;
+    width: $width-tablet;
+  }
 
+  @media (--desktop-viewport) {
+    padding: 0 $width-gutter-desktop;
+    width: $width-desktop;
+  }
+  &__inner {
+    position: relative;
   }
 
   &__hand {
-    padding-top: 176px;
-    height: 286px;
+    box-sizing: border-box;
     background: transparent url(../img/iphone-hand-mobile@1x.png) 0 100% no-repeat;
+
+    @media (--mobile-viewport) {
+      margin: 0 auto;
+      width: 320px;
+    }
+    @mixin responsive-property height, 320px, 620px, 745px;
+
   }
 
   &__title {
-    padding: 90px $width-gutter 0;
     height: 237px;
     color: $color-page;
     font-weight: $font-weight-light;
     font-size: 24px;
 
-    @mixin page-width;
+    @mixin width-page;
+    @mixin width-gutter padding, 90px, 0;
   }
 
   &__info-wrapper {
@@ -28,9 +44,9 @@
 
   &__info {
     display: block;
-    padding: 45px $width-gutter;
 
-    @mixin page-width;
+    @mixin width-gutter padding, 45px, 45px;
+    @mixin width-page;
   }
 }
 
