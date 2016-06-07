@@ -1,17 +1,71 @@
 .contest {
+  @mixin clearfix;
+
+  @media (--tablet-viewport) {
+    margin: 0 auto;
+    padding: 30px $width-gutter-tablet;
+    width: $width-tablet;
+  }
+
+  @media (--desktop-viewport) {
+    margin: 0 auto;
+    padding: 30px $width-gutter-desktop;
+    width: $width-desktop;
+  }
+  &__table-wrapper {
+    @media (--mobile-viewport) {
+      display: table;
+      width: 100%;
+    }
+  }
+
   &__item {
     border: none;
 
-    @mixin width-gutter padding, 30px, 30px;
-    &--even {}
+    @media (--mobile-viewport) {
+      margin: 0 auto;
+      padding: 30px $width-gutter-mobile;
+      width: $width-mobile;
+    }
+  }
 
-    &--odd {
-      background-color: $color-secondary;
+  &__item-wrapper {
+    @media (--mobile-viewport) {
+      &:nth-of-type(1) {
+        display: table-caption;
+      }
+
+      &:nth-of-type(3) {
+        display: table-row-group;
+      }
+
+      &:nth-of-type(4) {
+        display: table-header-group;
+      }
+
+      &:nth-of-type(2) {
+        display: table-footer-group;
+      }
+
+      &:nth-of-type(even) {
+        background-color: $color-secondary;
+      }
+    }
+
+    @media (--desktop-viewport) {
+      float: left;
+      width: 100%;
+
+      &:nth-of-type(-n+2) {
+        width: 40%;
+      }
     }
   }
 
   &__item-inner {
-    @mixin width-page;
+    box-sizing: border-box;
+
+
   }
 
   &__label {

@@ -44,6 +44,13 @@ $width-mobile-content-minus: calc(($width-mobile - $width-gutter-mobile * 2) * -
   }
 }
 
+@define-mixin clearfix {
+    &::after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+}
 
 @define-mixin pink {
   color: $color-brand;
@@ -88,8 +95,6 @@ $width-mobile-content-minus: calc(($width-mobile - $width-gutter-mobile * 2) * -
     $(property)-right: $width-gutter-desktop;
   }
 }
-
-
 
 
 @define-mixin responsive-property $property, $value-mobile, $value-tablet, $value-desktop {

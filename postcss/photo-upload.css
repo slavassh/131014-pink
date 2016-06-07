@@ -13,16 +13,51 @@
 
   &__form {
     @mixin width-page;
+    @mixin width-gutter padding, 20px, 40px;
+    @mixin clearfix;
   }
 
   &__frame {
-    @mixin width-gutter padding, 20px, 20px;
+    @media (--tablet-viewport) {
+      float: left;
+      margin-right: 45px;
+    }
   }
 
-  &__controls {}
+  &__tools {
+    @media (--tablet-viewport) {
+      float: right;
+    }
+  }
+
+  &__controls {
+    display: inline-block;
+  }
 
   &__scale {
+    display: block;
     margin-bottom: 25px;
+
+    @media (--tablet-viewport) {
+      display: inline-block;
+    }
+    &--crop {
+      display: none;
+
+      @media (--tablet-viewport) {
+       display: inline-block;
+      }
+    }
+
+    &--fill {
+      display: none;
+
+      @media (--tablet-viewport) {
+        display: inline-block;
+      }
+    }
+
+    &--bright {}
   }
 
   &__actions {

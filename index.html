@@ -8,12 +8,14 @@
   <body>
     <header class="header">
       <div class="main-menu  main-menu--closed">
-        <a href="" class="main-menu__switch"></a>
-        <div class="main-menu__items">
-          <a href="/" class="main-menu__item  main-menu__item--active">Главная</a>
-          <a href="/photo.html"  class="main-menu__item">Фотографии</a>
-          <a href="/form.html" class="main-menu__item">Конкурс</a>
-          <a href="https://htmlacademy.ru" class="main-menu__item">HTML Academy</a>
+        <div class="main-menu__inner">
+          <a href="" class="main-menu__switch"></a>
+          <div class="main-menu__items">
+            <a href="/" class="main-menu__item  main-menu__item--active">Главная</a>
+            <a href="/photo.html"  class="main-menu__item">Фотографии</a>
+            <a href="/form.html" class="main-menu__item">Конкурс</a>
+            <a href="https://htmlacademy.ru" class="main-menu__item">HTML Academy</a>
+          </div>
         </div>
       </div>
     </header>
@@ -152,86 +154,87 @@
     </header>
     <div class="columns">
       <div class="columns__content">
-
         <div class="user-photos">
           <div class="user-photos__panorama-wrapper">
             <img src="/img/panorama-mobile@1x.jpg" alt="Панорама дня" class="user-photos__panorama">
             <div class="user-photos__caption">Панорама дня</div>
           </div>
-          <div class="user-photos__item">
-            <div class="user-photos__info">
-              <div class="user-photos__user">
-                <span class="user-photos__name">Анна</span>
-                <span class="user-photos__date">(5 минут назад)</span>
+          <div class="user-photos__items">
+            <div class="user-photos__item user-photos__item--panorama">
+              <div class="user-photos__info">
+                <div class="user-photos__user">
+                  <span class="user-photos__name">Анна</span>
+                  <span class="user-photos__date">(5 минут назад)</span>
+                </div>
+                <div class="user-photos__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</div>
+                <div class="user-photos__like">Нравится: 215</div>
               </div>
-              <div class="user-photos__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</div>
-              <div class="user-photos__like">Нравится: 215</div>
             </div>
-          </div>
-          <div class="user-photos__item">
-            <img src="/img/photo-1-mobile@1x.jpg" alt="" class="user-photos__image">
-            <div class="user-photos__info">
-              <div class="user-photos__user">
-                <span class="user-photos__name">Левон</span>
-                <span class="user-photos__date">(5 часов назад)</span>
+            <div class="user-photos__item">
+              <img src="/img/photo-1-mobile@1x.jpg" alt="" class="user-photos__image">
+              <div class="user-photos__info">
+                <div class="user-photos__user">
+                  <span class="user-photos__name">Левон</span>
+                  <span class="user-photos__date">(5 часов назад)</span>
+                </div>
+                <div class="user-photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+                <div class="user-photos__like">Нравится: 356</div>
               </div>
-              <div class="user-photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</div>
-              <div class="user-photos__like">Нравится: 356</div>
             </div>
-          </div>
-          <div class="user-photos__item">
-            <img src="/img/photo-2-mobile@1x.jpg" alt="" class="user-photos__image">
-            <div class="user-photos__info">
-              <div class="user-photos__user">
-                <span class="user-photos__name">Антон</span>
-                <span class="user-photos__date">(12 часов назад)</span>
+            <div class="user-photos__item">
+              <img src="/img/photo-2-mobile@1x.jpg" alt="" class="user-photos__image">
+              <div class="user-photos__info">
+                <div class="user-photos__user">
+                  <span class="user-photos__name">Антон</span>
+                  <span class="user-photos__date">(12 часов назад)</span>
+                </div>
+                <div class="user-photos__comment">Соседи будут рады!</div>
+                <div class="user-photos__like">Нравится: 666</div>
               </div>
-              <div class="user-photos__comment">Соседи будут рады!</div>
-              <div class="user-photos__like">Нравится: 666</div>
             </div>
-          </div>
-          <div class="user-photos__item">
-            <img src="/img/photo-3-mobile@1x.jpg" alt="" class="user-photos__image">
-            <div class="user-photos__info">
-              <div class="user-photos__user">
-                <span class="user-photos__name">Борис</span>
-                <span class="user-photos__date">(20 часов назад)</span>
+            <div class="user-photos__item">
+              <img src="/img/photo-3-mobile@1x.jpg" alt="" class="user-photos__image">
+              <div class="user-photos__info">
+                <div class="user-photos__user">
+                  <span class="user-photos__name">Борис</span>
+                  <span class="user-photos__date">(20 часов назад)</span>
+                </div>
+                <div class="user-photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</div>
+                <div class="user-photos__like">Нравится: 215</div>
               </div>
-              <div class="user-photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</div>
-              <div class="user-photos__like">Нравится: 215</div>
             </div>
-          </div>
-          <div class="user-photos__item">
-            <img src="/img/photo-4-mobile@1x.jpg" alt="" class="user-photos__image">
-            <div class="user-photos__info">
-              <div class="user-photos__user">
-                <span class="user-photos__name">Сергей</span>
-                <span class="user-photos__date">(25 часов назад)</span>
+            <div class="user-photos__item">
+              <img src="/img/photo-4-mobile@1x.jpg" alt="" class="user-photos__image">
+              <div class="user-photos__info">
+                <div class="user-photos__user">
+                  <span class="user-photos__name">Сергей</span>
+                  <span class="user-photos__date">(25 часов назад)</span>
+                </div>
+                <div class="user-photos__comment">Самая кубанская в мире!</div>
+                <div class="user-photos__like">Нравится: 4</div>
               </div>
-              <div class="user-photos__comment">Самая кубанская в мире!</div>
-              <div class="user-photos__like">Нравится: 4</div>
             </div>
-          </div>
-          <div class="user-photos__item">
-            <img src="/img/photo-5-mobile@1x.jpg" alt="" class="user-photos__image">
-            <div class="user-photos__info">
-              <div class="user-photos__user">
-                <span class="user-photos__name">Максим</span>
-                <span class="user-photos__date">(40 часов назад)</span>
+            <div class="user-photos__item">
+              <img src="/img/photo-5-mobile@1x.jpg" alt="" class="user-photos__image">
+              <div class="user-photos__info">
+                <div class="user-photos__user">
+                  <span class="user-photos__name">Максим</span>
+                  <span class="user-photos__date">(40 часов назад)</span>
+                </div>
+                <div class="user-photos__comment">Где снег-то?</div>
+                <div class="user-photos__like">Нравится: 150</div>
               </div>
-              <div class="user-photos__comment">Где снег-то?</div>
-              <div class="user-photos__like">Нравится: 150</div>
             </div>
-          </div>
-          <div class="user-photos__item">
-            <img src="/img/photo-6-mobile@1x.jpg" alt="" class="user-photos__image">
-            <div class="user-photos__info">
-              <div class="user-photos__user">
-                <span class="user-photos__name">Надежда</span>
-                <span class="user-photos__date">(45 часов назад)</span>
+            <div class="user-photos__item">
+              <img src="/img/photo-6-mobile@1x.jpg" alt="" class="user-photos__image">
+              <div class="user-photos__info">
+                <div class="user-photos__user">
+                  <span class="user-photos__name">Надежда</span>
+                  <span class="user-photos__date">(45 часов назад)</span>
+                </div>
+                <div class="user-photos__comment">Всем GM и взаимные лайки!</div>
+                <div class="user-photos__like">Нравится: 2650</div>
               </div>
-              <div class="user-photos__comment">Всем GM и взаимные лайки!</div>
-              <div class="user-photos__like">Нравится: 2650</div>
             </div>
           </div>
         </div>
@@ -243,15 +246,23 @@
             <div class="photo-upload__frame">
               <img src="/img/photo-7-mobile@1x.jpg" alt="Загрузка изображения">
             </div>
-            <div class="photo-upload__controls">
-              <div class="photo-upload__control  photo-upload__control--crop photo-upload__control--active">Обрезка</div>
-              <div class="photo-upload__control  photo-upload__control--fill">Заливка</div>
-              <div class="photo-upload__control  photo-upload__control--bright">Яркость</div>
-            </div>
-            <input type="range" name="upload-scale" id="upload-scale" class="photo-upload__scale">
-            <div class="photo-upload__actions">
-              <button type="submit" class="photo-upload__action  photo-upload__action--post">Запостить</button>
-              <button type="reset" class="photo-upload__action  photo-upload__action--cancel">Отмена</button>
+            <div class="photo-upload__tools">
+              <div class="photo-upload__controls">
+                <div class="photo-upload__control  photo-upload__control--crop photo-upload__control--active">Обрезка
+                  <input class="photo-upload__scale  photo-upload__scale--crop" type="range" name="upload-scale" id="upload-scale">
+                </div>
+                <div class="photo-upload__control  photo-upload__control--fill">Заливка
+                  <input class="photo-upload__scale  photo-upload__scale--fill" type="range" name="upload-scale" id="upload-scale">
+                </div>
+                <div class="photo-upload__control  photo-upload__control--bright">Яркость
+                  <input class="photo-upload__scale  photo-upload__scale--bright" type="range" name="upload-scale" id="upload-scale">
+                </div>
+              </div>
+              <!-- <input type="range" name="upload-scale" id="upload-scale" class="photo-upload__scale"> -->
+              <div class="photo-upload__actions">
+                <button type="submit" class="photo-upload__action  photo-upload__action--post">Запостить</button>
+                <button type="reset" class="photo-upload__action  photo-upload__action--cancel">Отмена</button>
+              </div>
             </div>
           </form>
         </div>
@@ -273,60 +284,72 @@
     <div class="columns">
       <div class="columns__content">
         <form action="/post.html" class="contest">
-          <fieldset class="contest__item contest__item--even">
-            <div class="contest__item-inner">
-              <label for="contest-lastname" class="contest__label">Фамилия:</label>
-              <input type="text" name="contest-text" id="contest-lastname" placeholder="Укажите фамилию" class="contest__textfield">
-              <label for="contest-firstname" class="contest__label">Имя:</label>
-              <input type="text" name="contest-text" id="contest-firstname" placeholder="Введите ваше имя" class="contest__textfield">
-              <label for="contest-patronymic" class="contest__label">Отчество:</label>
-              <input type="text" name="contest-text" id="contest-patronymic" placeholder="Ну и отчество тоже" class="contest__textfield">
+          <div class="contest__table-wrapper">
+            <div class="contest__item-wrapper">
+              <fieldset class="contest__item">
+                <div class="contest__item-inner">
+                  <label class="contest__label" for="contest-lastname">Фамилия:</label>
+                  <input class="contest__textfield" type="text" name="contest-text" id="contest-lastname" placeholder="Укажите фамилию">
+                  <label class="contest__label" for="contest-firstname">Имя:</label>
+                  <input class="contest__textfield" type="text" name="contest-text" id="contest-firstname" placeholder="Введите ваше имя">
+                  <label class="contest__label" for="contest-patronymic">Отчество:</label>
+                  <input class="contest__textfield" type="text" name="contest-text" id="contest-patronymic" placeholder="Ну и отчество тоже">
+                </div>
+              </fieldset>
             </div>
-          </fieldset>
-          <fieldset class="contest__item contest__item--odd">
-            <div class="contest__item-inner">
-              <p class="contest__desc">Ваши безбашенные<br>достижения в путешествии</p>
-              <input type="checkbox" name="contest-check" id="contest-check-1" class="contest__checkbox" checked>
-              <label for="contest-check-1" class="contest__option">Сделал селфи с акулой</label>
-              <input type="checkbox" name="contest-check" id="contest-check-2" class="contest__checkbox" checked>
-              <label for="contest-check-2" class="contest__option">Обгорел на пляже</label>
-              <input type="checkbox" name="contest-check" id="contest-check-3" class="contest__checkbox">
-              <label for="contest-check-3" class="contest__option">Видел Чака Норриса</label>
-              <input type="checkbox" name="contest-check" id="contest-check-4" class="contest__checkbox">
-              <label for="contest-check-4" class="contest__option">Накупил сувениров</label>
-              <input type="checkbox" name="contest-check" id="contest-check-5" class="contest__checkbox" checked>
-              <label for="contest-check-5" class="contest__option">Удержал башню</label>
-              <input type="checkbox" name="contest-check" id="contest-check-6" class="contest__checkbox">
-              <label for="contest-check-6" class="contest__option">Разгромил отель</label>
+            <div class="contest__item-wrapper">
+              <fieldset class="contest__item">
+                <div class="contest__item-inner">
+                  <p class="contest__desc">С каким приложением путешествовали?</p>
+                  <input class="contest__radiobtn" type="radio" name="contest-radio" id="contest-radio-1" checked>
+                  <label class="contest__option" for="contest-check-1">Pink для iOS</label>
+                  <input class="contest__radiobtn" type="radio" name="contest-radio" id="contest-radio-2">
+                  <label class="contest__option" for="contest-check-2">Pink на Android</label>
+                  <input class="contest__radiobtn" type="radio" name="contest-radio" id="contest-radio-3">
+                  <label class="contest__option" for="contest-check-3">Windows Phone</label>
+                </div>
+              </fieldset>
             </div>
-          </fieldset>
-          <fieldset class="contest__item contest__item--even">
-            <div class="contest__item-inner">
-              <label for="contest-phone" class="contest__label">Номер телефончика</label>
-              <input type="tel" name="contest-tel" id="contest-phone" placeholder="Номер, пожалуйста" class="contest__textfield">
-              <label for="contest-email" class="contest__label">Адресок почты</label>
-              <input type="email" name="contest-email" id="contest-email" placeholder="E-mail, пожалуйста" class="contest__textfield">
+            <div class="contest__item-wrapper">
+            <fieldset class="contest__item">
+              <div class="contest__item-inner">
+                <label for="contest-phone" class="contest__label">Номер телефончика</label>
+                <input type="tel" name="contest-tel" id="contest-phone" placeholder="Номер, пожалуйста" class="contest__textfield">
+                <label for="contest-email" class="contest__label">Адресок почты</label>
+                <input type="email" name="contest-email" id="contest-email" placeholder="E-mail, пожалуйста" class="contest__textfield">
+              </div>
+            </fieldset>
             </div>
-          </fieldset>
-          <fieldset class="contest__item contest__item--odd">
-            <div class="contest__item-inner">
-              <p class="contest__desc">С каким приложением путешествовали?</p>
-              <input type="radio" name="contest-radio" id="contest-radio-1" class="contest__radiobtn" checked>
-              <label for="contest-check-1" class="contest__option">Pink для iOS</label>
-              <input type="radio" name="contest-radio" id="contest-radio-2" class="contest__radiobtn">
-              <label for="contest-check-2" class="contest__option">Pink на Android</label>
-              <input type="radio" name="contest-radio" id="contest-radio-3" class="contest__radiobtn">
-              <label for="contest-check-3" class="contest__option">Windows Phone</label>
+            <div class="contest__item-wrapper">
+              <fieldset class="contest__item">
+                <div class="contest__item-inner">
+                  <p class="contest__desc">Ваши безбашенные<br>достижения в путешествии</p>
+                  <input class="contest__checkbox" type="checkbox" name="contest-check" id="contest-check-1" checked>
+                  <label class="contest__option" for="contest-check-1">Сделал селфи с акулой</label>
+                  <input class="contest__checkbox" type="checkbox" name="contest-check" id="contest-check-2" checked>
+                  <label class="contest__option" for="contest-check-2">Обгорел на пляже</label>
+                  <input class="contest__checkbox" type="checkbox" name="contest-check" id="contest-check-3">
+                  <label class="contest__option" for="contest-check-3">Видел Чака Норриса</label>
+                  <input class="contest__checkbox" type="checkbox" name="contest-check" id="contest-check-4">
+                  <label class="contest__option" for="contest-check-4">Накупил сувениров</label>
+                  <input class="contest__checkbox" type="checkbox" name="contest-check" id="contest-check-5" checked>
+                  <label class="contest__option" for="contest-check-5">Удержал башню</label>
+                  <input class="contest__checkbox" type="checkbox" name="contest-check" id="contest-check-6">
+                  <label class="contest__option" for="contest-check-6">Разгромил отель</label>
+                </div>
+              </fieldset>
             </div>
-          </fieldset>
-          <fieldset class="contest__item contest__item--even">
-            <div class="contest__item-inner">
-              <label for="contest-feedback" class="contest__label contest__label--textarea">Опишите свои эмоции</label>
-              <textarea name="contest-textarea" rows="10" id="contest-feedback" placeholder="Можно прям в красках, не стесняясь в выражениях" class="contest__textfield"></textarea>
-            </div>
-          </fieldset>
+          </div>
+          <div class="contest__item-wrapper">
+            <fieldset class="contest__item">
+              <div class="contest__item-inner">
+                <label class="contest__label  contest__label--textarea" for="contest-feedback">Опишите свои эмоции</label>
+                <textarea  class="contest__textfield" name="contest-textarea" rows="10" id="contest-feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </div>
+            </fieldset>
+          </div>
           <div class="contest__action">
-            <button type="submit" class="contest__submit">Отправить форму</button>
+            <button class="contest__submit" type="submit">Отправить форму</button>
             <div class="contest__star"><sup>*</sup> - обязательные поля</div>
           </div>
         </form>
