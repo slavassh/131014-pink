@@ -5,11 +5,23 @@
   text-transform: uppercase;
 
   &__inner {
+    box-sizing: border-box;
     margin: 0 auto;
 
     @media (--mobile-viewport) {
       width: $width-mobile-content;
     }
+
+    @media (--tablet-viewport) {
+      padding: 0 $width-gutter-tablet;
+      width: $width-tablet;
+    }
+
+    @media (--desktop-viewport) {
+      padding: 0 $width-gutter-desktop;
+      width: $width-desktop;
+    }
+
   }
 
   &__table {
@@ -24,6 +36,13 @@
   &__column {
     display: table-cell;
     width: $width-mobile-content;
+    vertical-align: bottom;
+
+    @media (--mobile-viewport) {
+      &:first-of-type {
+        display: none;
+      }
+    }
   }
 
   &__item {

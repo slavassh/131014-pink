@@ -19,13 +19,15 @@
   }
 
   &__actions-wrapper {
-  }
-
-  &__actions {
-    box-sizing: border-box;
+    position: relative;
 
     @mixin width-gutter padding, 40px, 10px;
     @mixin width-page;
+  }
+
+  &__actions {
+    display: table;
+    box-sizing: border-box;
   }
 
   &__action {
@@ -34,10 +36,31 @@
     h3 {
       margin: 0 0 15px;
       color: $color-title;
+      font-size: 18px;
+
+      @media (--desktop-viewport) {
+        font-size: 30px;
+      }
     }
 
     p {
       margin: 0 0 30px;
+
+      @media (--desktop-viewport) {
+        font-size: 18px;
+      }
+    }
+    @media (--tablet-viewport) {
+      padding: 35px 0 0 310px;
+      text-align: left;
+    }
+
+    @media (--desktop-viewport) {
+      display: table-cell;
+      padding: 350px 35px 0;
+      width: 33.33%;
+      background: transparent url(../img/iphone-screen-mobile@1x.png) 50% 0 no-repeat;
+      text-align: center;
     }
   }
 
@@ -46,8 +69,14 @@
     background: transparent url(../img/iphone-screen-mobile@1x.png) 50% 0 no-repeat;
 
     @media (--tablet-viewport) {
-      float: left;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
       width: 200px;
+    }
+
+    @media (--desktop-viewport) {
+      display: none;
     }
   }
 }

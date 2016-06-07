@@ -2,10 +2,11 @@
   background: $color-primary url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
 
   &__branding {
-
+    @mixin width-page;
   }
 
   &__logo {
     @mixin width-gutter padding, 25px, 25px;
+
   }
 }
