@@ -21,13 +21,23 @@
   &__actions-wrapper {
     position: relative;
 
-    @mixin width-gutter padding, 40px, 10px;
+    @mixin clearfix;
+    @mixin width-gutter padding, 40px, 0px;
     @mixin width-page;
   }
 
   &__actions {
     display: table;
     box-sizing: border-box;
+
+    @media (--tablet-viewport) {
+      float: right;
+      width: 60%;
+    }
+
+    @media (--desktop-viewport) {
+      width: 100%;
+    }
   }
 
   &__action {
@@ -51,7 +61,6 @@
       }
     }
     @media (--tablet-viewport) {
-      padding: 35px 0 0 310px;
       text-align: left;
     }
 
@@ -69,10 +78,9 @@
     background: transparent url(../img/iphone-screen-mobile@1x.png) 50% 0 no-repeat;
 
     @media (--tablet-viewport) {
-      position: absolute;
-      bottom: 0;
-      left: 20px;
-      width: 200px;
+      float: left;
+      margin-top: 70px;
+      width: 40%;
     }
 
     @media (--desktop-viewport) {
