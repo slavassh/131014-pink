@@ -1,29 +1,98 @@
 .user-photos {
+  &__items {
+    @mixin width-page;
+    @mixin width-gutter padding, 0, 20px;
+    @mixin clearfix;
+  }
+
   &__item {
-    margin: 0 $gutter $gutter;
+    margin-bottom: 20px;
+
+    @media (--tablet-viewport) {
+      float: left;
+      box-sizing: border-box;
+      width: 300px;
+
+      &:nth-of-type(2n) {
+        margin-right: 20px;
+      }
+    }
+
+    @media (--desktop-viewport) {
+      &:nth-of-type(2n) {
+        margin-right: 0px;
+      }
+
+      &:nth-of-type(3n) {
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    }
+    &--panorama {
+      width: 100%;
+    }
   }
+
   &__info {
-    background: $ultralight;
+    position: relative;
+    box-sizing: border-box;
     padding: 17px;
+    width: 100%;
+    background: $color-secondary;
     line-height: 24px;
+
+    @media (--tablet-viewport) {
+      padding-bottom: 40px;
+      min-height: 155px;
+    }
   }
+
+  &__panorama {
+    display: block;
+    width: 100%;
+  }
+
+  &__caption {
+    padding: 10px 20px;
+    background-color: $color-brand;
+    color: $color-page;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
   &__image {
     display: block;
+
+    @media (--tablet-viewport) {
+      box-sizing: border-box;
+      width: 300px;
+    }
   }
+
   &__user {}
+
   &__name {
-    font-weight: 700;
+    font-weight: $font-weight-bold;
   }
+
   &__date {
-    font-weight: 300;
     text-transform: uppercase;
+    font-weight: $font-weight-light;
   }
+
   &__comment {
     margin-bottom: 10px;
   }
+
   &__like {
-    @mixin pink;
-    font-size: 12px;
     margin-bottom: 5px;
+    font-size: 12px;
+
+    @media (--tablet-viewport) {
+      position: absolute;
+      bottom: 15px;
+    }
+    @mixin pink;
   }
 }

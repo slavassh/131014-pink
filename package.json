@@ -19,6 +19,7 @@
     "gulp": "3.9.1",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.1.1",
+    "postcss-custom-media": "^5.0.1",
     "precss": "1.4.0"
   },
   "scripts": {

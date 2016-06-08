@@ -1,9 +1,34 @@
 .header {
-  background-color: $medium_dark;
+  background: $color-primary url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
+
   &__branding {
+    @mixin width-page;
+  }
+
+  &__logo {
+    @mixin width-gutter padding, 25px, 25px;
 
   }
-  &__logo {
-    padding: 25px $gutter;
+
+  &__title {
+    color: $color-page;
+    text-align: center;
+    font-weight: $font-weight-light;
+    font-size: 24px;
+
+    @mixin width-page;
+    @mixin width-gutter padding, 90px, 90px;
+  }
+
+  &__info-wrapper {
+    background-color: $color-page;
+    text-align: center;
+  }
+
+  &__info {
+    display: block;
+
+    @mixin width-gutter padding, 45px, 45px;
+    @mixin width-page;
   }
 }

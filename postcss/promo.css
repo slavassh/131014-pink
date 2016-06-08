@@ -1,30 +1,90 @@
 .promo {
-  background-color: $ultralight;
+  background-color: $color-secondary;
   text-align: center;
+
+  &__header-wrapper {
+    background-color: $color-page;
+  }
+
   &__header {
-    font-size: 24px;
-    font-weight: 300;
-    background-color: $page;
-    padding: 46px 58px 1px;
+    box-sizing: border-box;
+    font-weight: $font-weight-light;
+
+    @mixin responsive-property font-size, 24px, 40px, 50px;
+    @mixin width-gutter padding, 45px, 1px;
+    @mixin width-page;
     p {
       margin: 0 0 30px;
     }
   }
-  &__actions {
-    padding: 40px $gutter 10px;
+
+  &__actions-wrapper {
+    position: relative;
+
+    @mixin clearfix;
+    @mixin width-gutter padding, 40px, 0px;
+    @mixin width-page;
   }
+
+  &__actions {
+    display: table;
+    box-sizing: border-box;
+
+    @media (--tablet-viewport) {
+      float: right;
+      width: 60%;
+    }
+
+    @media (--desktop-viewport) {
+      width: 100%;
+    }
+  }
+
   &__action {
     line-height: 24px;
+
     h3 {
-      color: $ultradark;
       margin: 0 0 15px;
+      color: $color-title;
+      font-size: 18px;
+
+      @media (--desktop-viewport) {
+        font-size: 30px;
+      }
     }
+
     p {
       margin: 0 0 30px;
+
+      @media (--desktop-viewport) {
+        font-size: 18px;
+      }
+    }
+    @media (--tablet-viewport) {
+      text-align: left;
+    }
+
+    @media (--desktop-viewport) {
+      display: table-cell;
+      padding: 350px 35px 0;
+      width: 33.33%;
+      background: transparent url(../img/iphone-screen-mobile@1x.png) 50% 0 no-repeat;
+      text-align: center;
     }
   }
+
   &__footer {
-    background: transparent url(../img/iphone-screen-mobile@1x.png) 50% 0 no-repeat;
     height: 277px;
+    background: transparent url(../img/iphone-screen-mobile@1x.png) 50% 0 no-repeat;
+
+    @media (--tablet-viewport) {
+      float: left;
+      margin-top: 70px;
+      width: 40%;
+    }
+
+    @media (--desktop-viewport) {
+      display: none;
+    }
   }
 }

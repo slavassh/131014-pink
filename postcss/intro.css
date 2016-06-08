@@ -1,21 +1,31 @@
 .intro {
-  background: $medium_dark url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
+  box-sizing: border-box;
+  margin: 0 auto;
   text-align: center;
-  &__hand {
-    background: transparent url(../img/iphone-hand-mobile@1x.png) 0 100% no-repeat;
-    height: 286px;
-    padding-top: 176px;
-  }
-  &__title {
-    font-size: 24px;
-    font-weight: 300;
-    color: $page;
-    height: 147px;
-    padding: 90px $gutter 0;
 
+  @media (--tablet-viewport) {
+    padding: 0 $width-gutter-tablet;
+    width: $width-tablet;
   }
-  &__info {
-    background-color: $page;
-    padding: 45px $gutter;
+
+  @media (--desktop-viewport) {
+    padding: 0 $width-gutter-desktop;
+    width: $width-desktop;
+  }
+  &__inner {
+    position: relative;
+  }
+
+  &__hand {
+    box-sizing: border-box;
+    background: transparent url(../img/iphone-hand-mobile@1x.png) 0 100% no-repeat;
+
+    @media (--mobile-viewport) {
+      margin: 0 auto;
+      width: 320px;
+    }
+    @mixin responsive-property height, 320px, 620px, 745px;
   }
 }
+
+

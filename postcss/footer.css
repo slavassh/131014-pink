@@ -1,11 +1,31 @@
 .footer {
   text-align: center;
-  &__branding {}
+
+  &__branding {
+    display: table;
+
+    @mixin width-gutter padding, 30px, 30px;
+    @mixin width-page;
+  }
+
   &__logo {
-    margin: 30px $gutter;
+    @media (--tablet-viewport) {
+      display: table-cell;
+      text-align: left;
+    }
   }
+
   &__social {
-    margin-bottom: 30px;
+    @media (--tablet-viewport) {
+      display: table-cell;
+      text-align: center;
+    }
   }
-  &__copyright {}
+
+  &__copyright {
+    @media (--tablet-viewport) {
+      display: table-cell;
+      text-align: right;
+    }
+  }
 }

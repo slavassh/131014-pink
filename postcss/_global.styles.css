@@ -1,43 +1,45 @@
+@font-face {
+  font-weight: $font-weight-normal;
+  font-style: normal;
+  font-family: 'Open Sans';
+  src: local('Open Sans'),
+       url('../fonts/opensans.woff2') format('woff2'),
+       url('../fonts/opensans.woff') format('woff');
+}
+
+@font-face {
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  font-family: 'Open Sans';
+  src: local('Open Sans Bold'),
+       url('../fonts/opensansbold.woff2') format('woff2'),
+       url('../fonts/opensansbold.woff') format('woff');
+}
+
+@font-face {
+  font-weight: $font-weight-light;
+  font-style: normal;
+  font-family: 'Open Sans';
+  src: local('Open Sans Light'),
+       url('../fonts/opensanslight.woff2') format('woff2'),
+       url('../fonts/opensanslight.woff') format('woff');
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/opensans.woff2') format('woff2'),
-       url('/fonts/opensans.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/opensansbold.woff2') format('woff2'),
-       url('/fonts/opensansbold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: url('/fonts/opensanslight.woff2') format('woff2'),
-       url('/fonts/opensanslight.woff') format('woff');
-}
 
 body {
-  background-color: $page;
-  color: $text;
-  font-family: $font;
+  background-color: $color-page;
+  color: $color-primary;
+  font-weight: $font-weight-normal;
   font-size: 14px;
-  font-weight: 400;
+  font-family: $font;
   line-height: 30px;
 }
 
 a {
   text-decoration: none;
 }
-
-

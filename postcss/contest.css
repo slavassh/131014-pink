@@ -1,46 +1,121 @@
 .contest {
-  &__item {
-    border: none;
-    padding: 30px $gutter;
-    &--even {}
-    &--odd {
-      background-color: $ultralight;
+  @mixin clearfix;
+
+  @media (--tablet-viewport) {
+    margin: 0 auto;
+    padding: 30px $width-gutter-tablet;
+    width: $width-tablet;
+  }
+
+  @media (--desktop-viewport) {
+    margin: 0 auto;
+    padding: 30px $width-gutter-desktop;
+    width: $width-desktop;
+  }
+  &__table-wrapper {
+    @media (--mobile-viewport) {
+      display: table;
+      width: 100%;
     }
   }
+
+  &__item {
+    border: none;
+
+    @media (--mobile-viewport) {
+      margin: 0 auto;
+      padding: 30px $width-gutter-mobile;
+      width: $width-mobile;
+    }
+  }
+
+  &__item-wrapper {
+    @media (--mobile-viewport) {
+      &:nth-of-type(1) {
+        display: table-caption;
+      }
+
+      &:nth-of-type(3) {
+        display: table-row-group;
+      }
+
+      &:nth-of-type(4) {
+        display: table-header-group;
+      }
+
+      &:nth-of-type(2) {
+        display: table-footer-group;
+      }
+
+      &:nth-of-type(even) {
+        background-color: $color-secondary;
+      }
+    }
+
+    @media (--desktop-viewport) {
+      float: left;
+      width: 100%;
+
+      &:nth-of-type(-n+2) {
+        width: 40%;
+      }
+    }
+  }
+
+  &__item-inner {
+    box-sizing: border-box;
+
+
+  }
+
   &__label {
-    @mixin pink;
     display: block;
     margin: 5px 24px;
     line-height: 1;
+
+    @mixin pink;
     &--textarea {
       margin-bottom: 20px;
       text-align: center;
     }
   }
+
   &__textfield {
     margin-bottom: 20px;
   }
+
   &__desc {
-    @mixin pink;
+    margin-bottom: 20px;
     text-align: center;
     line-height: 18px;
-    margin-bottom: 20px;
+
+    @mixin pink;
   }
+
   &__option {
-    font-size: 18px;
-    font-weight: 400;
     display: block;
     margin: 20px 0;
+    font-weight: $font-weight-normal;
+    font-size: 18px;
   }
+
   &__checkbox {}
+
+  &__action {
+    @mixin width-page;
+  }
+
   &__submit {
     text-align: center;
-    margin: 20px $gutter;
+
+    @mixin width-gutter margin, 20px, 20px;
   }
+
   &__star {
-    text-transform: uppercase;
     text-align: center;
-    padding: 0 $gutter 20px;
+    text-transform: uppercase;
+
+    @mixin width-gutter padding, 0, 20px;
     sup {
       @mixin pink;
     }

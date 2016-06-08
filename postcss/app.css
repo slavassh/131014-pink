@@ -1,24 +1,47 @@
 .apps {
-  background-color: $darkest;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  background-color: $color-bg-apps;
   text-align: center;
-  padding: 28px $gutter 35px;
-  &__download {
-    color: $page;
-    font-size: 18px;
-    font-weight: 700;
-    display: block;
-    border: 3px solid $page;
-    border-radius: 30px;
-    line-height: 1;
-    padding: 15px;
-    margin-bottom: 32px;
+
+  @media (--tablet-viewport) {
+    width: 300px;
   }
+
+  @media (--tablet-viewport) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__inner {
+    margin: 0 auto;
+
+    @media (--mobile-viewport) {
+      width: 280px;
+    }
+
+
+  }
+
+  &__download {
+    display: block;
+    margin-bottom: 32px;
+    padding: 15px;
+    border: 3px solid $color-page;
+    border-radius: 30px;
+    color: $color-page;
+    font-weight: $font-weight-bold;
+    font-size: 18px;
+    line-height: 1;
+  }
+
   &__logos {
     margin-bottom: 28px;
   }
+
   &__desc {
-    color: $page;
-    line-height: 24px;
     margin: 0px;
+    color: $color-page;
+    line-height: 24px;
   }
 }
