@@ -30,7 +30,7 @@
     border: 3px solid $color-page;
     border-radius: 30px;
     color: $color-page;
-    font-weight: $font-weight-bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 1;
   }

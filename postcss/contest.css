@@ -95,7 +95,7 @@
   &__option {
     display: block;
     margin: 20px 0;
-    font-weight: $font-weight-normal;
+    font-weight: 400;
     font-size: 18px;
   }
 

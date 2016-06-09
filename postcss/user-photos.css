@@ -73,12 +73,12 @@
   &__user {}
 
   &__name {
-    font-weight: $font-weight-bold;
+    font-weight: 700;
   }
 
   &__date {
     text-transform: uppercase;
-    font-weight: $font-weight-light;
+    font-weight: 300;
   }
 
   &__comment {
