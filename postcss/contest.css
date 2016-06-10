@@ -4,13 +4,13 @@
   @media (--tablet-viewport) {
     margin: 0 auto;
     padding: 30px $width-gutter-tablet;
-    width: $width-tablet;
+    width: $width-tablet-content;
   }
 
   @media (--desktop-viewport) {
     margin: 0 auto;
     padding: 30px $width-gutter-desktop;
-    width: $width-desktop;
+    width: $width-desktop-content;
   }
   &__table-wrapper {
     @media (--mobile-viewport) {
@@ -25,7 +25,7 @@
     @media (--mobile-viewport) {
       margin: 0 auto;
       padding: 30px $width-gutter-mobile;
-      width: $width-mobile;
+      width: $width-mobile-content;
     }
   }
 

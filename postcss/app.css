@@ -1,16 +1,46 @@
 .apps {
-  padding-top: 30px;
-  padding-bottom: 35px;
-  background-color: $color-bg-apps;
   text-align: center;
 
   @media (--tablet-viewport) {
     width: 300px;
   }
-  &__inner {
-    margin: 0 auto;
+  &__hand {
+    z-index: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 286px;
+    background: transparent url(../img/iphone-hand-mobile@1x.png) 0 100% no-repeat;
 
     @media (--mobile-viewport) {
+      margin: 0 auto;
+      width: 320px;
+    }
+
+    @media (--tablet-viewport) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-position: 50% 100%;
+    }
+
+    @media (--desktop-viewport) {
+
+    }
+  }
+
+  &__links {
+    position: relative;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    background-color: $color-bg-apps;
+  }
+
+  &__inner {
+    @media (--mobile-viewport) {
+      margin: 0 auto;
+      max-width: 300px;
       width: $width-mobile-content;
     }
   }

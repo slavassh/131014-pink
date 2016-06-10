@@ -14,12 +14,12 @@
 
     @media (--tablet-viewport) {
       padding: 0 $width-gutter-tablet;
-      width: $width-tablet;
+      width: $width-tablet-content;
     }
 
     @media (--desktop-viewport) {
       padding: 0 $width-gutter-desktop;
-      width: $width-desktop;
+      width: $width-desktop-content;
     }
 
   }
