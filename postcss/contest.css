@@ -102,7 +102,6 @@
   &__checkbox {}
 
   &__action {
-    @mixin width-page;
   }
 
   &__submit {

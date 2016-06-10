@@ -7,20 +7,12 @@
   @media (--tablet-viewport) {
     width: 300px;
   }
-
-  @media (--tablet-viewport) {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
   &__inner {
     margin: 0 auto;
 
     @media (--mobile-viewport) {
-      width: 280px;
+      width: $width-mobile-content;
     }
-
-
   }
 
   &__download {

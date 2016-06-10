@@ -8,11 +8,9 @@
 
   &__info {
     @mixin width-gutter padding, 20px, 40px;
-    @mixin width-page;
   }
 
   &__form {
-    @mixin width-page;
     @mixin width-gutter padding, 20px, 40px;
     @mixin clearfix;
   }

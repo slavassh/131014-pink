@@ -1,6 +1,5 @@
 .user-photos {
   &__items {
-    @mixin width-page;
     @mixin width-gutter padding, 0, 20px;
     @mixin clearfix;
   }

@@ -2,7 +2,6 @@
   background: $color-primary url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
 
   &__branding {
-    @mixin width-page;
   }
 
   &__logo {
@@ -16,7 +15,6 @@
     font-weight: 300;
     font-size: 24px;
 
-    @mixin width-page;
     @mixin width-gutter padding, 90px, 90px;
   }
 
@@ -29,6 +27,5 @@
     display: block;
 
     @mixin width-gutter padding, 45px, 45px;
-    @mixin width-page;
   }
 }

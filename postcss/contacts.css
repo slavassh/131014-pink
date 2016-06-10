@@ -4,7 +4,6 @@
   &__inner {
     background-color: $color-page;
 
-    @mixin width-page;
     @mixin width-gutter padding, 40px, 40px;
   }
 

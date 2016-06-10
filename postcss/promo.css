@@ -12,7 +12,6 @@
 
     @mixin responsive-property font-size, 24px, 40px, 50px;
     @mixin width-gutter padding, 45px, 1px;
-    @mixin width-page;
     p {
       margin: 0 0 30px;
     }
@@ -23,7 +22,6 @@
 
     @mixin clearfix;
     @mixin width-gutter padding, 40px, 0px;
-    @mixin width-page;
   }
 
   &__actions {

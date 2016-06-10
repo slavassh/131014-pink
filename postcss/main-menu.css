@@ -3,7 +3,6 @@
 
   &__inner {
     @mixin width-gutter padding, 0, 0;
-    @mixin width-page;
   }
 
   &__items {

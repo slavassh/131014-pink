@@ -43,3 +43,22 @@ body {
 a {
   text-decoration: none;
 }
+
+.page-width {
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (--mobile-viewport) {
+    width: $width-mobile;
+  }
+
+  @media (--tablet-viewport) {
+    width: $width-tablet;
+  }
+
+  @media (--desktop-viewport) {
+    width: $width-desktop;
+  }
+}
+

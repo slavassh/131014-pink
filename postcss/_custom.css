@@ -19,10 +19,10 @@ $color-button:               $green;
 $font:                       'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 
 
-$width-gutter-mobile:        20px;
+$width-gutter-mobile:        6.25%;
 $width-gutter-tablet:        calc($width-gutter-mobile * 2);
 $width-gutter-desktop:       calc($width-gutter-mobile * 6.5);
-$width-mobile:               320px;
+$width-mobile:               100%;
 $width-tablet:               700px;
 $width-desktop:              1200px;
 $width-mobile-content:       calc($width-mobile - $width-gutter-mobile * 2);
