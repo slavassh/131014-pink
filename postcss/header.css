@@ -2,11 +2,33 @@
   background: $color-primary url(../img/bg-back-mobile@1x.jpg) 50% 0 no-repeat;
 
   &__branding {
+    background-color: $color-bg-menu;
+  }
+
+  &__branding-inner {
+    @media (--desktop-viewport) {
+      display: flex;
+      border: none;
+      background: transparent;
+
+      justify-content: space-between;
+    }
   }
 
   &__logo {
-    @mixin width-gutter padding, 25px, 25px;
+    display: block;
 
+    @media (--mobile-viewport) {
+      padding: 22px 0;
+    }
+
+    @media (--tablet-viewport) {
+      padding: 27px 0 43px;
+    }
+
+    @media (--desktop-viewport) {
+      padding: 22px 0;
+    }
   }
 
   &__title {

@@ -37,7 +37,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   font-family: $font;
-  line-height: 30px;
+  line-height: $line-height-primary;
 }
 
 a {

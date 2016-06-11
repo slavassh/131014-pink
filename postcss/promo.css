@@ -9,11 +9,26 @@
   &__header {
     box-sizing: border-box;
     font-weight: 300;
+    line-height: $line-height-small;
 
     @mixin responsive-property font-size, 24px, 40px, 50px;
-    @mixin width-gutter padding, 45px, 1px;
-    p {
-      margin: 0 0 30px;
+
+    @media (--mobile-viewport) {
+      padding: 40px 0;
+    }
+
+    @media (--tablet-viewport) {
+      padding: 50px 0;
+    }
+
+    @media (--desktop-viewport) {
+      padding: 65px 0;
+    }
+  }
+
+  &__slogan {
+    @media (--mobile-viewport) {
+      margin-bottom: 1.2em;
     }
   }
 
@@ -25,7 +40,8 @@
   }
 
   &__actions {
-    display: table;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
 
     @media (--tablet-viewport) {
@@ -34,6 +50,7 @@
     }
 
     @media (--desktop-viewport) {
+      flex-direction: row;
       width: 100%;
     }
   }
@@ -41,37 +58,36 @@
   &__action {
     line-height: 24px;
 
-    h3 {
-      margin: 0 0 15px;
-      color: $color-title;
-      font-size: 18px;
-
-      @media (--desktop-viewport) {
-        font-size: 30px;
-      }
-    }
-
-    p {
-      margin: 0 0 30px;
-
-      @media (--desktop-viewport) {
-        font-size: 18px;
-      }
-    }
     @media (--tablet-viewport) {
       text-align: left;
     }
 
     @media (--desktop-viewport) {
-      display: table-cell;
       padding: 350px 35px 0;
-      width: 33.33%;
       background: transparent url(../img/iphone-screen-mobile@1x.png) 50% 0 no-repeat;
       text-align: center;
     }
   }
 
-  &__footer {
+  &__title {
+    margin: 0 0 15px;
+    color: $color-title;
+    font-size: 18px;
+
+    @media (--desktop-viewport) {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    @media (--desktop-viewport) {
+      font-size: 18px;
+    }
+  }
+
+/*   &__footer {
     height: 277px;
     background: transparent url(../img/iphone-screen-mobile@1x.png) 50% 0 no-repeat;
 
@@ -84,5 +100,5 @@
     @media (--desktop-viewport) {
       display: none;
     }
-  }
+  } */
 }

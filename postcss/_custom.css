@@ -4,10 +4,14 @@ $pink:                       #d22856;
 $gray:                       #f2f2f2;
 $gray-darken:                #e5e5e5;
 $blue-darken:                #1d2631;
+$black-transparent:          rgba(0, 0, 0, .3);
+
 
 
 $color-page:                 white;
+$color-page-transparent:     rgba(255, 255, 255, .15);
 $color-title:                black;
+$color-bg-menu:              $black-transparent;
 $color-primary:              $blue;
 $color-secondary:            $gray;
 $color-brand:                $pink;
@@ -17,6 +21,10 @@ $color-button:               $green;
 
 
 $font:                       'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+$line-height-primary:        2.14;
+$line-height-secondary:      1.67;
+$line-height-small:          1.24;
 
 
 $width-gutter-mobile:        20px;
@@ -30,9 +38,9 @@ $width-tablet-content:       88.6%;
 $width-desktop-content:      940px;
 
 
-
 @custom-media --mobile-viewport (max-width: 699px);
-@custom-media --tablet-viewport (min-width: 700px);
+@custom-media --tablet-viewport (min-width: 700px) and (max-width: 1199px);
+@custom-media --tablet-viewport-plus (min-width: 700px);
 @custom-media --desktop-viewport (min-width: 1200px);
 
 
