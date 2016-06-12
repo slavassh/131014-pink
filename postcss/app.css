@@ -93,7 +93,7 @@
     margin-bottom: 28px;
   }
 
-  &__desc {
+  &__description {
     margin: 0px;
     color: $color-page;
     line-height: 24px;
