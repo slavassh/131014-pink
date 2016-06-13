@@ -1,41 +1,43 @@
-$blue:                       #283645;
-$green:                      #2aab6d;
-$pink:                       #d22856;
-$gray:                       #f2f2f2;
-$gray-darken:                #e5e5e5;
-$blue-darken:                #1d2631;
-$black-transparent:          rgba(0, 0, 0, .3);
+$blue:                          #283645;
+$green:                         #2aab6d;
+$pink:                          #d22856;
+$gray:                          #f2f2f2;
+$gray-darken:                   #e5e5e5;
+$blue-darken:                   #1d2631;
+$black-transparent:             rgba(0, 0, 0, .3);
 
 
 
-$color-page:                 white;
-$color-page-transparent:     rgba(255, 255, 255, .15);
-$color-title:                black;
-$color-bg-menu:              $black-transparent;
-$color-primary:              $blue;
-$color-secondary:            $gray;
-$color-brand:                $pink;
-$color-bg-apps:              $blue-darken;
-$color-border:               $gray-darken;
-$color-button:               $green;
+$color-page:                    white;
+$color-page-transparent:        rgba(255, 255, 255, .15);
+$color-title:                   black;
+$color-bg-menu:                 $black-transparent;
+$color-primary:                 $blue;
+$color-secondary:               $gray;
+$color-brand:                   $pink;
+$color-bg-apps:                 $blue-darken;
+$color-border:                  $gray-darken;
+$color-button:                  $green;
 
 
-$font:                       'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font:                         'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 
-$line-height-primary:        2.14;
-$line-height-secondary:      1.67;
-$line-height-small:          1.24;
+$line-height-primary:           2.14;
+$line-height-secondary:         1.67;
+$line-height-small:             1.24;
 
 
-$width-gutter-mobile:        20px;
-$width-gutter-tablet:        40px;
-$width-gutter-desktop:       130px;
-$width-mobile:               320px;
-$width-tablet:               700px;
-$width-desktop:              1200px;
-$width-mobile-content:       87.5%;
-$width-tablet-content:       88.6%;
-$width-desktop-content:      940px;
+$width-gutter-mobile:           20px;
+$width-gutter-tablet:           40px;
+$width-gutter-desktop:          130px;
+$width-gutter-mobile-relative:  6.25%;
+$width-gutter-tablet-relative:  5.7%;
+$width-mobile:                  320px;
+$width-tablet:                  700px;
+$width-desktop:                 1200px;
+$width-mobile-content:          87.5%;
+$width-tablet-content:          88.6%;
+$width-desktop-content:         940px;
 
 
 @custom-media --mobile-viewport (max-width: 699px);

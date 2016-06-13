@@ -2,29 +2,39 @@
   text-align: center;
 
   &__branding {
-    display: table;
+    display: flex;
 
-    @mixin width-gutter padding, 30px, 30px;
+    justify-content: space-between;
+    @media (--mobile-viewport) {
+      flex-direction: column;
+      padding: 30px 0;
+    }
+
+    @media (--tablet-viewport) {
+      padding: 40px 0;
+    }
+
+    @media (--desktop-viewport) {
+      padding: 80px 0;
+    }
+
   }
 
   &__logo {
     @media (--tablet-viewport) {
-      display: table-cell;
-      text-align: left;
+
     }
   }
 
   &__social {
     @media (--tablet-viewport) {
-      display: table-cell;
-      text-align: center;
+
     }
   }
 
   &__copyright {
     @media (--tablet-viewport) {
-      display: table-cell;
-      text-align: right;
+
     }
   }
 }
