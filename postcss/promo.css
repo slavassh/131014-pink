@@ -38,9 +38,7 @@
 
   &__actions-wrapper {
     position: relative;
-
-    @mixin clearfix;
-    @mixin width-gutter padding, 40px, 0px;
+    padding: 40px 0;
   }
 
   &__actions {

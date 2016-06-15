@@ -85,27 +85,6 @@ $width-desktop-content:         940px;
   }
 }
 
-
-@define-mixin width-gutter $property, $top, $bottom {
-  $(property)-top: $(top);
-  $(property)-bottom: $(bottom);
-/*   @media (--mobile-viewport) {
-    $(property)-left: $width-gutter-mobile;
-    $(property)-right: $width-gutter-mobile;
-  }
-
-  @media (--tablet-viewport) {
-    $(property)-left: $width-gutter-tablet;
-    $(property)-right: $width-gutter-tablet;
-  }
-
-  @media (--desktop-viewport) {
-    $(property)-left: $width-gutter-desktop;
-    $(property)-right: $width-gutter-desktop;
-  } */
-}
-
-
 @define-mixin responsive-property $property, $value-mobile, $value-tablet, $value-desktop {
   @media (--mobile-viewport) {
     $(property): $(value-mobile);
