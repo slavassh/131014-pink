@@ -1,20 +1,38 @@
 .promo {
   background-color: $color-secondary;
   text-align: center;
+  line-height: $line-height-secondary;
 
+  @media (--desktop-viewport) {
+    font-size: 18px;
+  }
   &__header-wrapper {
     background-color: $color-page;
   }
 
   &__header {
     box-sizing: border-box;
-    font-weight: $font-weight-light;
+    font-weight: 300;
+    line-height: $line-height-small;
 
     @mixin responsive-property font-size, 24px, 40px, 50px;
-    @mixin width-gutter padding, 45px, 1px;
-    @mixin width-page;
-    p {
-      margin: 0 0 30px;
+
+    @media (--mobile-viewport) {
+      padding: 40px 0;
+    }
+
+    @media (--tablet-viewport) {
+      padding: 50px 0;
+    }
+
+    @media (--desktop-viewport) {
+      padding: 65px 0;
+    }
+  }
+
+  &__slogan {
+    @media (--mobile-viewport) {
+      margin-bottom: 1.2em;
     }
   }
 
@@ -23,68 +41,139 @@
 
     @mixin clearfix;
     @mixin width-gutter padding, 40px, 0px;
-    @mixin width-page;
   }
 
   &__actions {
-    display: table;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
 
+    @media (--mobile-viewport) {
+      padding-bottom: 295px;
+    }
+
     @media (--tablet-viewport) {
-      float: right;
-      width: 60%;
+      margin-top: 80px;
+      margin-left: auto;
+      width: 50%;
     }
 
     @media (--desktop-viewport) {
+      flex-direction: row;
       width: 100%;
     }
   }
 
   &__action {
-    line-height: 24px;
+    margin-bottom: 30px;
 
-    h3 {
-      margin: 0 0 15px;
-      color: $color-title;
-      font-size: 18px;
-
-      @media (--desktop-viewport) {
-        font-size: 30px;
-      }
-    }
-
-    p {
-      margin: 0 0 30px;
-
-      @media (--desktop-viewport) {
-        font-size: 18px;
-      }
-    }
     @media (--tablet-viewport) {
+      margin-bottom: 38px;
       text-align: left;
     }
 
     @media (--desktop-viewport) {
-      display: table-cell;
-      padding: 350px 35px 0;
-      width: 33.33%;
-      background: transparent url(../img/iphone-screen-mobile@1x.png) 50% 0 no-repeat;
+      padding: 30px 30px 0;
       text-align: center;
     }
   }
 
-  &__footer {
-    height: 277px;
+  &__image {
+    width: 100%;
+    height: 300px;
     background: transparent url(../img/iphone-screen-mobile@1x.png) 50% 0 no-repeat;
 
+    &--image-1,
+    &--image-2 {
+      @media (--mobile-viewport) {
+        display: none;
+      }
+
+      @media (--tablet-viewport) {
+        display: none;
+      }
+    }
+
+    &--image-3 {
+      @media (--mobile-viewport) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 280px;
+      }
+
+      @media (--tablet-viewport) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 480px;
+        background-position: 0 0;
+      }
+    }
+
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    color: $color-title;
+    font-size: 18px;
+    line-height: 1;
+
+    @media (--desktop-viewport) {
+      margin-top: 55px;
+      margin-bottom: 22px;
+      font-size: 30px;
+    }
+    &--bottom {
+      line-height: 1.17;
+
+      @media (--tablet-viewport) {
+        font-size: 30px;
+      }
+    }
+
+    br {
+      @media (--desktop-viewport) {
+        display: none;
+      }
+    }
+  }
+
+  &__text {}
+
+  &__footer-wrapper {
     @media (--tablet-viewport) {
-      float: left;
-      margin-top: 70px;
-      width: 40%;
+      background-color: $color-page;
+    }
+  }
+
+  &__footer {
+    background: transparent url() 50% 0 no-repeat;
+    text-align: left;
+
+    @media (--mobile-viewport) {
+      display: none;
+    }
+  }
+
+  &__footer-inner {
+    @media (--tablet-viewport-plus) {
+      margin-left: auto;
+      padding-top: 100px;
+      padding-bottom: 80px;
+      width: 50%;
     }
 
     @media (--desktop-viewport) {
-      display: none;
+      padding-top: 60px;
+      padding-bottom: 115px;
+      width: 61%;
     }
+  }
+
+  &__readmore {
+    display: block;
+    margin-top: 10px;
   }
 }

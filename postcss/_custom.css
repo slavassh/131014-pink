@@ -1,39 +1,48 @@
-$blue:                       #283645;
-$green:                      #2aab6d;
-$pink:                       #d22856;
-$gray:                       #f2f2f2;
-$gray-darken:                #e5e5e5;
-$blue-darken:                #1d2631;
+$blue:                          #283645;
+$green:                         #2aab6d;
+$pink:                          #d22856;
+$gray:                          #f2f2f2;
+$gray-darken:                   #e5e5e5;
+$blue-darken:                   #1d2631;
+$black-transparent:             rgba(0, 0, 0, .3);
 
 
-$color-page:                 white;
-$color-title:                black;
-$color-primary:              $blue;
-$color-secondary:            $gray;
-$color-brand:                $pink;
-$color-bg-apps:              $blue-darken;
-$color-border:               $gray-darken;
-$color-button:               $green;
+
+$color-page:                    white;
+$color-page-transparent:        rgba(255, 255, 255, .15);
+$color-title:                   black;
+$color-bg-menu:                 $black-transparent;
+$color-primary:                 $blue;
+$color-secondary:               $gray;
+$color-brand:                   $pink;
+$color-bg-apps:                 $blue-darken;
+$color-border:                  $gray-darken;
+$color-button:                  $green;
 
 
-$font:                       'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$font-weight-light:          300;
-$font-weight-normal:         400;
-$font-weight-bold:           700;
+$font:                         'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+$line-height-primary:           2.14;
+$line-height-secondary:         1.67;
+$line-height-small:             1.24;
 
 
-$width-gutter-mobile:        20px;
-$width-gutter-tablet:        calc($width-gutter-mobile * 2);
-$width-gutter-desktop:       calc($width-gutter-mobile * 6.5);
-$width-mobile:               320px;
-$width-tablet:               700px;
-$width-desktop:              1200px;
-$width-mobile-content:       calc($width-mobile - $width-gutter-mobile * 2);
-$width-mobile-content-minus: calc(($width-mobile - $width-gutter-mobile * 2) * -1);
+$width-gutter-mobile:           20px;
+$width-gutter-tablet:           40px;
+$width-gutter-desktop:          130px;
+$width-gutter-mobile-relative:  6.25%;
+$width-gutter-tablet-relative:  5.7%;
+$width-mobile:                  320px;
+$width-tablet:                  700px;
+$width-desktop:                 1200px;
+$width-mobile-content:          87.5%;
+$width-tablet-content:          88.6%;
+$width-desktop-content:         940px;
 
 
 @custom-media --mobile-viewport (max-width: 699px);
-@custom-media --tablet-viewport (min-width: 700px);
+@custom-media --tablet-viewport (min-width: 700px) and (max-width: 1199px);
+@custom-media --tablet-viewport-plus (min-width: 700px);
 @custom-media --desktop-viewport (min-width: 1200px);
 
 
@@ -64,15 +73,15 @@ $width-mobile-content-minus: calc(($width-mobile - $width-gutter-mobile * 2) * -
   margin-left: auto;
 
   @media (--mobile-viewport) {
-    width: $width-mobile;
+    width: $width-mobile-content;
   }
 
   @media (--tablet-viewport) {
-    width: $width-tablet;
+    width: $width-tablet-content;
   }
 
   @media (--desktop-viewport) {
-    width: $width-desktop;
+    width: $width-desktop-content;
   }
 }
 
@@ -80,7 +89,7 @@ $width-mobile-content-minus: calc(($width-mobile - $width-gutter-mobile * 2) * -
 @define-mixin width-gutter $property, $top, $bottom {
   $(property)-top: $(top);
   $(property)-bottom: $(bottom);
-  @media (--mobile-viewport) {
+/*   @media (--mobile-viewport) {
     $(property)-left: $width-gutter-mobile;
     $(property)-right: $width-gutter-mobile;
   }
@@ -93,7 +102,7 @@ $width-mobile-content-minus: calc(($width-mobile - $width-gutter-mobile * 2) * -
   @media (--desktop-viewport) {
     $(property)-left: $width-gutter-desktop;
     $(property)-right: $width-gutter-desktop;
-  }
+  } */
 }
 
 

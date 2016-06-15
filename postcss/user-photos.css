@@ -1,49 +1,36 @@
 .user-photos {
   &__items {
-    @mixin width-page;
-    @mixin width-gutter padding, 0, 20px;
-    @mixin clearfix;
+    display: flex;
+    flex-direction: row;
+
+    @media (--mobile-viewport) {
+      flex-direction: column;
+    }
+
+    @media (--tablet-viewport-plus) {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
   }
 
   &__item {
+    box-sizing: border-box;
     margin-bottom: 20px;
 
     @media (--tablet-viewport) {
-      float: left;
-      box-sizing: border-box;
-      width: 300px;
-
-      &:nth-of-type(2n) {
-        margin-right: 20px;
-      }
+      width: 48.38%;
     }
 
     @media (--desktop-viewport) {
-      &:nth-of-type(2n) {
-        margin-right: 0px;
-      }
-
-      &:nth-of-type(3n) {
-        margin-right: 20px;
-        margin-left: 20px;
-      }
+      width: 300px;
     }
     &--panorama {
       width: 100%;
-    }
-  }
 
-  &__info {
-    position: relative;
-    box-sizing: border-box;
-    padding: 17px;
-    width: 100%;
-    background: $color-secondary;
-    line-height: 24px;
-
-    @media (--tablet-viewport) {
-      padding-bottom: 40px;
-      min-height: 155px;
+      @media (--tablet-viewport-plus) {
+        margin-bottom: 50px;
+      }
     }
   }
 
@@ -52,33 +39,70 @@
     width: 100%;
   }
 
+  &__panorama-wrapper {
+    position: relative;
+  }
+
   &__caption {
+    position: absolute;
     padding: 10px 20px;
     background-color: $color-brand;
     color: $color-page;
     text-align: center;
     text-transform: uppercase;
     line-height: 1;
+
+    @media (--mobile-viewport) {
+      top: 0;
+      right: $width-gutter-mobile-relative;
+    }
+
+    @media (--tablet-viewport-plus) {
+      top: 55px;
+      right: $width-gutter-tablet-relative;
+    }
+
+    @media (--desktop-viewport) {
+      right: $width-gutter-desktop;
+    }
   }
 
   &__image {
     display: block;
+    width: 100%;
 
     @media (--tablet-viewport) {
       box-sizing: border-box;
-      width: 300px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 17px;
+    width: 100%;
+    background: $color-secondary;
+    line-height: 24px;
+
+    @media (--tablet-viewport-plus) {
+      padding: 24px 28px 28px;
+      min-height: 155px;
+    }
+    &--panorama {
+      min-height: auto;
     }
   }
 
   &__user {}
 
   &__name {
-    font-weight: $font-weight-bold;
+    font-weight: 700;
   }
 
   &__date {
     text-transform: uppercase;
-    font-weight: $font-weight-light;
+    font-weight: 300;
   }
 
   &__comment {
@@ -86,12 +110,12 @@
   }
 
   &__like {
-    margin-bottom: 5px;
+    margin-top: auto;
     font-size: 12px;
+    line-height: 1;
 
-    @media (--tablet-viewport) {
-      position: absolute;
-      bottom: 15px;
+    @media (--tablet-viewport-plus) {
+
     }
     @mixin pink;
   }

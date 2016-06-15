@@ -1,69 +1,79 @@
 .contest {
-  @mixin clearfix;
+  display: flex;
+  flex-direction: column;
 
+  flex-wrap: wrap;
   @media (--tablet-viewport) {
     margin: 0 auto;
-    padding: 30px $width-gutter-tablet;
-    width: $width-tablet;
+    padding: 30px 0;
+    width: $width-tablet-content;
   }
 
   @media (--desktop-viewport) {
+    flex-direction: row;
     margin: 0 auto;
-    padding: 30px $width-gutter-desktop;
-    width: $width-desktop;
-  }
-  &__table-wrapper {
-    @media (--mobile-viewport) {
-      display: table;
-      width: 100%;
-    }
-  }
+    width: $width-desktop-content;
 
-  &__item {
-    border: none;
-
-    @media (--mobile-viewport) {
-      margin: 0 auto;
-      padding: 30px $width-gutter-mobile;
-      width: $width-mobile;
-    }
+    justify-content: space-between;
   }
-
   &__item-wrapper {
     @media (--mobile-viewport) {
-      &:nth-of-type(1) {
-        display: table-caption;
-      }
-
-      &:nth-of-type(3) {
-        display: table-row-group;
-      }
-
-      &:nth-of-type(4) {
-        display: table-header-group;
-      }
-
-      &:nth-of-type(2) {
-        display: table-footer-group;
-      }
+      padding: 40px 0;
 
       &:nth-of-type(even) {
         background-color: $color-secondary;
       }
+
+      &:nth-of-type(1) {
+        order: 1;
+      }
+
+      &:nth-of-type(2) {
+        order: 4;
+      }
+
+      &:nth-of-type(3) {
+        order: 3;
+      }
+
+      &:nth-of-type(4) {
+        order: 2;
+      }
+
+      &:nth-of-type(5) {
+        order: 5;
+      }
+    }
+
+    @media (--tablet-viewport-plus) {
+      margin-bottom: 60px;
     }
 
     @media (--desktop-viewport) {
-      float: left;
+      margin-bottom: 60px;
       width: 100%;
 
       &:nth-of-type(-n+2) {
-        width: 40%;
+        width: 435px;
       }
     }
   }
 
-  &__item-inner {
+  &__item {
     box-sizing: border-box;
+    border: none;
+
+    @media (--mobile-viewport) {
+      margin: 0 auto;
+      width: $width-mobile-content;
+    }
+
+    @media (--tablet-viewport-plus) {
+      padding: 50px 60px;
+      height: 100%;
+      border: 2px solid $color-border;
+      border-radius: 3px;
+    }
 
 
   }
@@ -84,7 +94,7 @@
     margin-bottom: 20px;
   }
 
-  &__desc {
+  &__description {
     margin-bottom: 20px;
     text-align: center;
     line-height: 18px;
@@ -95,14 +105,22 @@
   &__option {
     display: block;
     margin: 20px 0;
-    font-weight: $font-weight-normal;
+    font-weight: 400;
     font-size: 18px;
   }
 
   &__checkbox {}
 
   &__action {
-    @mixin width-page;
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+    order: 6;
+    @media (--mobile-viewport) {
+      margin: 0 auto;
+      width: $width-mobile-content;
+    }
   }
 
   &__submit {
