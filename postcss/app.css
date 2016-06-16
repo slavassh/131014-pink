@@ -90,12 +90,22 @@
   }
 
   &__logos {
+    display: flex;
+    margin: 0 auto;
     margin-bottom: 28px;
+    max-width: 67%;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+
   }
 
   &__description {
     margin: 0px;
     color: $color-page;
-    line-height: 24px;
+    line-height: 1.71;
   }
 }

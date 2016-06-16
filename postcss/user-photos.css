@@ -21,6 +21,7 @@
     margin-bottom: 20px;
     background-color: $color-secondary;
 
+    align-items: center;
     justify-content: space-between;
     @media (--tablet-viewport) {
       width: 48.38%;
