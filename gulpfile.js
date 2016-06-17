@@ -4,6 +4,7 @@ var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var precss = require("precss");
+var inlinesvg = require("postcss-inline-svg");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync");
 
@@ -12,6 +13,7 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(postcss([
       precss(),
+      inlinesvg(),
       autoprefixer({browsers: [
         "last 1 version",
         "last 2 Chrome versions",

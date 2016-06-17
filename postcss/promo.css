@@ -1,7 +1,5 @@
 .promo {
-  background-color: $color-secondary;
   text-align: center;
-  line-height: $line-height-secondary;
 
   @media (--desktop-viewport) {
     font-size: 18px;
@@ -13,56 +11,62 @@
   &__header {
     box-sizing: border-box;
     font-weight: 300;
-    line-height: $line-height-small;
-
-    @mixin responsive-property font-size, 24px, 40px, 50px;
 
     @media (--mobile-viewport) {
-      padding: 40px 0;
+      padding: 35px 0 10px;
+      font-size: 24px;
     }
 
     @media (--tablet-viewport) {
-      padding: 50px 0;
+      padding: 50px 0 40px;
+      font-size: 40px;
     }
 
     @media (--desktop-viewport) {
-      padding: 65px 0;
+      padding: 65px 0 55px;
+      font-size: 50px;
     }
   }
 
   &__slogan {
     @media (--mobile-viewport) {
-      margin-bottom: 1.2em;
+      margin-bottom: 23px;
     }
   }
 
-  &__actions-wrapper {
-    position: relative;
-    padding: 40px 0;
+  &__items-wrapper {
+    background-color: $color-secondary;
+    background-image: svg-load('../img/bg-triangle-white.svg', fill=#fff);
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
-  &__actions {
+  &__items {
+    position: relative;
+  }
+
+  &__items-inner {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
 
     @media (--mobile-viewport) {
-      padding-bottom: 295px;
+      padding: 85px 0 295px;
     }
 
     @media (--tablet-viewport) {
-      margin-top: 80px;
       margin-left: auto;
+      padding-top: 80px;
       width: 50%;
     }
 
     @media (--desktop-viewport) {
       flex-direction: row;
-      width: 100%;
     }
   }
 
-  &__action {
+  &__item {
     margin-bottom: 30px;
 
     @media (--tablet-viewport) {
@@ -116,6 +120,7 @@
     margin-bottom: 10px;
     color: $color-title;
     font-size: 18px;
+    line-height: $line-height-secondary;
     line-height: 1;
 
     @media (--desktop-viewport) {
@@ -138,7 +143,9 @@
     }
   }
 
-  &__text {}
+  &__text {
+    line-height: $line-height-secondary;
+  }
 
   &__footer-wrapper {
     @media (--tablet-viewport) {
