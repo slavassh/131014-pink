@@ -1,17 +1,18 @@
 .intro {
-  box-sizing: border-box;
-  margin: 0 auto;
-  text-align: center;
+  position: relative;
 
-  @media (--tablet-viewport) {
-    width: $width-tablet-content;
-  }
-
-  @media (--desktop-viewport) {
-    width: $width-desktop-content;
-  }
   &__inner {
-    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (--tablet-viewport) {
+      width: $width-tablet-content;
+    }
+
+    @media (--desktop-viewport) {
+      width: $width-desktop-content;
+    }
   }
 }
 
