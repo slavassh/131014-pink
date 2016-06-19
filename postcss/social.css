@@ -1,9 +1,38 @@
 .social {
+  display: flex;
+
+  align-items: center;
   &__link {
-    &--twitter {}
+    display: flex;
+    margin: 0 6px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid $color-secondary;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 
-    &--fb {}
+    &:hover {
+      border-color: $color-primary;
+    }
 
-    &--youtube {}
+    &--twitter {
+      background-image: svg-load('../img/icon-twitter.svg', fill=$color-brand);
+
+    }
+
+    &--facebook {
+      background-image: svg-load('../img/icon-facebook.svg', fill=$color-brand);
+    }
+
+    &--youtube {
+      background-image: svg-load('../img/icon-youtube.svg', fill=$color-brand);
+      background-position-x: 55%; /* Так стоит делать? */
+    }
+  }
+
+  &__logo {
+    margin: auto;
+
   }
 }

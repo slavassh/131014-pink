@@ -1,10 +1,12 @@
 $blue:                          #283645;
 $green:                         #2aab6d;
+$green-light:                   #3dc644;
 $pink:                          #d22856;
 $gray:                          #f2f2f2;
 $gray-darken:                   #e5e5e5;
 $blue-darken:                   #1d2631;
 $black-transparent:             rgba(0, 0, 0, .3);
+$red:                           #f25b26;
 
 
 
@@ -18,6 +20,8 @@ $color-brand:                   $pink;
 $color-bg-apps:                 $blue-darken;
 $color-border:                  $gray-darken;
 $color-button:                  $green;
+$color-check:                   $green-light;
+$color-uncheck:                 $red;
 
 
 $font:                         'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -40,10 +44,12 @@ $width-tablet-content:          88.6%;
 $width-desktop-content:         940px;
 
 
+@custom-media --mobile-viewport-small (max-width: 320px);
 @custom-media --mobile-viewport (max-width: 699px);
 @custom-media --tablet-viewport (min-width: 700px) and (max-width: 1199px);
 @custom-media --tablet-viewport-plus (min-width: 700px);
 @custom-media --desktop-viewport (min-width: 1200px);
+@custom-media --retina (min-resolution: 144dpi), (min-resolution: 1.5dppx);
 
 
 @define-mixin mobile-plus $property, $mobile-value, $value {
@@ -84,27 +90,6 @@ $width-desktop-content:         940px;
     width: $width-desktop-content;
   }
 }
-
-
-@define-mixin width-gutter $property, $top, $bottom {
-  $(property)-top: $(top);
-  $(property)-bottom: $(bottom);
-/*   @media (--mobile-viewport) {
-    $(property)-left: $width-gutter-mobile;
-    $(property)-right: $width-gutter-mobile;
-  }
-
-  @media (--tablet-viewport) {
-    $(property)-left: $width-gutter-tablet;
-    $(property)-right: $width-gutter-tablet;
-  }
-
-  @media (--desktop-viewport) {
-    $(property)-left: $width-gutter-desktop;
-    $(property)-right: $width-gutter-desktop;
-  } */
-}
-
 
 @define-mixin responsive-property $property, $value-mobile, $value-tablet, $value-desktop {
   @media (--mobile-viewport) {

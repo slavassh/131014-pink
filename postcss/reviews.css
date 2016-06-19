@@ -2,7 +2,13 @@
   text-align: center;
   line-height: $line-height-secondary;
 
+  @media (--desktop-viewport) {
+    background: svg-load('../img/icon-quotes.svg', fill=$color-secondary) no-repeat 50% 70px;
+
+
+  }
   &__inner {
+    position: relative;
     padding: 40px 0;
 
     @media (--tablet-viewport) {
@@ -30,7 +36,7 @@
   &__title {
     color: $color-title;
 
-    @media (--media-viewport) {
+    @media (--mobile-viewport) {
       margin-bottom: 10px;
     }
 
@@ -72,5 +78,44 @@
       quotes: none;
     }
 
+  }
+
+  &__arrows {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+
+  }
+
+  &__arrow {
+    @media (--desktop-viewport) {
+      display: block;
+      width: 21px;
+      height: 41px;
+      border: none;
+      opacity: .3;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
+
+      &--left {
+        background: svg-load('../img/icon-review-arrow-left.svg', fill=$color-primary) transparent no-repeat 0 0;
+      }
+
+      &--right {
+        background: svg-load('../img/icon-review-arrow-right.svg', fill=$color-primary) transparent no-repeat 0 0;
+      }
+    }
   }
 }

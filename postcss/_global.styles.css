@@ -34,10 +34,9 @@
 body {
   background-color: $color-page;
   color: $color-primary;
-  font-weight: 400;
   font-size: 14px;
   font-family: $font;
-  line-height: $line-height-primary;
+
 }
 
 a {
@@ -60,5 +59,10 @@ a {
   @media (--desktop-viewport) {
     width: $width-desktop-content;
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 

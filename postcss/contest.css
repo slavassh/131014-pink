@@ -124,16 +124,17 @@
   }
 
   &__submit {
+    padding: 20px 0;
     text-align: center;
 
-    @mixin width-gutter margin, 20px, 20px;
+
   }
 
   &__star {
+    padding: 0  0 20px 0;
     text-align: center;
     text-transform: uppercase;
 
-    @mixin width-gutter padding, 0, 20px;
     sup {
       @mixin pink;
     }

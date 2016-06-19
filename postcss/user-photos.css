@@ -15,9 +15,14 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     margin-bottom: 20px;
+    background-color: $color-secondary;
 
+    align-items: center;
+    justify-content: space-between;
     @media (--tablet-viewport) {
       width: 48.38%;
     }
@@ -69,7 +74,6 @@
 
   &__image {
     display: block;
-    width: 100%;
 
     @media (--tablet-viewport) {
       box-sizing: border-box;
@@ -82,7 +86,6 @@
     box-sizing: border-box;
     padding: 17px;
     width: 100%;
-    background: $color-secondary;
     line-height: 24px;
 
     @media (--tablet-viewport-plus) {
