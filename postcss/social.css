@@ -1,6 +1,7 @@
 .social {
   display: flex;
 
+  align-items: center;
   &__link {
     display: flex;
     margin: 0 6px;
@@ -8,6 +9,26 @@
     height: 50px;
     border: 3px solid $color-secondary;
     border-radius: 50%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &:hover {
+      border-color: $color-primary;
+    }
+
+    &--twitter {
+      background-image: svg-load('../img/icon-twitter.svg', fill=$color-brand);
+
+    }
+
+    &--facebook {
+      background-image: svg-load('../img/icon-facebook.svg', fill=$color-brand);
+    }
+
+    &--youtube {
+      background-image: svg-load('../img/icon-youtube.svg', fill=$color-brand);
+      background-position-x: 55%; /* Так стоит делать? */
+    }
   }
 
   &__logo {

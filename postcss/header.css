@@ -60,6 +60,22 @@
     }
   }
 
+  &__logo-glasses {
+    @media (--mobile-viewport) {
+      display: none;
+    }
+  }
+
+  &__logo-stars {
+    @media (--mobile-viewport) {
+      display: none;
+    }
+
+    @media (--tablet-viewport) {
+      display: none;
+    }
+  }
+
   &__title {
     box-sizing: border-box;
     color: $color-page;

@@ -32,8 +32,6 @@
 
     @media (--tablet-viewport) {
       padding: 55px 0;
-
-      justify-content: space-around;
     }
 
     @media (--desktop-viewport) {
@@ -45,15 +43,30 @@
   }
 
   &__frame {
+    display: block;
+
+    @media (--mobile-viewport) {
+      margin: 0 auto 25px;
+    }
+
     @media (--tablet-viewport) {
-      float: left;
       margin-right: 45px;
+      min-width: 300px;
     }
   }
 
   &__tools {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    @media (--mobile-viewport) {
+      margin: 0 auto;
+      width: 240px;
+    }
+
     @media (--tablet-viewport) {
-      width: 45%;
+      width: 100%;
     }
 
     @media (--desktop-viewport) {
@@ -62,39 +75,194 @@
   }
 
   &__controls {
+    position: relative;
+    display: flex;
+
+    @media (--mobile-viewport) {
+      padding-bottom: 60px;
+      border-bottom: 1px solid $color-border;
+
+      justify-content: space-around;
+    }
+
+    @media (--tablet-viewport-plus) {
+      flex-direction: column;
+    }
   }
 
   &__control {
-    border-bottom: 1px solid $color-border;
+    display: flex;
+    min-height: 70px;
+
+    align-items: center;
+    @media (--tablet-viewport-plus) {
+      border-bottom: 1px solid $color-border;
+    }
+
   }
 
-  &__scale {
-    display: block;
-    margin: 5px 0;
-    width: 100%;
+  &__icon {
+    min-width: 48px;
+    min-height: 48px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    @media (--tablet-viewport) {
+      min-width: 24px;
+      min-height: 24px;
+    }
 
     @media (--mobile-viewport) {
+      &--inactive:hover {
+        cursor: pointer;
+      }
+
     }
     &--crop {
-      display: none;
+      background-image: svg-load('../img/icon-editor-crop.svg', fill=$color-brand);
+      background-size: 44px 44px;
 
       @media (--tablet-viewport) {
-       display: inline-block;
+        background-size: 20px 20px;
+      }
+    }
+
+    &--crop&--inactive {
+      @media (--mobile-viewport) {
+        background-image: svg-load('../img/icon-editor-fill.svg', fill=$color-primary);
+        opacity: .3;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
 
     &--fill {
-      display: none;
+      background-image: svg-load('../img/icon-editor-fill.svg', fill=$color-brand);
+      background-size: 48px 43px;
 
       @media (--tablet-viewport) {
-        display: inline-block;
+        background-size: 24px 22px;
       }
     }
 
-    &--bright {}
+    &--fill&--inactive {
+      @media (--mobile-viewport) {
+        background-image: svg-load('../img/icon-editor-fill.svg', fill=$color-primary);
+        opacity: .3;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+    }
+
+    &--contrast {
+      background-image: svg-load('../img/icon-editor-contrast.svg', fill=$color-brand);
+      background-size: 32px 32px;
+
+      @media (--tablet-viewport) {
+        background-size: 16px 16px;
+      }
+    }
+
+    &--contrast&--inactive {
+      @media (--mobile-viewport) {
+        background-image: svg-load('../img/icon-editor-contrast.svg', fill=$color-primary);
+        opacity: .3;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  &__scale {
+    width: 100%;
+
+    @media (--tablet-viewport) {
+      margin-left: 55px;
+    }
+
+    @media (--desktop-viewport) {
+      margin: auto 30px auto 45px;
+    }
+    &--crop {
+      @media (--mobile-viewport) {
+        display: none;
+      }
+
+      @media (--tablet-viewport) {
+
+      }
+    }
+
+    &--fill {
+      @media (--mobile-viewport) {
+        display: none;
+      }
+    }
+
+    &--contrast {
+      @media (--mobile-viewport) {
+        position: absolute;
+        bottom: 35px;
+        left: 0;
+      }
+    }
+  }
+
+  &__track {
+    position: relative;
+    height: 2px;
+    background-color: $color-primary;
+
+  }
+
+  &__thumb {
+    position: absolute;
+    top: -6px;
+    left: 70%; /* Обязательно все ползунки позиционировать? */
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    border: 2px solid $color-brand;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    cursor: pointer;
   }
 
   &__actions {
-    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+
+    @media (--mobile-viewport) {
+      padding: 30px 0;
+    }
+
+    @media (--desktop-viewport) {
+      flex-direction: row;
+
+      justify-content: space-between;
+    }
+  }
+
+  &__action {
+    margin-top: 10px;
+
+    @media (--mobile-viewport) {
+
+    }
+
+    @media (--tablet-viewport) {
+      max-width: 260px;
+    }
+
+    @media (--desktop-viewport) {
+      min-width: 180px;
+    }
   }
 }

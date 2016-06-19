@@ -44,6 +44,7 @@ $width-tablet-content:          88.6%;
 $width-desktop-content:         940px;
 
 
+@custom-media --mobile-viewport-small (max-width: 320px);
 @custom-media --mobile-viewport (max-width: 699px);
 @custom-media --tablet-viewport (min-width: 700px) and (max-width: 1199px);
 @custom-media --tablet-viewport-plus (min-width: 700px);
