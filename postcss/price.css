@@ -1,24 +1,24 @@
 .price {
   overflow: hidden;
-  background-color: $color-secondary;
+  background: svg-load('../img/bg-triangle-white.svg', fill=#fff) $color-secondary no-repeat 0 0;
+  background-size: contain;
 
   &__inner {
     box-sizing: border-box;
     margin: 0 auto;
+    padding: 90px 0 70px;
 
     @media (--mobile-viewport) {
-      padding: 50px 0;
       width: calc($width-mobile - $width-gutter-mobile * 2);
       text-transform: uppercase;
     }
 
     @media (--tablet-viewport) {
-      padding: 70px 0;
       width: $width-tablet-content;
     }
 
     @media (--desktop-viewport) {
-      padding: 95px 0;
+      padding: 145px 0 95px;
       width: $width-desktop-content;
     }
 
@@ -45,14 +45,17 @@
   }
 
   &__item {
-    padding: 23px;
+    box-sizing: border-box;
+    padding: 20px 23px;
+    min-height: 60px;
     border-bottom: 2px solid $color-border;
     border-left: 2px solid $color-border;
     background-color: $color-page;
     line-height: 1;
 
     @media (--tablet-viewport) {
-      padding: 18px;
+      padding: 17px 18px;
+      min-height: 50px;
     }
 
     @media (--desktop-viewport) {
@@ -68,7 +71,70 @@
 
       @media (--tablet-viewport) {
         font-size: 16px;
+      }
+    }
 
+    &--hit {
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        position: absolute;
+        top: 11px;
+        left: -28px;
+        width: 110px;
+        height: 28px;
+        background-color: $color-brand;
+        content: 'Хит';
+        font-size: 14px;
+        line-height: 1.9;
+        transform: rotate(-45deg);
+
+        @media (--tablet-viewport) {
+          top: 6px;
+          left: -32px;
+        }
+      }
+/*       &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 74px;
+        height: 73px;
+        background: url('../img/bg-hit.svg') no-repeat 0 0;
+        content: '';
+      } */
+      /* Кривой svg - внутри base64 png! */
+/*       &::after {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 35px;
+        height: 35px;
+        content: '';
+        font-size: 14px;
+        transform: rotate(-45deg);
+      } */
+    }
+
+    &--yes {
+      background: $color-page svg-load('../img/icon-yes.svg', fill=$color-check) no-repeat 50% 50%;
+      background-size: 31px 21px;
+    }
+
+    &--no {
+      background: $color-page svg-load('../img/icon-no.svg', fill=$color-uncheck) no-repeat 50% 50%;
+      background-size: 27px 26px;
+    }
+
+    &--yes,
+    &--no {
+      @media (--mobile-viewport) {
+        background-position-x: 92%;
+      }
+
+      @media (--tablet-viewport-plus) {
+        font-size: 0;
       }
     }
   }

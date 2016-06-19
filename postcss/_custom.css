@@ -1,10 +1,12 @@
 $blue:                          #283645;
 $green:                         #2aab6d;
+$green-light:                   #3dc644;
 $pink:                          #d22856;
 $gray:                          #f2f2f2;
 $gray-darken:                   #e5e5e5;
 $blue-darken:                   #1d2631;
 $black-transparent:             rgba(0, 0, 0, .3);
+$red:                           #f25b26;
 
 
 
@@ -18,6 +20,8 @@ $color-brand:                   $pink;
 $color-bg-apps:                 $blue-darken;
 $color-border:                  $gray-darken;
 $color-button:                  $green;
+$color-check:                   $green-light;
+$color-uncheck:                 $red;
 
 
 $font:                         'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
