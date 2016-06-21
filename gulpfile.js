@@ -13,6 +13,8 @@ var sourcemaps = require('gulp-sourcemaps');
 var rename = require("gulp-rename");
 var imagemin = require('gulp-imagemin');
 var svgstore = require('gulp-svgstore');
+var del = require("del");
+var runSequence = require('run-sequence');
 
 gulp.task("style", function() {
   gulp.src("postcss/style.css")
@@ -32,16 +34,32 @@ gulp.task("style", function() {
         "last 2 Edge versions"
       ]})
     ]))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.reload({stream: true}));
 });
 
+gulp.task("copy", function() {
+  return gulp.src([
+      "fonts/**/*.{woff,woff2}",
+      "img/**",
+      "js/**",
+      "*.html"
+    ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("clean", function() {
+ return del("build");
+});
+
 gulp.task("images", function() {
-  return gulp.src("img/**/*.{png,jpg,gif}")
+  return gulp.src("build/img/**/*.{png,jpg,gif}")
         .pipe(imagemin([
           imagemin.optipng({optimizationLevel: 3}),
           imagemin.jpegtran({progressive: true})
@@ -50,7 +68,7 @@ gulp.task("images", function() {
 });
 
 gulp.task("symbols", function() {
-  return gulp.src("img/*.svg")
+  return gulp.src("build/img/*.svg")
         .pipe(svgstore({
           inlineSvg: true
         }))
@@ -59,9 +77,9 @@ gulp.task("symbols", function() {
 });
 
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", function() {
   server.init({
-    server: ".",
+    server: "build",
     notify: false,
     open: true,
     ui: false
@@ -69,4 +87,15 @@ gulp.task("serve", ["style"], function() {
 
   gulp.watch("postcss/**/*.css", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
+});
+
+gulp.task("build", function(fn) {
+  runSequence(
+    "clean",
+    "copy",
+    "style",
+    "images",
+    "symbols",
+    fn
+  );
 });
