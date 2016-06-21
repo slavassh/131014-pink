@@ -95,26 +95,6 @@
           left: -32px;
         }
       }
-/*       &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 74px;
-        height: 73px;
-        background: url('../img/bg-hit.svg') no-repeat 0 0;
-        content: '';
-      } */
-      /* Кривой svg - внутри base64 png! */
-/*       &::after {
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        width: 35px;
-        height: 35px;
-        content: '';
-        font-size: 14px;
-        transform: rotate(-45deg);
-      } */
     }
 
     &--yes {
@@ -133,7 +113,11 @@
         background-position-x: 92%;
       }
 
-      @media (--tablet-viewport-plus) {
+      @media (--tablet-viewport) {
+        font-size: 0;
+      }
+
+      @media (--desktop-viewport) {
         font-size: 0;
       }
     }
