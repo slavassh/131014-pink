@@ -45,7 +45,7 @@ gulp.task("style", function() {
 gulp.task("copy", function() {
   return gulp.src([
       "fonts/**/*.{woff,woff2}",
-      "img/**",
+      "img/**/*.{png,jpg}",
       "js/**",
       "*.html"
     ], {
@@ -81,7 +81,7 @@ gulp.task("images", function() {
 });
 
 gulp.task("symbols", function() {
-  return gulp.src("build/img/icons/*.svg")
+  return gulp.src("img/icons/*.svg")
         .pipe(svgstore({
           inlineSvg: true
         }))

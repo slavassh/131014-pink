@@ -35,6 +35,10 @@
   }
 
   &__branding-inner {
+    @media (--mobile-viewport) {
+      overflow: hidden;
+    }
+
     @media (--desktop-viewport) {
       display: flex;
       border: none;
@@ -45,9 +49,8 @@
   }
 
   &__logo {
-    display: block;
-
     @media (--mobile-viewport) {
+      margin-left: -70px;
       padding: 22px 0;
     }
 
@@ -57,22 +60,6 @@
 
     @media (--desktop-viewport) {
       padding: 22px 0;
-    }
-  }
-
-  &__logo-glasses {
-    @media (--mobile-viewport) {
-      display: none;
-    }
-  }
-
-  &__logo-stars {
-    @media (--mobile-viewport) {
-      display: none;
-    }
-
-    @media (--tablet-viewport) {
-      display: none;
     }
   }
 
