@@ -1,20 +1,20 @@
 "use strict";
 
-var gulp = require("gulp");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var precss = require("precss");
-var inlinesvg = require("postcss-inline-svg");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync");
-var mqpacker = require("css-mqpacker");
-var csso = require('gulp-csso');
-var sourcemaps = require('gulp-sourcemaps');
-var rename = require("gulp-rename");
-var imagemin = require('gulp-imagemin');
-var svgstore = require('gulp-svgstore');
-var del = require("del");
-var runSequence = require('run-sequence');
+var gulp            = require("gulp");
+var plumber         = require("gulp-plumber");
+var postcss         = require("gulp-postcss");
+var precss          = require("precss");
+var inlinesvg       = require("postcss-inline-svg");
+var autoprefixer    = require("autoprefixer");
+var server          = require("browser-sync");
+var mqpacker        = require("css-mqpacker");
+var csso            = require('gulp-csso');
+var sourcemaps      = require('gulp-sourcemaps');
+var rename          = require("gulp-rename");
+var imagemin        = require('gulp-imagemin');
+var svgstore        = require('gulp-svgstore');
+var del             = require("del");
+var runSequence     = require('run-sequence');
 
 gulp.task("style", function() {
   gulp.src("postcss/style.css")
@@ -54,6 +54,19 @@ gulp.task("copy", function() {
   .pipe(gulp.dest("build"));
 });
 
+
+gulp.task('html-watch', ['copyhtml'], server.reload);
+gulp.task('image-watch', ['build'], server.reload);
+
+gulp.task("copyhtml", function() {
+  return gulp.src([
+      "*.html"
+    ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"));
+});
+
 gulp.task("clean", function() {
  return del("build");
 });
@@ -68,12 +81,12 @@ gulp.task("images", function() {
 });
 
 gulp.task("symbols", function() {
-  return gulp.src("build/img/*.svg")
+  return gulp.src("build/img/icons/*.svg")
         .pipe(svgstore({
           inlineSvg: true
         }))
         .pipe(rename("symbols.svg"))
-        .pipe(gulp.dest("build/img"));
+        .pipe(gulp.dest("build/img/icons"));
 });
 
 
@@ -86,7 +99,9 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("postcss/**/*.css", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("img/**/*.*", ["image-watch"]);
+  gulp.watch("*.html", ['html-watch']);
+
 });
 
 gulp.task("build", function(fn) {
