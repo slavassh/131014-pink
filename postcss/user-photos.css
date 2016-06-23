@@ -31,21 +31,27 @@
       width: 300px;
     }
     &--panorama {
-      width: 100%;
-
-      @media (--tablet-viewport-plus) {
+      @media (--tablet-viewport) {
         margin-bottom: 50px;
+        width: 100%;
+      }
+
+      @media (--desktop-viewport) {
+        width: 100%;
       }
     }
   }
 
-  &__panorama {
-    display: block;
-    width: 100%;
-  }
-
   &__panorama-wrapper {
     position: relative;
+  }
+
+  &__panorama {
+    display: block;
+
+    @media (--tablet-viewport-plus) {
+      width: 100%;
+    }
   }
 
   &__caption {
@@ -122,4 +128,5 @@
     }
     @mixin pink;
   }
+
 }

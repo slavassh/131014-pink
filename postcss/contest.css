@@ -60,22 +60,36 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
+    height: 100%;
     border: none;
 
+    justify-content: space-between;
     @media (--mobile-viewport) {
       margin: 0 auto;
       width: $width-mobile-content;
     }
 
     @media (--tablet-viewport-plus) {
-      padding: 50px 60px;
-      height: 100%;
-      border: 2px solid $color-border;
-      border-radius: 3px;
+      &:not(&--name) {
+        padding: 50px 60px;
+
+        @mixin border-form;
+      }
     }
+  }
 
+  &__field {
+    display: flex;
 
+    align-items: center;
+    @media (--mobile-viewport) {
+      flex-direction: column;
+
+      align-items: flex-start;
+    }
   }
 
   &__label {
@@ -91,11 +105,24 @@
   }
 
   &__textfield {
-    margin-bottom: 20px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 15px 24px;
+    width: 100%;
+    color: $color-primary;
+    font-size: 18px;
+    font-family: $font;
+    line-height: $line-height-secondary;
+
+    @mixin border-form;
+    &::placeholder {
+      color: $color-primary;
+    }
   }
 
   &__description {
     margin-bottom: 20px;
+    padding: 0 30px;
     text-align: center;
     line-height: 18px;
 
@@ -103,13 +130,55 @@
   }
 
   &__option {
+    position: relative;
     display: block;
-    margin: 20px 0;
+    margin: 35px 0;
+    padding: 5px 0 5px 60px;
     font-weight: 400;
     font-size: 18px;
+    line-height: $line-height-secondary;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      border: 2px solid $color-border;
+      content: '';
+    }
+
+    &--radio {
+      &:before {
+        border-radius: 50%;
+      }
+    }
+
+    &--chekbox {
+      &:before {
+        border-radius: 2px;
+      }
+    }
   }
 
-  &__checkbox {}
+  &__radiobtn {
+    display: none;
+
+    &:checked + label::after {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $color-brand;
+      content: '';
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
 
   &__action {
     display: flex;

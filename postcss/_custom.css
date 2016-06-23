@@ -72,6 +72,11 @@ $width-desktop-content:         940px;
   text-transform: uppercase;
 }
 
+@define-mixin border-form {
+  border: 2px solid $color-border;
+  border-radius: 2px;
+}
+
 
 @define-mixin width-page {
   box-sizing: border-box;

@@ -7,6 +7,10 @@
     fill: $color-brand;
   }
 
+  &:active {
+    opacity: .3;
+  }
+
   &__glasses {
     fill: $color-page;
     &--inverse {
