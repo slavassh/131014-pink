@@ -409,15 +409,15 @@
             <div class="contest__item  contest__item--name">
               <div class="contest__item-inner  contest__item-inner--name">
                 <div class="contest__field    contest__field--name">
-                  <label class="contest__label" for="contest-lastname">Фамилия:</label>
+                  <label class="contest__label  contest__label--name" for="contest-lastname">Фамилия:</label>
                   <input class="contest__textfield" type="text" name="contest-text" id="contest-lastname" placeholder="Укажите фамилию">
                 </div>
                 <div class="contest__field    contest__field--name">
-                  <label class="contest__label" for="contest-firstname">Имя:</label>
+                  <label class="contest__label  contest__label--name" for="contest-firstname">Имя:</label>
                   <input class="contest__textfield" type="text" name="contest-text" id="contest-firstname" placeholder="Введите ваше имя">
                 </div>
                 <div class="contest__field    contest__field--name">
-                  <label class="contest__label" for="contest-patronymic">Отчество:</label>
+                  <label class="contest__label  contest__label--name" for="contest-patronymic">Отчество:</label>
                   <input class="contest__textfield" type="text" name="contest-text" id="contest-patronymic" placeholder="Ну и отчество тоже">
                 </div>
               </div>
@@ -438,6 +438,7 @@
           </div>
           <div class="contest__item-wrapper">
             <fieldset class="contest__item  contest__item--contacts">
+            <legend class="contest__description  contest__description--contacts">Контактная информация</legend>
               <div class="contest__item-inner  contest__item-inner--contacts">
                 <div class="contest__field  contest__field--contacts">
                   <label class="contest__label" for="contest-phone">Номер телефончика</label>
@@ -483,13 +484,16 @@
             <fieldset class="contest__item  contest__item--emotions">
             <legend class="contest__description  contest__description--textarea">Опишите свои эмоции</legend>
               <div class="contest__item-inner  contest__item-inner--emotions">
-                <textarea  class="contest__textfield" name="contest-textarea" rows="10" id="contest-feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <textarea  class="contest__textfield  contest__textfield--textarea" name="contest-textarea" id="contest-feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </fieldset>
           </div>
           <div class="contest__action">
             <button class="contest__submit" type="submit">Отправить форму</button>
-            <div class="contest__star"><sup>*</sup> - обязательные поля</div>
+            <div class="contest__required">
+              <sup class="contest__star">*</sup> - обязательные
+              <span class="contest__required-hidden"> для заполнения</span> поля
+            </div>
           </div>
         </form>
       </div>
