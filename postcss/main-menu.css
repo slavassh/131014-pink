@@ -18,7 +18,7 @@
   &__item {
     display: block;
     padding: 23px;
-    border-top: 1px solid $color-page-transparent;
+    border-top: 1px solid $color-page-alpha-min;
     border-bottom: 1px solid $color-title;
     background-color: $color-primary;
     color: $color-page;
