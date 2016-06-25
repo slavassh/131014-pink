@@ -11,7 +11,6 @@
       justify-content: space-between;
       flex-wrap: wrap;
     }
-
   }
 
   &__item {
@@ -100,10 +99,24 @@
     }
     &--panorama {
       min-height: auto;
+
+      @media (--tablet-viewport-plus) {
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
     }
   }
 
-  &__user {}
+  &__user {
+    &--panorama {
+      @media (--tablet-viewport-plus) {
+        order: 1;
+      }
+    }
+  }
 
   &__name {
     font-weight: 700;
@@ -116,17 +129,43 @@
 
   &__comment {
     margin-bottom: 10px;
+
+    &--panorama {
+      @media (--tablet-viewport-plus) {
+        order: 3;
+      }
+    }
   }
 
   &__like {
+    display: flex;
     margin-top: auto;
     font-size: 12px;
     line-height: 1;
 
-    @media (--tablet-viewport-plus) {
-
-    }
+    align-items: center;
     @mixin pink;
+    &--panorama {
+      @media (--tablet-viewport-plus) {
+        margin: 0;
+
+        order: 2;
+      }
+    }
+
+  }
+
+  &__like-icon {
+    width: 13px;
+    height: 12px;
+    background-image: svg-load('../img/icon-heart.svg', fill=$color-brand);
+    background-position: 50% 50%;
+    background-size: 13px 12px;
+    background-repeat: no-repeat;
+  }
+
+  &__like-text {
+    margin: 0 20px;
   }
 
 }

@@ -5,7 +5,7 @@
 
   @media (--mobile-viewport) {
     background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-position-y: 0;
+    background-position: left 50% bottom 280px;
 
     @media (--retina) {
       background-image: url(../img/bg-back-mobile@2x.jpg);
@@ -30,36 +30,18 @@
       background-size: 2560px auto;
     }
   }
-  &__branding {
-    background-color: $color-bg-menu;
-  }
-
-  &__branding-inner {
-    @media (--mobile-viewport) {
-      overflow: hidden;
-    }
-
-    @media (--desktop-viewport) {
-      display: flex;
-      border: none;
-      background: transparent;
-
-      justify-content: space-between;
-    }
-  }
-
   &__logo {
     @media (--mobile-viewport) {
+      margin-top: -15px;
       margin-left: -70px;
-      padding: 22px 0;
     }
 
     @media (--tablet-viewport) {
-      padding: 27px 0 43px;
+
     }
 
     @media (--desktop-viewport) {
-      padding: 22px 0;
+
     }
   }
 

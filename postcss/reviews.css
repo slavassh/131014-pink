@@ -68,6 +68,8 @@
   }
 
   &__text {
+    line-height: $line-height-primary;
+
     @media (--tablet-viewport-plus) {
       font-size: 18px;
 
@@ -81,13 +83,16 @@
   }
 
   &__arrows {
-    position: absolute;
-    top: 50%;
-    display: flex;
-    width: 100%;
+    display: none;
 
-    justify-content: space-between;
+    @media (--desktop-viewport) {
+      position: absolute;
+      top: 50%;
+      display: flex;
+      width: 100%;
 
+      justify-content: space-between;
+    }
   }
 
   &__arrow {

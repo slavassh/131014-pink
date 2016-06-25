@@ -1,10 +1,92 @@
 .main-menu {
-  &__inner {
+  position: relative;
+  background-color: $color-bg-menu;
+
+  &--opened {
+    background-color: $color-primary;
+  }
+
+  &--opened
+  &__items {
+    @media (--tablet-viewport-minus) {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      width: 100%;
+    }
+  }
+
+  &--closed
+  &__items {
+    @media (--tablet-viewport-minus) {
+      display: none;
+    }
+  }
+
+  &--no-js
+  &__items {
+    @media (--tablet-viewport-minus) {
+      display: block;
+    }
+  }
+
+  &__branding {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    @media (--mobile-viewport) {
+      overflow: hidden;
+    }
+
+    @media (--desktop-viewport) {
+      border: none;
+      background: transparent;
+    }
+  }
+
+  &__switch {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 24px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    justify-content: space-between;
+    @media (--mobile-viewport) {
+      margin: 21px 0;
+    }
+
+    @media (--tablet-viewport) {
+      margin: 42px 0;
+    }
+
+    @media (--desktop-viewport) {
+      display: none;
+    }
+    &:hover
+    &-line {
+      background-color: $color-brand;
+    }
+
+    &:active {
+      opacity: .3;
+    }
+
+  }
+
+  &__switch-line {
+    display: block;
+    min-width: 50px;
+    min-height: 4px;
+    background-color: $color-page;
   }
 
   &__items {
-    display: none;
-    list-style: none;
     text-transform: uppercase;
 
     @media (--desktop-viewport) {
@@ -28,11 +110,36 @@
     line-height: 1;
 
     @media (--desktop-viewport) {
-      padding: 48px 0;
+      margin: 35px 0;
+      padding: 10px 0;
       border: none;
+      border-bottom: 2px solid transparent;
       background-color: transparent;
       text-transform: none;
       font-weight: 300;
     }
+    &:hover {
+      @media (--tablet-viewport-minus) {
+        color: $color-brand;
+      }
+
+      @media (--desktop-viewport) {
+        border-bottom: 2px solid $color-page;
+      }
+    }
+
+    &:active {
+      opacity: .3;
+    }
+
+    &--active {
+      &:hover {
+        @media (--desktop-viewport) {
+          border-color: $color-brand;
+          color: $color-brand;
+        }
+      }
+    }
+
   }
 }

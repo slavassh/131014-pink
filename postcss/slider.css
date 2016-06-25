@@ -1,13 +1,59 @@
 .slider {
-  &__items {}
-
-  &__item {}
-
   &__switches {
-    text-align: center;
+    display: flex;
+    margin: 0 auto;
+
+    align-items: center;
+    justify-content: center;
   }
 
-  &__control {}
+  &__switch {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    margin: 8px;
+    width: 12px;
+    height: 12px;
 
-  &__switch {}
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $color-primary-alpha-medium;
+      content: '';
+    }
+
+    &:hover {
+      &::before  {
+        background-color: $color-primary-alpha-max;
+      }
+    }
+
+    &:active {
+      &::before  {
+        background-color: $color-primary-alpha-min;
+      }
+    }
+  }
+
+  &__control {
+    display: none;
+    box-sizing: border-box;
+
+    &:checked + label::after {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      box-sizing: border-box;
+      width: 12px;
+      height: 12px;
+      border: 3px solid $color-primary;
+      border-radius: 50%;
+      background-color: $color-page;
+      content: '';
+    }
+  }
 }

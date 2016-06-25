@@ -55,11 +55,12 @@ gulp.task("copy", function() {
 });
 
 
-gulp.task('html-watch', ['copyhtml'], server.reload);
+gulp.task('html-js-watch', ['copy-html-js'], server.reload);
 gulp.task('image-watch', ['build'], server.reload);
 
-gulp.task("copyhtml", function() {
+gulp.task("copy-html-js", function() {
   return gulp.src([
+      "js/**",
       "*.html"
     ], {
     base: "."
@@ -100,7 +101,8 @@ gulp.task("serve", function() {
 
   gulp.watch("postcss/**/*.css", ["style"]);
   gulp.watch("img/**/*.*", ["image-watch"]);
-  gulp.watch("*.html", ['html-watch']);
+  gulp.watch("*.html", ['html-js-watch']);
+  gulp.watch("js/**/*.js", ['html-js-watch']);
 
 });
 
