@@ -386,7 +386,7 @@
     font-weight: 700;
     font-size: 18px;
     font-family: $font;
-    line-height: 1.67;
+    line-height: $line-height-primary;
 
     @media (--mobile-viewport) {
       margin-bottom: 40px;

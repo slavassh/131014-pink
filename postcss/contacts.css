@@ -1,6 +1,5 @@
 .contacts {
   text-align: center;
-  line-height: $line-height-small;
 
   &__inner {
     padding: 40px 0;

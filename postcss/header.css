@@ -50,7 +50,6 @@
     color: $color-page;
     text-align: center;
     font-weight: 300;
-    line-height: $line-height-small;
 
     @media (--mobile-viewport) {
       padding: 30px 0 50px;
@@ -77,6 +76,7 @@
 
   &__info {
     display: block;
+    line-height: $line-height-primary;
 
     @media (--mobile-viewport) {
       padding: 45px 0;
@@ -89,7 +89,6 @@
 
     @media (--desktop-viewport) {
       padding: 70px 0 100px;
-      min-height: 285px;
     }
   }
 }

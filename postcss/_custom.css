@@ -32,9 +32,9 @@ $color-uncheck:                 $red;
 
 $font:                         'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 
-$line-height-primary:           2.14;
-$line-height-secondary:         1.67;
-$line-height-small:             1.24;
+$line-height-primary:           30px;
+$line-height-secondary:         24px;
+$line-height-large:             36px;
 
 
 $width-gutter-mobile:           20px;

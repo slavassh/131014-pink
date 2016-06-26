@@ -123,4 +123,10 @@
       }
     }
   }
+
+  &__switches {
+    @media (--desktop-viewport) {
+      display: none;
+    }
+  }
 }
