@@ -11,7 +11,6 @@
       justify-content: space-between;
       flex-wrap: wrap;
     }
-
   }
 
   &__item {
@@ -21,31 +20,36 @@
     margin-bottom: 20px;
     background-color: $color-secondary;
 
-    align-items: center;
-    justify-content: space-between;
     @media (--tablet-viewport) {
       width: 48.38%;
     }
 
     @media (--desktop-viewport) {
+      margin-bottom: 50px;
       width: 300px;
     }
     &--panorama {
-      width: 100%;
-
-      @media (--tablet-viewport-plus) {
+      @media (--tablet-viewport) {
         margin-bottom: 50px;
+        width: 100%;
+      }
+
+      @media (--desktop-viewport) {
+        width: 100%;
       }
     }
   }
 
-  &__panorama {
-    display: block;
-    width: 100%;
-  }
-
   &__panorama-wrapper {
     position: relative;
+  }
+
+  &__panorama {
+    display: block;
+
+    @media (--tablet-viewport-plus) {
+      width: 100%;
+    }
   }
 
   &__caption {
@@ -84,20 +88,37 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 17px;
+    padding: 20px 17px 25px;
     width: 100%;
-    line-height: 24px;
+    height: 100%;
+    line-height: $line-height-secondary;
 
+    align-items: stretch;
     @media (--tablet-viewport-plus) {
       padding: 24px 28px 28px;
-      min-height: 155px;
+      min-height: 155px; /* как сделать все блоки одинаковой высоты? */
     }
     &--panorama {
       min-height: auto;
+
+      @media (--tablet-viewport-plus) {
+        flex-direction: row;
+        min-height: auto;
+
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
     }
   }
 
-  &__user {}
+  &__user {
+    &--panorama {
+      @media (--tablet-viewport-plus) {
+        order: 1;
+      }
+    }
+  }
 
   &__name {
     font-weight: 700;
@@ -109,17 +130,60 @@
   }
 
   &__comment {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+
+    @media (--tablet-viewport-plus) {
+      margin-bottom: 20px;
+    }
+    &--panorama {
+      @media (--tablet-viewport-plus) {
+        margin-bottom: 0;
+
+        order: 3;
+      }
+    }
   }
 
   &__like {
+    display: flex;
     margin-top: auto;
     font-size: 12px;
     line-height: 1;
 
     @media (--tablet-viewport-plus) {
+      flex-direction: row-reverse;
 
+      justify-content: space-between;
     }
     @mixin pink;
+    &--panorama {
+      @media (--tablet-viewport-plus) {
+        margin: 0;
+
+        order: 2;
+      }
+    }
+
+  }
+
+  &__like-icon {
+    width: 13px;
+    height: 12px;
+    background-image: svg-load('../img/icon-heart.svg', fill=$color-brand);
+    background-position: 50% 50%;
+    background-size: 13px 12px;
+    background-repeat: no-repeat;
+  }
+
+  &__like-text {
+    margin: 0 20px;
+
+    @media (--mobile-viewport) {
+      margin: 0 0 0 20px;
+    }
+
+    @media (--tablet-viewport-plus) {
+      margin: 0 15px 0 0;
+    }
   }
 }

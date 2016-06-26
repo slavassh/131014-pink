@@ -1,0 +1,60 @@
+.logo {
+  display: block;
+
+  &:hover &__title,
+  &:hover &__glasses,
+  &:hover &__stars {
+    fill: $color-brand;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+
+  &__glasses {
+    fill: $color-page;
+    &--inverse {
+      fill: $color-brand;
+    }
+    @media (--mobile-viewport) {
+      display: none;
+
+      &--inverse {
+      display: block;
+    }
+    }
+    &--stars {
+      @media (--tablet-viewport) {
+        display: none;
+      }
+    }
+
+    &--nostars {
+      @media (--desktop-viewport) {
+        display: none;
+      }
+    }
+  }
+
+  &__stars {
+    fill: $color-brand;
+    &--inverse {
+      fill: $color-primary;
+    }
+    @media (--mobile-viewport) {
+      display: none;
+    }
+
+    @media (--tablet-viewport) {
+      display: none;
+    }
+  }
+
+  &__title {
+    fill: $color-page;
+    &--inverse {
+      fill: $color-primary;
+    }
+  }
+
+}

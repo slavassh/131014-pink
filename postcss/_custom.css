@@ -1,34 +1,40 @@
 $blue:                          #283645;
 $green:                         #2aab6d;
 $green-light:                   #3dc644;
+$green-dark:                    #1c9b5e;
 $pink:                          #d22856;
 $gray:                          #f2f2f2;
 $gray-darken:                   #e5e5e5;
 $blue-darken:                   #1d2631;
-$black-transparent:             rgba(0, 0, 0, .3);
 $red:                           #f25b26;
+$green-dark:                    #1c9b5e;
 
 
 
 $color-page:                    white;
-$color-page-transparent:        rgba(255, 255, 255, .15);
+$color-page-alpha-min:          color($color-page a(15%));
+$color-page-alpha-medium:       color($color-page a(30%));
 $color-title:                   black;
-$color-bg-menu:                 $black-transparent;
+$color-bg-menu:                 color($color-title a(30%));
 $color-primary:                 $blue;
+$color-primary-alpha-medium:    color($color-primary a(30%));
+$color-primary-alpha-max:       color($color-primary a(60%));
+$color-primary-alpha-min:       color($color-primary a(15%));
 $color-secondary:               $gray;
 $color-brand:                   $pink;
 $color-bg-apps:                 $blue-darken;
 $color-border:                  $gray-darken;
 $color-button:                  $green;
+$color-button-hover:            $green-dark;
 $color-check:                   $green-light;
 $color-uncheck:                 $red;
 
 
 $font:                         'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 
-$line-height-primary:           2.14;
-$line-height-secondary:         1.67;
-$line-height-small:             1.24;
+$line-height-primary:           30px;
+$line-height-secondary:         24px;
+$line-height-large:             36px;
 
 
 $width-gutter-mobile:           20px;
@@ -47,6 +53,7 @@ $width-desktop-content:         940px;
 @custom-media --mobile-viewport-small (max-width: 320px);
 @custom-media --mobile-viewport (max-width: 699px);
 @custom-media --tablet-viewport (min-width: 700px) and (max-width: 1199px);
+@custom-media --tablet-viewport-minus (max-width: 1199px);
 @custom-media --tablet-viewport-plus (min-width: 700px);
 @custom-media --desktop-viewport (min-width: 1200px);
 @custom-media --retina (min-resolution: 144dpi), (min-resolution: 1.5dppx);
@@ -70,6 +77,11 @@ $width-desktop-content:         940px;
 @define-mixin pink {
   color: $color-brand;
   text-transform: uppercase;
+}
+
+@define-mixin border-form {
+  border: 2px solid $color-border;
+  border-radius: 2px;
 }
 
 

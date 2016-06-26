@@ -53,7 +53,6 @@
   &__title {
     margin: 0 30px 30px;
     font-weight: 300;
-    line-height: 1.20;
 
     @media (--mobile-viewport) {
       display: none;
@@ -129,6 +128,6 @@
   &__description {
     margin: 0px;
     color: $color-page;
-    line-height: 1.71;
+    line-height: $line-height-secondary;
   }
 }

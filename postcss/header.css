@@ -5,7 +5,7 @@
 
   @media (--mobile-viewport) {
     background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-position-y: 0;
+    background-position: left 50% bottom 280px;
 
     @media (--retina) {
       background-image: url(../img/bg-back-mobile@2x.jpg);
@@ -30,49 +30,18 @@
       background-size: 2560px auto;
     }
   }
-  &__branding {
-    background-color: $color-bg-menu;
-  }
-
-  &__branding-inner {
-    @media (--desktop-viewport) {
-      display: flex;
-      border: none;
-      background: transparent;
-
-      justify-content: space-between;
-    }
-  }
-
   &__logo {
-    display: block;
-
     @media (--mobile-viewport) {
-      padding: 22px 0;
+      margin-top: -15px;
+      margin-left: -70px;
     }
 
     @media (--tablet-viewport) {
-      padding: 27px 0 43px;
+
     }
 
     @media (--desktop-viewport) {
-      padding: 22px 0;
-    }
-  }
 
-  &__logo-glasses {
-    @media (--mobile-viewport) {
-      display: none;
-    }
-  }
-
-  &__logo-stars {
-    @media (--mobile-viewport) {
-      display: none;
-    }
-
-    @media (--tablet-viewport) {
-      display: none;
     }
   }
 
@@ -81,7 +50,6 @@
     color: $color-page;
     text-align: center;
     font-weight: 300;
-    line-height: $line-height-small;
 
     @media (--mobile-viewport) {
       padding: 30px 0 50px;
@@ -108,6 +76,7 @@
 
   &__info {
     display: block;
+    line-height: $line-height-primary;
 
     @media (--mobile-viewport) {
       padding: 45px 0;
@@ -120,7 +89,6 @@
 
     @media (--desktop-viewport) {
       padding: 70px 0 100px;
-      min-height: 285px;
     }
   }
 }

@@ -10,6 +10,8 @@
   }
 
   &__info {
+    line-height: $line-height-primary;
+
     @media (--mobile-viewport) {
       padding: 30px 0 50px;
     }
@@ -17,7 +19,7 @@
     @media (--tablet-viewport-plus) {
       padding: 50px 0 70px;
       font-size: 18px;
-      line-height: $line-height-secondary;
+
     }
   }
 

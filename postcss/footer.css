@@ -5,6 +5,7 @@
     display: flex;
 
     justify-content: space-between;
+    align-items: center;
     @media (--mobile-viewport) {
       flex-direction: column;
       padding: 30px 0;
@@ -22,15 +23,17 @@
 
   }
 
-  &__logo {
-    @media (--tablet-viewport) {
+  &__logo-link {
+    display: block;
 
+    @media (--mobile-viewport) {
+      margin-bottom: 40px;
     }
   }
 
   &__social {
-    @media (--tablet-viewport) {
-
+    @media (--mobile-viewport) {
+      margin-bottom: 40px;
     }
   }
 
