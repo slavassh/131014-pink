@@ -97,8 +97,17 @@
   }
 
   &__download {
-    border-color: $color-page;
     color: $color-page;
+
+    &:hover {
+      border-color: $color-page;
+      background-color: $color-page;
+      color: $color-brand;
+    }
+
+    &:active {
+      color: $color-brand-alpha-medium;
+    }
   }
 
   &__logos {

@@ -22,6 +22,7 @@ $color-primary-alpha-max:       color($color-primary a(60%));
 $color-primary-alpha-min:       color($color-primary a(15%));
 $color-secondary:               $gray;
 $color-brand:                   $pink;
+$color-brand-alpha-medium:      color($color-brand a(30%));
 $color-bg-apps:                 $blue-darken;
 $color-border:                  $gray-darken;
 $color-button:                  $green;
