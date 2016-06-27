@@ -5,7 +5,6 @@
 
   @media (--mobile-viewport) {
     background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-position: left 50% bottom 280px;
 
     @media (--retina) {
       background-image: url(../img/bg-back-mobile@2x.jpg);
@@ -30,6 +29,12 @@
       background-size: 2560px auto;
     }
   }
+  &--front {
+    @media (--mobile-viewport) {
+      background-position: left 50% top 0;
+    }
+  }
+
   &__logo {
     @media (--mobile-viewport) {
       margin-top: -15px;

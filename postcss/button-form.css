@@ -1,0 +1,41 @@
+.button-form {
+  padding: 15px 55px;
+  border: 2px solid $color-button;
+  border-radius: 3px;
+  background-color: $color-button;
+  color: $color-page;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: $font;
+  line-height: $line-height-primary;
+
+  @media (--tablet-viewport-plus) {
+    min-width: 300px;
+  }
+  &:hover {
+    border-color: $color-button-hover;
+    background-color: $color-button-hover;
+  }
+
+  &:active {
+    color: $color-page-alpha-medium;
+    animation-name: color-button-text;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  &:disabled {
+    border-color: $color-border;
+    background-color: $color-border;
+  }
+}
+
+@keyframes color-button-text {
+  0% {color: $color-page-alpha-medium}
+
+  100% {color: $color-page-alpha-max;}
+}

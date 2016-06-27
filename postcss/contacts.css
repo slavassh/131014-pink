@@ -69,6 +69,17 @@
     color: $color-brand;
     font-weight: 300;
     font-size: 24px;
+
+    &--mail {
+      &:hover {
+        color: $color-primary;
+        text-decoration: underline;
+      }
+
+      &:active {
+        opacity: .3;
+      }
+    }
   }
 
   &__map {

@@ -14,7 +14,9 @@ $green-dark:                    #1c9b5e;
 $color-page:                    white;
 $color-page-alpha-min:          color($color-page a(15%));
 $color-page-alpha-medium:       color($color-page a(30%));
+$color-page-alpha-max:          color($color-page a(70%));
 $color-title:                   black;
+$color-title-alpha-min:         color($color-title a(15%));
 $color-bg-menu:                 color($color-title a(30%));
 $color-primary:                 $blue;
 $color-primary-alpha-medium:    color($color-primary a(30%));
@@ -36,6 +38,7 @@ $font:                         'Open Sans', Arial, 'Helvetica Neue', Helvetica, 
 $line-height-primary:           30px;
 $line-height-secondary:         24px;
 $line-height-large:             36px;
+
 
 
 $width-gutter-mobile:           20px;

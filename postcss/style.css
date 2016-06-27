@@ -3,6 +3,7 @@
 @import "header.css";
 @import "app.css";
 @import "button.css";
+@import "button-form.css";
 @import "contacts.css";
 @import "contest.css";
 @import "footer.css";
@@ -13,6 +14,7 @@
 @import "photo-upload.css";
 @import "price.css";
 @import "promo.css";
+@import "popup.css";
 @import "reviews.css";
 @import "slider.css";
 @import "social.css";

@@ -272,18 +272,21 @@
   }
 
   &__description {
-    position: relative;
-    top: -10px;
-    left: 50%;
-    display: inline-block;
-    padding: 0 30px;
-    background-color: $color-page;
-    transform: translateX(-50%);
-
     @mixin pink;
 
     @media (--mobile-viewport) {
       margin-bottom: 30px;
+      text-align: center;
+    }
+
+    @media (--tablet-viewport-plus) {
+      position: relative;
+      top: -10px;
+      left: 50%;
+      display: inline-block;
+      padding: 0 30px;
+      background-color: $color-page;
+      transform: translateX(-50%);
     }
     &--contacts {
       display: none;
@@ -377,41 +380,16 @@
     order: 6;
     @media (--mobile-viewport) {
       flex-direction: column;
-      margin: 0 auto;
+      margin: 25px auto 0;
       width: $width-mobile-content;
     }
   }
 
   &__submit {
-    padding: 15px 55px;
-    border: 2px solid $color-button;
-    border-radius: 3px;
-    background-color: $color-button;
-    color: $color-page;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
-    font-family: $font;
-    line-height: $line-height-primary;
-
     @media (--mobile-viewport) {
       margin-bottom: 40px;
       padding: 15px;
       width: $width-mobile-content;
-    }
-    &:hover {
-      border-color: $color-button-hover;
-      background-color: $color-button-hover;
-    }
-
-    &:active {
-      color: $color-page-alpha-medium;
-    }
-
-    &:disabled {
-      border-color: $color-border;
-      background-color: $color-border;
     }
   }
 

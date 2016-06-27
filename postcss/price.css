@@ -26,6 +26,7 @@
 
   &__table {
     display: flex;
+    border-right: 2px solid $color-border;
 
     align-items: flex-end;
     @media (--mobile-viewport) {
@@ -41,6 +42,13 @@
       &:first-of-type {
         display: none;
       }
+    }
+  }
+
+  &__column:first-of-type
+  &__item {
+    &:first-of-type {
+      border-top: 2px solid $color-border;
     }
   }
 

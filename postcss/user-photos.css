@@ -133,10 +133,12 @@
 
     @media (--tablet-viewport-plus) {
       margin-bottom: 20px;
+      min-height: 50px;
     }
     &--panorama {
       @media (--tablet-viewport-plus) {
         margin-bottom: 0;
+        min-height: auto;
 
         order: 3;
       }
@@ -167,10 +169,10 @@
 
   &__like-icon {
     width: 13px;
-    height: 12px;
+    height: 13px;
     background-image: svg-load('../img/icon-heart.svg', fill=$color-brand);
     background-position: 50% 50%;
-    background-size: 13px 12px;
+    background-size: 13px 13px;
     background-repeat: no-repeat;
   }
 

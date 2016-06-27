@@ -227,7 +227,7 @@
   &__thumb {
     position: absolute;
     top: -6px;
-    left: 70%; /* Обязательно все ползунки позиционировать? */
+    left: 70%;
     box-sizing: border-box;
     width: 14px;
     height: 14px;
@@ -235,6 +235,10 @@
     border-radius: 50%;
     background-color: $color-secondary;
     cursor: pointer;
+
+    &:active {
+      background-color: $color-brand;
+    }
   }
 
   &__actions {
