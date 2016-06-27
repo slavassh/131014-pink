@@ -41,12 +41,8 @@
       margin-left: -70px;
     }
 
-    @media (--tablet-viewport) {
-
-    }
-
-    @media (--desktop-viewport) {
-
+    @media (--tablet-viewport-plus) {
+      margin-bottom: 15px;
     }
   }
 

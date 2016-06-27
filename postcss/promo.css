@@ -23,7 +23,7 @@
     }
 
     @media (--desktop-viewport) {
-      padding: 60px 0 70px;
+      padding: 70px 0 55px;
       font-size: 50px;
     }
   }
@@ -31,6 +31,14 @@
   &__slogan {
     @media (--mobile-viewport) {
       margin-bottom: 23px;
+    }
+
+    @media (--tablet-viewport) {
+      line-height: 48px;
+    }
+
+    @media (--desktop-viewport) {
+      line-height: 58px;
     }
   }
 
@@ -61,12 +69,15 @@
 
     @media (--tablet-viewport) {
       margin-left: auto;
-      padding-top: 80px;
+      padding-top: 75px;
+      padding-bottom: 15px;
       width: 50%;
     }
 
     @media (--desktop-viewport) {
       flex-direction: row;
+
+      justify-content: space-between;
     }
   }
 
@@ -74,12 +85,13 @@
     margin-bottom: 30px;
 
     @media (--tablet-viewport) {
-      margin-bottom: 38px;
+      margin-bottom: 28px;
       text-align: left;
     }
 
     @media (--desktop-viewport) {
-      padding: 0 30px 0;
+      padding: 20px 0 0;
+      width: 300px;
       text-align: center;
     }
   }
@@ -182,15 +194,28 @@
     font-size: 18px;
     line-height: $line-height-large;
 
+    @media (--tablet-viewport) {
+      margin-bottom: 5px;
+    }
+
     @media (--desktop-viewport) {
-      margin-top: 55px;
+      margin-top: 60px;
       margin-bottom: 22px;
+      padding: 0 30px;
       font-size: 30px;
+      line-height: $line-height-primary;
     }
     &--bottom {
       @media (--tablet-viewport) {
         font-size: 30px;
       }
+
+      @media (--desktop-viewport) {
+        margin-top: 70px;
+        padding: 0;
+        font-size: 30px;
+      }
+
     }
 
     br {
@@ -201,7 +226,14 @@
   }
 
   &__text {
-
+    @media (--desktop-viewport) {
+      padding: 0 30px;
+    }
+    &--bottom {
+      @media (--desktop-viewport) {
+        padding: 0;
+      }
+    }
   }
 
   &__footer-wrapper {
@@ -224,7 +256,7 @@
     }
 
     @media (--desktop-viewport) {
-     padding-bottom: 65px;
+     padding-bottom: 60px;
     line-height: $line-height-primary;
     }
   }
