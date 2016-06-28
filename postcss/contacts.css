@@ -125,6 +125,7 @@
     }
     @media (--mobile-viewport) {
       height: 200px;
+      background-image: url(../img/bg-map-tablet@1x.jpg);
 
       &::before {
         height: 75px;
@@ -133,6 +134,7 @@
 
     @media (--tablet-viewport) {
       height: 380px;
+      background-image: url(../img/bg-map-desktop@1x.jpg);
 
       &::before {
         height: 125px;
@@ -141,6 +143,7 @@
 
     @media (--desktop-viewport) {
       height: 515px;
+      background-image: url(../img/bg-map-desktop@1x.jpg);
 
       &::before {
         height: 195px;
