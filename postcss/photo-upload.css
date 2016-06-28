@@ -13,14 +13,19 @@
     line-height: $line-height-primary;
 
     @media (--mobile-viewport) {
-      padding: 30px 0 50px;
+      padding: 25px 0 40px;
     }
 
     @media (--tablet-viewport-plus) {
-      padding: 50px 0 70px;
+      padding: 45px 0 70px;
       font-size: 18px;
-
     }
+
+    @media (--desktop-viewport) {
+      padding: 15px 0 65px;
+      font-size: 18px;
+    }
+
   }
 
   &__form {
@@ -29,31 +34,35 @@
     justify-content: space-between;
     @media (--mobile-viewport) {
       flex-direction: column;
-      padding: 20px 0 40px;
+      padding: 20px 0 15px;
     }
 
     @media (--tablet-viewport) {
-      padding: 55px 0;
+      padding: 45px 0 50px;
     }
 
     @media (--desktop-viewport) {
-      padding: 55px 80px;
+      margin-bottom: 30px;
+      padding: 40px 60px 55px 80px;
       background-color: $color-secondary;
     }
-
-
   }
 
   &__frame {
     display: block;
 
     @media (--mobile-viewport) {
-      margin: 0 auto 25px;
+      margin: 0 auto 30px;
     }
 
     @media (--tablet-viewport) {
+      margin-top: 15px;
       margin-right: 45px;
       min-width: 300px;
+    }
+
+    @media (--desktop-viewport) {
+      margin-top: 15px;
     }
   }
 
@@ -64,7 +73,7 @@
     justify-content: space-between;
     @media (--mobile-viewport) {
       margin: 0 auto;
-      width: 240px;
+      width: 280px;
     }
 
     @media (--tablet-viewport) {
@@ -81,8 +90,8 @@
     display: flex;
 
     @media (--mobile-viewport) {
+      margin: 0 20px;
       padding-bottom: 60px;
-      border-bottom: 1px solid $color-border;
 
       justify-content: space-around;
     }
@@ -186,7 +195,7 @@
     width: 100%;
 
     @media (--tablet-viewport) {
-      margin-left: 55px;
+      margin: 0 20px 0 30px;
     }
 
     @media (--desktop-viewport) {
@@ -247,6 +256,7 @@
 
     @media (--mobile-viewport) {
       padding: 30px 0;
+      border-top: 1px solid $color-border;
     }
 
     @media (--desktop-viewport) {
@@ -257,13 +267,13 @@
   }
 
   &__action {
-    margin-top: 10px;
-
     @media (--mobile-viewport) {
-
+      margin-top: 10px;
+      max-width:
     }
 
     @media (--tablet-viewport) {
+      margin-top: 25px;
       max-width: 260px;
     }
 

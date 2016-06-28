@@ -9,6 +9,7 @@
     padding: 90px 0 70px;
 
     @media (--mobile-viewport) {
+      padding-bottom: 40px;
       width: calc($width-mobile - $width-gutter-mobile * 2);
       text-transform: uppercase;
     }
@@ -88,8 +89,8 @@
 
       &::before {
         position: absolute;
-        top: 11px;
-        left: -28px;
+        top: 16px;
+        left: -33px;
         width: 110px;
         height: 28px;
         background-color: $color-brand;
@@ -118,7 +119,7 @@
     &--yes,
     &--no {
       @media (--mobile-viewport) {
-        background-position: top 50% right 24px;
+        background-position: top 50% right 22px;
       }
 
       @media (--tablet-viewport) {

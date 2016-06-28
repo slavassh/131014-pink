@@ -1,4 +1,7 @@
 .user-photos {
+  @media (--desktop-viewport) {
+    margin-top: 10px;
+  }
   &__items {
     display: flex;
     flex-direction: row;
@@ -42,6 +45,7 @@
 
   &__panorama-wrapper {
     position: relative;
+    display: block;
   }
 
   &__panorama {
@@ -54,11 +58,12 @@
 
   &__caption {
     position: absolute;
-    padding: 10px 20px;
+    padding: 12px 22px;
     background-color: $color-brand;
     color: $color-page;
     text-align: center;
     text-transform: uppercase;
+    font-size: 12px;
     line-height: 1;
 
     @media (--mobile-viewport) {
@@ -88,13 +93,13 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 20px 17px 25px;
+    padding: 18px 17px 25px;
     line-height: $line-height-secondary;
 
     justify-content: flex-start;
     align-items: stretch;
     @media (--tablet-viewport-plus) {
-      padding: 24px 28px 28px;
+      padding: 24px 28px 22px;
       min-height: 155px;
     }
     &--panorama {
@@ -126,6 +131,7 @@
   &__date {
     text-transform: uppercase;
     font-weight: 300;
+    font-size: 12px;
   }
 
   &__comment {
@@ -177,14 +183,12 @@
   }
 
   &__like-text {
-    margin: 0 20px;
-
     @media (--mobile-viewport) {
       margin: 0 0 0 20px;
     }
 
     @media (--tablet-viewport-plus) {
-      margin: 0 15px 0 0;
+      margin: 0 20px 0 0;
     }
   }
 }

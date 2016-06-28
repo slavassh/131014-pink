@@ -5,6 +5,7 @@ var plumber         = require("gulp-plumber");
 var postcss         = require("gulp-postcss");
 var precss          = require("precss");
 var inlinesvg       = require("postcss-inline-svg");
+var inlinesvgopt    = require('postcss-svgo')
 var autoprefixer    = require("autoprefixer");
 var server          = require("browser-sync");
 var mqpacker        = require("css-mqpacker");
@@ -23,6 +24,7 @@ gulp.task("style", function() {
     .pipe(postcss([
       precss(),
       inlinesvg(),
+      inlinesvgopt(),
       mqpacker({
         sort: true
       }),

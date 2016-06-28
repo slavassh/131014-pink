@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
 
     @media (--mobile-viewport) {
-      margin: 100px auto 0;
+      margin: 105px auto 0;
       height: 286px;
       background-image: url(../img/iphone-hand-mobile@1x.png);
 
@@ -76,7 +76,7 @@
     z-index: 1;
 
     @media (--mobile-viewport) {
-      padding: 30px 0 35px;
+      padding: 30px 0;
       background-color: $color-bg-apps;
     }
 
@@ -118,12 +118,12 @@
   &__logos {
     display: flex;
     margin-bottom: 28px;
-    max-width: 67%;
+    max-width: 205px;
 
     align-items: center;
     justify-content: space-between;
     @media (--mobile-viewport) {
-      margin: 30px auto 25px;
+      margin: 30px auto 20px;
     }
 
     @media (--tablet-viewport) {
@@ -133,10 +133,6 @@
     @media (--desktop-viewport) {
       margin: 64px auto 50px;
     }
-  }
-
-  &__link {
-
   }
 
   &__description {

@@ -1,6 +1,6 @@
 .header {
   background-color: $color-primary;
-  background-position: 50% 100%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
 
   @media (--mobile-viewport) {
@@ -56,17 +56,20 @@
       padding: 30px 0 50px;
       min-height: 170px;
       font-size: 24px;
+      line-height: $line-height-primary;
     }
 
     @media (--tablet-viewport-plus) {
       padding: 70px 0;
       min-height: 330px;
-      font-size: 50px
+      font-size: 50px;
+      line-height: 62px;
     }
 
     @media (--desktop-viewport) {
-      padding: 70px 0 100px;
+      padding: 65px 0 100px;
       min-height: 285px;
+      line-height: 58px;
     }
   }
 
@@ -80,16 +83,27 @@
     line-height: $line-height-primary;
 
     @media (--mobile-viewport) {
-      padding: 45px 0;
+      padding: 45px 0 50px;
     }
 
     @media (--tablet-viewport-plus) {
-      padding: 70px 0;
+      padding: 95px 0 75px;
       font-size: 18px
     }
 
     @media (--desktop-viewport) {
-      padding: 70px 0 100px;
+      padding: 90px 0 80px;;
+    }
+  }
+
+  &__info-hidden {
+    @media (--mobile-viewport) {
+      display: none;
+    }
+    br {
+      @media (--desktop-viewport) {
+        display: none;
+      }
     }
   }
 }

@@ -13,7 +13,7 @@
     font-weight: 300;
 
     @media (--mobile-viewport) {
-      padding: 35px 0 10px;
+      padding: 35px 0 5px;
       font-size: 24px;
     }
 
@@ -64,7 +64,7 @@
     min-height: 485px;
 
     @media (--mobile-viewport) {
-      padding: 85px 0 295px;
+      padding: 75px 0 285px;
     }
 
     @media (--tablet-viewport) {
@@ -192,10 +192,11 @@
     margin-bottom: 10px;
     color: $color-title;
     font-size: 18px;
-    line-height: $line-height-large;
+    line-height: $line-height-primary;
 
     @media (--tablet-viewport) {
       margin-bottom: 5px;
+      line-height: $line-height-large;
     }
 
     @media (--desktop-viewport) {
@@ -203,7 +204,6 @@
       margin-bottom: 22px;
       padding: 0 30px;
       font-size: 30px;
-      line-height: $line-height-primary;
     }
     &--bottom {
       @media (--tablet-viewport) {
