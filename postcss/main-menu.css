@@ -172,7 +172,7 @@
     }
 
     &:active {
-      opacity: .3;
+      color: $color-brand-alpha-medium;
     }
 
     &--active {
