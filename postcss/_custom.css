@@ -63,13 +63,6 @@ $width-desktop-content:         940px;
 @custom-media --retina (min-resolution: 144dpi), (min-resolution: 1.5dppx);
 
 
-@define-mixin mobile-plus $property, $mobile-value, $value {
-  $(property): $(mobile-value);
-  @media (--tablet-viewport) {
-    $(property): $(value);
-  }
-}
-
 @define-mixin clearfix {
     &::after {
       display: table;

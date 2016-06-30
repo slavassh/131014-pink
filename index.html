@@ -6,12 +6,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
+    <script async src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="header header--front">
-      <div class="main-menu  main-menu--closed  main-menu--no-js">
+      <nav class="main-menu  main-menu--closed  main-menu--no-js">
         <div class="main-menu__branding  page-width">
           <a href="" class="header__logo-link">
             <svg class="logo  header__logo" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
@@ -41,17 +41,17 @@
             <span class="main-menu__switch-line"></span>
           </button>
         </div>
-      </div>
+      </nav>
       <div class="intro">
         <div class="intro__inner">
           <div class="apps">
             <div class="apps__hand"></div>
             <div class="apps__links">
               <div class="apps__links-inner">
-                <div class="apps__title">Взгляните на жизнь иначе!</div>
+                <h2 class="apps__title">Взгляните на жизнь иначе!</h2>
                 <a href="https://www.appstore.com/" class="apps__download  button">Скачать приложение</a>
-                <div class="apps__logos">
                 <script>svg4everybody(); </script>
+                <div class="apps__logos">
                   <a class="apps__link" href="https://www.appstore.com/" title="Apple Store">
                     <svg width="47" height="56">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/symbols.svg#logo-apple"></use>
@@ -75,12 +75,10 @@
         </div>
       </div>
     </header>
-    <div class="promo">
-      <div class="promo__header-wrapper">
-        <div class="promo__header  page-width">
-          <p class="promo__slogan">Устали от серости мегаполиса?</p>
-          <p class="promo__slogan">Нам есть, что вам<br>предложить!</p>
-        </div>
+    <section class="promo">
+      <div class="promo__header  page-width">
+        <h2 class="promo__slogan">Устали от серости мегаполиса?</h2>
+        <h2 class="promo__slogan">Нам есть, что вам предложить!</h2>
       </div>
       <div class="promo__items-wrapper">
         <div class="promo__items  page-width">
@@ -120,8 +118,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="reviews">
+    </section>
+    <section class="reviews">
       <div class="reviews__inner  page-width">
         <div class="slider">
           <div class="reviews__items  slider__items">
@@ -155,8 +153,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="price">
+    </section>
+    <section class="price">
       <div class="price__inner">
         <div class="slider">
           <div class="price__table slider__items">
@@ -166,28 +164,28 @@
               <div class="price__item">Комментарии</div>
             </div>
             <div class="price__column  slider__item">
-              <div class="price__item  price__item--header">
-                <span class="price__title">База</span><br>
-                <span class="price__cost">1,99 USD</span>
-              </div>
+              <header class="price__item  price__item--header">
+                <div class="price__title">База</div>
+                <div class="price__cost">1,99 USD</div>
+              </header>
               <div class="price__item  price__item--yes">Розовый фильтр</div>
               <div class="price__item  price__item--no">Смайлики</div>
               <div class="price__item  price__item--no">Комментарии</div>
             </div>
             <div class="price__column  slider__item">
-              <div class="price__item  price__item--header  price__item--hit">
-                <span class="price__title">Стандарт</span><br>
-                <span class="price__cost">3,99 USD</span>
-              </div>
+              <header class="price__item  price__item--header  price__item--hit">
+                <div class="price__title">Стандарт</div>
+                <div class="price__cost">3,99 USD</div>
+              </header>
               <div class="price__item  price__item--yes">Розовый фильтр</div>
               <div class="price__item  price__item--yes">Смайлики</div>
               <div class="price__item  price__item--no">Комментарии</div>
             </div>
             <div class="price__column  slider__item">
-              <div class="price__item  price__item--header">
-                <span class="price__title">Анлим</span><br>
-                <span class="price__cost">9,99 USD</span>
-              </div>
+              <header class="price__item  price__item--header">
+                <div class="price__title">Анлим</div>
+                <div class="price__cost">9,99 USD</div>
+              </header>
               <div class="price__item  price__item--yes">Розовый фильтр</div>
               <div class="price__item  price__item--yes">Смайлики</div>
               <div class="price__item  price__item--yes">Комментарии</div>
@@ -203,11 +201,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <footer class="footer">
       <div class="contacts">
         <div class="contacts__inner  page-width">
-          <h3 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h3>
+          <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
           <div class="contacts__items">
             <div class="contacts__item">
               <h4 class="contacts__label">Звоните:</h4>
@@ -219,7 +217,7 @@
             </div>
             <div class="contacts__item">
               <h4 class="contacts__label">Приезжайте в гости:</h4>
-              <p class="contacts__data">ул. Большая<br>Конюшенная, 19/8</p>
+              <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
             </div>
           </div>
         </div>

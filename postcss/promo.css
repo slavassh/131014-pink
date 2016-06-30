@@ -29,15 +29,20 @@
   }
 
   &__slogan {
+    font-weight: 300;
+
     @media (--mobile-viewport) {
       margin-bottom: 23px;
+      font-size: 24px;
     }
 
     @media (--tablet-viewport) {
+      font-size: 40px;
       line-height: 48px;
     }
 
     @media (--desktop-viewport) {
+      font-size: 50px;
       line-height: 58px;
     }
   }
@@ -215,7 +220,6 @@
         padding: 0;
         font-size: 30px;
       }
-
     }
 
     br {

@@ -6,12 +6,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/svg4everybody.min.js"></script>
+    <script async src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="header header--front">
-      <div class="main-menu  main-menu--closed  main-menu--no-js">
+      <nav class="main-menu  main-menu--closed  main-menu--no-js">
         <div class="main-menu__branding  page-width">
           <a href="/" class="header__logo-link">
             <svg class="logo  header__logo" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
@@ -41,13 +40,13 @@
             <span class="main-menu__switch-line"></span>
           </button>
         </div>
-      </div>
-      <h1 class="header__title  page-width">Фотографии<br>пользователей</h1>
+      </nav>
+      <h1 class="header__title  page-width">Фотографии пользователей</h1>
       <div class="header__info-wrapper">
         <p class="header__info  page-width">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
       </div>
     </header>
-    <div class="user-photos">
+    <section class="user-photos">
       <a class="user-photos__panorama-wrapper" href="img/panorama-desktop@2x.jpg">
         <picture>
           <source media="(min-width: 1201px)" srcset="img/panorama-desktop@2x.jpg">
@@ -66,7 +65,7 @@
             </div>
             <div class="user-photos__comment  user-photos__comment--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</div>
             <div class="user-photos__like  user-photos__like--panorama">
-              <div class="user-photos__like-icon  user-photos__like-icon--panorama"></div>
+              <a class="user-photos__like-icon  user-photos__like-icon--panorama" href=""></a>
               <div class="user-photos__like-text">Нравится: 215</div>
             </div>
           </div>
@@ -82,13 +81,13 @@
             </picture>
           </a>
           <div class="user-photos__info">
-            <div class="user-photos__user">
+            <header class="user-photos__user">
               <span class="user-photos__name">Левон</span>
               <span class="user-photos__date">(5 часов назад)</span>
-            </div>
-            <div class="user-photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+            </header>
+            <p class="user-photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="user-photos__like">
-              <div class="user-photos__like-icon"></div>
+              <a class="user-photos__like-icon" href=""></a>
               <div class="user-photos__like-text">Нравится: 356</div>
             </div>
           </div>
@@ -104,13 +103,13 @@
             </picture>
           </a>
           <div class="user-photos__info">
-            <div class="user-photos__user">
+            <header class="user-photos__user">
               <span class="user-photos__name">Антон</span>
               <span class="user-photos__date">(12 часов назад)</span>
-            </div>
-            <div class="user-photos__comment">Соседи будут рады!</div>
+            </header>
+            <p class="user-photos__comment">Соседи будут рады!</p>
             <div class="user-photos__like">
-              <div class="user-photos__like-icon"></div>
+              <a class="user-photos__like-icon" href=""></a>
               <div class="user-photos__like-text">Нравится: 666</div>
             </div>
           </div>
@@ -126,13 +125,13 @@
             </picture>
           </a>
           <div class="user-photos__info">
-            <div class="user-photos__user">
+            <header class="user-photos__user">
               <span class="user-photos__name">Борис</span>
               <span class="user-photos__date">(20 часов назад)</span>
-            </div>
-            <div class="user-photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</div>
+            </header>
+            <p class="user-photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="user-photos__like">
-              <div class="user-photos__like-icon"></div>
+              <a class="user-photos__like-icon" href=""></a>
               <div class="user-photos__like-text">Нравится: 215</div>
             </div>
           </div>
@@ -148,13 +147,13 @@
             </picture>
           </a>
           <div class="user-photos__info">
-            <div class="user-photos__user">
+            <header class="user-photos__user">
               <span class="user-photos__name">Сергей</span>
               <span class="user-photos__date">(25 часов назад)</span>
-            </div>
-            <div class="user-photos__comment">Самая кубанская в мире!</div>
+            </header>
+            <p class="user-photos__comment">Самая кубанская в мире!</p>
             <div class="user-photos__like">
-              <div class="user-photos__like-icon"></div>
+              <a class="user-photos__like-icon" href=""></a>
               <div class="user-photos__like-text">Нравится: 4</div>
             </div>
           </div>
@@ -170,13 +169,13 @@
             </picture>
           </a>
           <div class="user-photos__info">
-            <div class="user-photos__user">
+            <header class="user-photos__user">
               <span class="user-photos__name">Максим</span>
               <span class="user-photos__date">(40 часов назад)</span>
-            </div>
-            <div class="user-photos__comment">Где снег-то?</div>
+            </header>
+            <p class="user-photos__comment">Где снег-то?</p>
             <div class="user-photos__like">
-              <div class="user-photos__like-icon"></div>
+              <a class="user-photos__like-icon" href=""></a>
               <div class="user-photos__like-text">Нравится: 150</div>
             </div>
           </div>
@@ -192,20 +191,20 @@
             </picture>
           </a>
           <div class="user-photos__info">
-            <div class="user-photos__user">
+            <header class="user-photos__user">
               <span class="user-photos__name">Надежда</span>
               <span class="user-photos__date">(45 часов назад)</span>
-            </div>
-            <div class="user-photos__comment">Всем GM и взаимные лайки!</div>
+            </header>
+            <p class="user-photos__comment">Всем GM и взаимные лайки!</p>
             <div class="user-photos__like">
-              <div class="user-photos__like-icon"></div>
+              <a class="user-photos__like-icon" href=""></a>
               <div class="user-photos__like-text">Нравится: 2650</div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="photo-upload">
+    </section>
+    <section class="photo-upload">
       <div class="photo-upload__info-wrapper">
         <p class="photo-upload__info  page-width">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       </div>
@@ -249,10 +248,9 @@
           </div>
         </div>
       </form>
-    </div>
+    </section>
     <footer class="footer">
       <div class="footer__branding  page-width">
-
         <a href="/" class="footer__logo-link">
           <svg class="logo  footer__logo" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
             <g class="logo__title  logo__title--inverse">
@@ -282,7 +280,6 @@
           <a class="footer__copyright-logo" href="https://htmlacademy.ru"></a>
         </div>
       </div>
-
     </footer>
     <script src="js/script.js"></script>
   </body>

@@ -9,6 +9,7 @@
   font-size: 18px;
   font-family: $font;
   line-height: 1;
+  cursor: pointer;
 
   &--submit {
     border-color: $color-brand;

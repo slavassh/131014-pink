@@ -28,7 +28,7 @@
 
     &--youtube {
       background-image: svg-load('../img/icon-youtube.svg', fill=$color-brand);
-      background-position-x: 55%; /* Так стоит делать? */
+      background-position-x: 55%;
     }
   }
 

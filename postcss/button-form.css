@@ -10,6 +10,7 @@
   font-size: 18px;
   font-family: $font;
   line-height: $line-height-primary;
+  cursor: pointer;
 
   @media (--tablet-viewport-plus) {
     min-width: 300px;

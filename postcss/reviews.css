@@ -86,7 +86,6 @@
     @media (--desktop-viewport) {
       quotes: none;
     }
-
   }
 
   &__arrows {
