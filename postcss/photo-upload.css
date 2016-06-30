@@ -5,15 +5,12 @@
   @media (--desktop-viewport) {
     background-color: $color-page;
   }
-  &__info-wrapper {
-    background-color: $color-page;
-  }
-
   &__info {
+    background-color: $color-page;
     line-height: $line-height-primary;
 
     @media (--mobile-viewport) {
-      padding: 25px 0 40px;
+      padding: 25px $width-gutter-mobile-relative 40px;
     }
 
     @media (--tablet-viewport-plus) {
