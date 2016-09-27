@@ -7,7 +7,9 @@
   background-color: transparent;
   font-weight: 700;
   font-size: 18px;
+  font-family: $font;
   line-height: 1;
+  cursor: pointer;
 
   &--submit {
     border-color: $color-brand;
@@ -20,8 +22,7 @@
 
     &:active {
       background-color: $color-brand;
-      color: $color-page;
-      opacity: .3;
+      color: $color-page-alpha-medium;
     }
   }
 
@@ -36,7 +37,7 @@
 
     &:active {
       background-color: $color-primary;
-      opacity: 0.3;
+      opacity: .3;
     }
   }
 }

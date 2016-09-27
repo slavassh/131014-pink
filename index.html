@@ -6,10 +6,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <script src="js/svg4everybody.min.js"></script>
+    <script async src="js/picturefill.min.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div class="main-menu  main-menu--closed  main-menu--no-js">
+    <header class="header header--front">
+      <nav class="main-menu  main-menu--closed  main-menu--no-js">
         <div class="main-menu__branding  page-width">
           <a href="" class="header__logo-link">
             <svg class="logo  header__logo" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
@@ -27,27 +29,28 @@
               <path class="logo__stars" d="M50.686 16.125c-2.485 0-4.5-2.014-4.5-4.5 0 2.486-2.013 4.5-4.498 4.5 2.485 0 4.5 2.014 4.5 4.5 0-2.486 2.012-4.5 4.498-4.5zM37.904 19.626c-1.52 0-2.75-1.23-2.75-2.75 0 1.52-1.23 2.75-2.748 2.75 1.52 0 2.75 1.23 2.75 2.75 0-1.52 1.23-2.75 2.748-2.75zM10.734 34.072c-1.52 0-2.75-1.23-2.75-2.75 0 1.52-1.23 2.75-2.748 2.75 1.52 0 2.75 1.23 2.75 2.748 0-1.517 1.23-2.748 2.748-2.748z"/>
             </svg>
           </a>
+          <div class="main-menu__items">
+            <a class="main-menu__item  main-menu__item--active" href="">Главная</a>
+            <a class="main-menu__item" href="photo.html">Фотографии</a>
+            <a class="main-menu__item" href="form.html">Конкурс</a>
+            <a class="main-menu__item" href="https://htmlacademy.ru">HTML Academy</a>
+          </div>
           <button class="main-menu__switch" type="button">
             <span class="main-menu__switch-line"></span>
             <span class="main-menu__switch-line"></span>
             <span class="main-menu__switch-line"></span>
           </button>
-          <div class="main-menu__items">
-            <a class="main-menu__item  main-menu__item--active" href="/">Главная</a>
-            <a class="main-menu__item" href="photo.html">Фотографии</a>
-            <a class="main-menu__item" href="form.html">Конкурс</a>
-            <a class="main-menu__item" href="https://htmlacademy.ru">HTML Academy</a>
-          </div>
         </div>
-      </div>
+      </nav>
       <div class="intro">
         <div class="intro__inner">
           <div class="apps">
             <div class="apps__hand"></div>
             <div class="apps__links">
               <div class="apps__links-inner">
-                <div class="apps__title">Взгляните на жизнь иначе!</div>
+                <h2 class="apps__title">Взгляните на жизнь иначе!</h2>
                 <a href="https://www.appstore.com/" class="apps__download  button">Скачать приложение</a>
+                <script>svg4everybody(); </script>
                 <div class="apps__logos">
                   <a class="apps__link" href="https://www.appstore.com/" title="Apple Store">
                     <svg width="47" height="56">
@@ -72,15 +75,10 @@
         </div>
       </div>
     </header>
-
-    <!-- index.html start -->
-
     <div class="promo">
-      <div class="promo__header-wrapper">
-        <div class="promo__header  page-width">
-          <p class="promo__slogan">Устали от серости мегаполиса?</p>
-          <p class="promo__slogan">Нам есть, что вам<br>предложить!</p>
-        </div>
+      <div class="promo__header  page-width">
+        <h2 class="promo__slogan">Устали от серости мегаполиса?</h2>
+        <h2 class="promo__slogan">Нам есть, что вам предложить!</h2>
       </div>
       <div class="promo__items-wrapper">
         <div class="promo__items  page-width">
@@ -114,7 +112,7 @@
           </div>
           <div class="promo__footer-item">
             <h3 class="promo__title  promo__title--bottom">Эффект <br>на 24 часа!</h3>
-            <p class="promo__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            <p class="promo__text  promo__text--bottom">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
             </p>
             <a class="promo__readmore" href="brit.html">Узнать больше об исследовании</a>
           </div>
@@ -125,6 +123,16 @@
       <div class="reviews__inner  page-width">
         <div class="slider">
           <div class="reviews__items  slider__items">
+            <div class="reviews__item  slider__item">
+              <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__description">25 лет, водитель трамвая</p>
+              <q class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+            </div>
+            <div class="reviews__item  slider__item">
+              <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__description">25 лет, водитель трамвая</p>
+              <q class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+            </div>
             <div class="reviews__item  slider__item">
               <h3 class="reviews__title">Николай Петров</h3>
               <p class="reviews__description">25 лет, водитель трамвая</p>
@@ -156,28 +164,28 @@
               <div class="price__item">Комментарии</div>
             </div>
             <div class="price__column  slider__item">
-              <div class="price__item  price__item--header">
-                <span class="price__title">База</span><br>
-                <span class="price__cost">1,99 USD</span>
-              </div>
+              <header class="price__item  price__item--header">
+                <div class="price__title">База</div>
+                <div class="price__cost">1,99 USD</div>
+              </header>
               <div class="price__item  price__item--yes">Розовый фильтр</div>
               <div class="price__item  price__item--no">Смайлики</div>
               <div class="price__item  price__item--no">Комментарии</div>
             </div>
             <div class="price__column  slider__item">
-              <div class="price__item  price__item--header  price__item--hit">
-                <span class="price__title">Стандарт</span><br>
-                <span class="price__cost">3,99 USD</span>
-              </div>
+              <header class="price__item  price__item--header  price__item--hit">
+                <div class="price__title">Стандарт</div>
+                <div class="price__cost">3,99 USD</div>
+              </header>
               <div class="price__item  price__item--yes">Розовый фильтр</div>
               <div class="price__item  price__item--yes">Смайлики</div>
               <div class="price__item  price__item--no">Комментарии</div>
             </div>
             <div class="price__column  slider__item">
-              <div class="price__item  price__item--header">
-                <span class="price__title">Анлим</span><br>
-                <span class="price__cost">9,99 USD</span>
-              </div>
+              <header class="price__item  price__item--header">
+                <div class="price__title">Анлим</div>
+                <div class="price__cost">9,99 USD</div>
+              </header>
               <div class="price__item  price__item--yes">Розовый фильтр</div>
               <div class="price__item  price__item--yes">Смайлики</div>
               <div class="price__item  price__item--yes">Комментарии</div>
@@ -194,318 +202,10 @@
         </div>
       </div>
     </div>
-
-
-    <!-- index.html end -->
-
-    <!-- photo.html start -->
-    <header class="header">
-      <h1 class="header__title  page-width">Фотографии<br>пользователей</h1>
-      <div class="header__info-wrapper">
-        <p class="header__info  page-width">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
-      </div>
-    </header>
-    <div class="user-photos">
-      <div class="user-photos__panorama-wrapper">
-        <picture>
-          <source media="(min-width: 1201px)" srcset="img/panorama-desktop@2x.jpg">
-          <source media="(min-width: 701px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-          <source media="(min-width: 321px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-          <img class="user-photos__panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"  alt="Панорама дня">
-        </picture>
-        <div class="user-photos__caption">Панорама дня</div>
-      </div>
-      <div class="user-photos__items  page-width">
-        <div class="user-photos__item user-photos__item--panorama">
-          <div class="user-photos__info  user-photos__info--panorama">
-            <div class="user-photos__user  user-photos__user--panorama">
-              <span class="user-photos__name">Анна</span>
-              <span class="user-photos__date">(5 минут назад)</span>
-            </div>
-            <div class="user-photos__comment  user-photos__comment--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</div>
-            <div class="user-photos__like  user-photos__like--panorama">
-              <div class="user-photos__like-icon  user-photos__like-icon--panorama"></div>
-              <div class="user-photos__like-text">Нравится: 215</div>
-            </div>
-          </div>
-        </div>
-        <div class="user-photos__item">
-          <picture>
-            <source media="(width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-            <source media="(min-width: 701px)" srcset="img/photo-1-tablet@2x.jpg">
-            <source media="(width: 700px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-            <source media="(min-width: 321px)" srcset="img/photo-1-mobile@2x.jpg">
-            <img class="user-photos__image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"  alt="Загруженная пользователем фотография">
-          </picture>
-          <div class="user-photos__info">
-            <div class="user-photos__user">
-              <span class="user-photos__name">Левон</span>
-              <span class="user-photos__date">(5 часов назад)</span>
-            </div>
-            <div class="user-photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</div>
-            <div class="user-photos__like">
-              <div class="user-photos__like-icon"></div>
-              <div class="user-photos__like-text">Нравится: 356</div>
-            </div>
-          </div>
-        </div>
-        <div class="user-photos__item">
-          <picture>
-            <source media="(width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-            <source media="(min-width: 701px)" srcset="img/photo-2-tablet@2x.jpg">
-            <source media="(width: 700px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-            <source media="(min-width: 321px)" srcset="img/photo-2-mobile@2x.jpg">
-            <img class="user-photos__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"  alt="Загруженная пользователем фотография">
-          </picture>
-          <div class="user-photos__info">
-            <div class="user-photos__user">
-              <span class="user-photos__name">Антон</span>
-              <span class="user-photos__date">(12 часов назад)</span>
-            </div>
-            <div class="user-photos__comment">Соседи будут рады!</div>
-            <div class="user-photos__like">
-              <div class="user-photos__like-icon"></div>
-              <div class="user-photos__like-text">Нравится: 666</div>
-            </div>
-          </div>
-        </div>
-        <div class="user-photos__item">
-          <picture>
-            <source media="(width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-            <source media="(min-width: 701px)" srcset="img/photo-3-tablet@2x.jpg">
-            <source media="(width: 700px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-            <source media="(min-width: 321px)" srcset="img/photo-3-mobile@2x.jpg">
-            <img class="user-photos__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"  alt="Загруженная пользователем фотография">
-          </picture>
-          <div class="user-photos__info">
-            <div class="user-photos__user">
-              <span class="user-photos__name">Борис</span>
-              <span class="user-photos__date">(20 часов назад)</span>
-            </div>
-            <div class="user-photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</div>
-            <div class="user-photos__like">
-              <div class="user-photos__like-icon"></div>
-              <div class="user-photos__like-text">Нравится: 215</div>
-            </div>
-          </div>
-        </div>
-        <div class="user-photos__item">
-          <picture>
-            <source media="(width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-            <source media="(min-width: 701px)" srcset="img/photo-4-tablet@2x.jpg">
-            <source media="(width: 700px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-            <source media="(min-width: 321px)" srcset="img/photo-4-mobile@2x.jpg">
-            <img class="user-photos__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"  alt="Загруженная пользователем фотография">
-          </picture>
-          <div class="user-photos__info">
-            <div class="user-photos__user">
-              <span class="user-photos__name">Сергей</span>
-              <span class="user-photos__date">(25 часов назад)</span>
-            </div>
-            <div class="user-photos__comment">Самая кубанская в мире!</div>
-            <div class="user-photos__like">
-              <div class="user-photos__like-icon"></div>
-              <div class="user-photos__like-text">Нравится: 4</div>
-            </div>
-          </div>
-        </div>
-        <div class="user-photos__item">
-          <picture>
-            <source media="(width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
-            <source media="(min-width: 701px)" srcset="img/photo-5-tablet@2x.jpg">
-            <source media="(width: 700px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
-            <source media="(min-width: 321px)" srcset="img/photo-5-mobile@2x.jpg">
-            <img class="user-photos__image" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x"  alt="Загруженная пользователем фотография">
-          </picture>
-          <div class="user-photos__info">
-            <div class="user-photos__user">
-              <span class="user-photos__name">Максим</span>
-              <span class="user-photos__date">(40 часов назад)</span>
-            </div>
-            <div class="user-photos__comment">Где снег-то?</div>
-            <div class="user-photos__like">
-              <div class="user-photos__like-icon"></div>
-              <div class="user-photos__like-text">Нравится: 150</div>
-            </div>
-          </div>
-        </div>
-        <div class="user-photos__item">
-          <picture>
-            <source media="(width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
-            <source media="(min-width: 701px)" srcset="img/photo-6-tablet@2x.jpg">
-            <source media="(width: 700px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
-            <source media="(min-width: 321px)" srcset="img/photo-6-mobile@2x.jpg">
-            <img class="user-photos__image" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x"  alt="Загруженная пользователем фотография">
-          </picture>
-          <div class="user-photos__info">
-            <div class="user-photos__user">
-              <span class="user-photos__name">Надежда</span>
-              <span class="user-photos__date">(45 часов назад)</span>
-            </div>
-            <div class="user-photos__comment">Всем GM и взаимные лайки!</div>
-            <div class="user-photos__like">
-              <div class="user-photos__like-icon"></div>
-              <div class="user-photos__like-text">Нравится: 2650</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="photo-upload">
-      <div class="photo-upload__info-wrapper">
-        <p class="photo-upload__info  page-width">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-      </div>
-      <form class="photo-upload__form  page-width">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
-          <source media="(min-width: 700px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
-          <source media="(max-width: 699px)" srcset="img/photo-7-mobile@1x.jpg 1x, img/photo-7-mobile@2x.jpg 2x">
-          <img class="photo-upload__frame" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x"  alt="Загрузка изображения">
-        </picture>
-        <div class="photo-upload__tools">
-          <div class="photo-upload__controls">
-            <div class="photo-upload__control  photo-upload__control--crop  photo-upload__control--active">
-              <div class="photo-upload__icon photo-upload__icon--crop  photo-upload__icon--active"></div>
-              <div class="photo-upload__scale  photo-upload__scale--crop">
-                <div class="photo-upload__track">
-                  <div class="photo-upload__thumb"></div>
-                </div>
-              </div>
-            </div>
-            <div class="photo-upload__control  photo-upload__control--fill">
-              <div class="photo-upload__icon photo-upload__icon--fill  photo-upload__icon--inactive"></div>
-              <div class="photo-upload__scale  photo-upload__scale--fill">
-                <div class="photo-upload__track">
-                  <div class="photo-upload__thumb"></div>
-                </div>
-              </div>
-            </div>
-            <div class="photo-upload__control  photo-upload__control--contrast">
-              <div class="photo-upload__icon photo-upload__icon--contrast  photo-upload__icon--inactive"></div>
-              <div class="photo-upload__scale  photo-upload__scale--contrast">
-                <div class="photo-upload__track">
-                  <div class="photo-upload__thumb"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <input type="range" name="upload-scale" id="upload-scale" class="photo-upload__scale"> -->
-          <div class="photo-upload__actions">
-            <button class="photo-upload__action  photo-upload__action--submit  button  button--submit" type="submit">Запостить</button>
-            <button class="photo-upload__action  photo-upload__action--cancel  button  button--cancel" type="reset">Отмена</button>
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <!-- photo.html end -->
-
-    <!-- form.html start -->
-    <header class="header">
-      <h1 class="header__title  page-width">Конкурс на самое безбашенное<br>путешествие с Пинк</h1>
-      <div class="header__info-wrapper">
-        <p class="header__info page-width">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-      </div>
-    </header>
-    <form action="/post.html" class="contest">
-      <div class="contest__item-wrapper">
-        <div class="contest__item  contest__item--name">
-          <div class="contest__item-inner  contest__item-inner--name">
-            <div class="contest__field    contest__field--name">
-              <label class="contest__label  contest__label--name" for="contest-lastname">Фамилия:</label>
-              <input class="contest__textfield" type="text" name="contest-text" id="contest-lastname" placeholder="Укажите фамилию">
-            </div>
-            <div class="contest__field    contest__field--name">
-              <label class="contest__label  contest__label--name" for="contest-firstname">Имя:</label>
-              <input class="contest__textfield" type="text" name="contest-text" id="contest-firstname" placeholder="Введите ваше имя">
-            </div>
-            <div class="contest__field    contest__field--name">
-              <label class="contest__label  contest__label--name" for="contest-patronymic">Отчество:</label>
-              <input class="contest__textfield" type="text" name="contest-text" id="contest-patronymic" placeholder="Ну и отчество тоже">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="contest__item-wrapper">
-        <fieldset class="contest__item  contest__item--apps">
-        <legend class="contest__description">С каким приложением путешествовали?</legend>
-          <div class="contest__item-inner  contest__item-inner--apps">
-            <input class="contest__radiobtn" type="radio" name="contest-radio" id="apps-radio-1" checked>
-            <label class="contest__option  contest__option--radio" for="apps-radio-1">Pink для iOS</label>
-            <input class="contest__radiobtn" type="radio" name="contest-radio" id="apps-radio-2">
-            <label class="contest__option  contest__option--radio" for="apps-radio-2">Pink на Android</label>
-            <input class="contest__radiobtn" type="radio" name="contest-radio" id="apps-radio-3">
-            <label class="contest__option  contest__option--radio" for="apps-radio-3">Windows Phone</label>
-          </div>
-        </fieldset> <!-- неведомый отступ снизу? -->
-      </div>
-      <div class="contest__item-wrapper">
-        <fieldset class="contest__item  contest__item--contacts">
-        <legend class="contest__description  contest__description--contacts">Контактная информация</legend>
-          <div class="contest__item-inner  contest__item-inner--contacts">
-            <div class="contest__field  contest__field--contacts">
-              <label class="contest__label" for="contest-phone">Номер телефончика</label>
-              <div class="contest__input-wrapper  contest__input-wrapper--phone">
-                <input class="contest__textfield  contest__textfield--contacts  contest__textfield--phone" type="tel" name="contest-tel" id="contest-phone" placeholder="Номер, пожалуйста">
-              </div>
-            </div>
-            <div class="contest__field    contest__field--contacts">
-              <label class="contest__label" for="contest-email">Адресок почты</label>
-              <div class="contest__input-wrapper  contest__input-wrapper--email">
-                <input class="contest__textfield  contest__textfield--contacts  contest__textfield--email" type="email" name="contest-email" id="contest-email" placeholder="E-mail, пожалуйста">
-              </div>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-      <div class="contest__item-wrapper">
-        <fieldset class="contest__item  contest__item--achievements">
-        <legend class="contest__description">Ваши безбашенные достижения в путешествии</legend>
-          <div class="contest__item-inner  contest__item-inner--achievements">
-            <div class="contest__checkbox-group">
-              <input class="contest__checkbox" type="checkbox" name="contest-check" id="contest-check-1" checked>
-              <label class="contest__option  contest__option--checkbox" for="contest-check-1">Сделал селфи с акулой</label>
-              <input class="contest__checkbox" type="checkbox" name="contest-check" id="contest-check-2" checked>
-              <label class="contest__option  contest__option--checkbox" for="contest-check-2">Обгорел на пляже</label>
-            </div>
-            <div class="contest__checkbox-group">
-              <input class="contest__checkbox" type="checkbox" name="contest-check" id="contest-check-3">
-              <label class="contest__option  contest__option--checkbox" for="contest-check-3">Видел Чака Норриса</label>
-              <input class="contest__checkbox" type="checkbox" name="contest-check" id="contest-check-4">
-              <label class="contest__option  contest__option--checkbox" for="contest-check-4">Накупил сувениров</label>
-            </div>
-            <div class="contest__checkbox-group">
-              <input class="contest__checkbox" type="checkbox" name="contest-check" id="contest-check-5" checked>
-              <label class="contest__option  contest__option--checkbox" for="contest-check-5">Удержал башню</label>
-              <input class="contest__checkbox" type="checkbox" name="contest-check" id="contest-check-6">
-              <label class="contest__option  contest__option--checkbox" for="contest-check-6">Разгромил отель</label>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-      <div class="contest__item-wrapper">
-        <fieldset class="contest__item  contest__item--emotions">
-        <legend class="contest__description  contest__description--textarea">Опишите свои эмоции</legend>
-          <div class="contest__item-inner  contest__item-inner--emotions">
-            <textarea  class="contest__textfield  contest__textfield--textarea" name="contest-textarea" id="contest-feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </div>
-        </fieldset>
-      </div>
-      <div class="contest__action">
-        <button class="contest__submit" type="submit">Отправить форму</button>
-        <div class="contest__required">
-          <sup class="contest__star">*</sup> - обязательные
-          <span class="contest__required-hidden"> для заполнения</span> поля
-        </div>
-      </div>
-    </form>
-
-    <!-- form.html end -->
-
     <footer class="footer">
       <div class="contacts">
         <div class="contacts__inner  page-width">
-          <h3 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h3>
+          <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
           <div class="contacts__items">
             <div class="contacts__item">
               <h4 class="contacts__label">Звоните:</h4>
@@ -513,22 +213,21 @@
             </div>
             <div class="contacts__item">
               <h4 class="contacts__label">Пишите:</h4>
-              <p class="contacts__data">mail@htmlacademy.ru</p>
+              <a class="contacts__data  contacts__data--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
             <div class="contacts__item">
               <h4 class="contacts__label">Приезжайте в гости:</h4>
-              <p class="contacts__data">ул. Большая<br>Конюшенная, 19/8</p>
+              <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
             </div>
           </div>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.3566910597765!2d30.318419990807197!3d59.937479378541646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057d105877%3A0x91c16b0cf63dfa74!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsA!5e0!3m2!1sru!2sru!4v1466943129510" style="border-style: none; width: 100%; height: 100%;" allowfullscreen></iframe>
+        </div>
       </div>
-      <div class="footer__branding  page-width">
-<!--    <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-blue-desktop.svg">
-          <img class="header__logo" src="img/logo-blue-mobile.svg" alt="Pink">
-        </picture> -->
-        <a href="" class="footer__logo-link">
+      <div class="footer__branding  footer__branding--front  page-width">
+
+        <a href="/" class="footer__logo-link">
           <svg class="logo  footer__logo" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
             <g class="logo__title  logo__title--inverse">
               <path d="M71.874 18.66c0-.707.58-1.287 1.256-1.287h7.18c5.087 0 8.436 2.704 8.436 7.146v.063c0 4.86-4.057 7.373-8.854 7.373h-5.475v6.825c0 .71-.58 1.29-1.288 1.29-.677 0-1.257-.58-1.257-1.29V18.66zm8.114 10.98c3.734 0 6.182-1.995 6.182-4.958v-.063c0-3.22-2.414-4.895-6.053-4.895h-5.7v9.917h5.57zM93.603 18.5c0-.708.58-1.288 1.255-1.288.71 0 1.288.58 1.288 1.288v20.283c0 .708-.58 1.287-1.288 1.287-.676 0-1.255-.58-1.255-1.287V18.5zM102.744 18.532c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45V18.468c0-.676.547-1.256 1.256-1.256.676 0 1.224.58 1.224 1.256v20.35c0 .675-.48 1.19-1.158 1.19h-.13c-.547 0-.934-.322-1.318-.773l-13.975-17.868v17.45c0 .676-.547 1.256-1.256 1.256-.677 0-1.224-.58-1.224-1.256V18.532h-.002zM128.173 18.5c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.33l12.848-13.167c.29-.257.58-.45.998-.45.676 0 1.225.61 1.225 1.255 0 .354-.162.644-.42.9l-7.984 7.92 8.564 10.562c.225.29.354.547.354.935 0 .676-.577 1.288-1.285 1.288-.483 0-.806-.258-1.03-.58l-8.402-10.463-4.863 4.86v4.895c0 .708-.578 1.288-1.286 1.288-.677 0-1.257-.58-1.257-1.288V18.5h-.004z"/>
@@ -546,13 +245,10 @@
         </a>
         <div class="footer__social  social">
           <a  class="social__link  social__link--twitter" href="https://twitter.com/htmlacademy">
-            <!-- <img class="social__logo" src="img/icon-twitter.svg" alt="Мы в Twitter" width="17" height="14"> -->
           </a>
           <a  class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy">
-            <!-- <img class="social__logo" src="img/icon-facebook.svg" alt="Мы в Facebook" width="8" height="18"> -->
           </a>
           <a  class="social__link  social__link--youtube" href="https://www.youtube.com/htmlacademy">
-            <!-- <img class="social__logo" src="img/icon-youtube.svg" alt="Мы в Facebook" width="14" height="13"> -->
           </a>
         </div>
         <div class="footer__copyright">

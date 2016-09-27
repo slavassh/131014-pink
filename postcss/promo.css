@@ -13,7 +13,7 @@
     font-weight: 300;
 
     @media (--mobile-viewport) {
-      padding: 35px 0 10px;
+      padding: 35px 0 5px;
       font-size: 24px;
     }
 
@@ -23,14 +23,27 @@
     }
 
     @media (--desktop-viewport) {
-      padding: 60px 0 70px;
+      padding: 70px 0 55px;
       font-size: 50px;
     }
   }
 
   &__slogan {
+    font-weight: 300;
+
     @media (--mobile-viewport) {
       margin-bottom: 23px;
+      font-size: 24px;
+    }
+
+    @media (--tablet-viewport) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    @media (--desktop-viewport) {
+      font-size: 50px;
+      line-height: 58px;
     }
   }
 
@@ -56,17 +69,20 @@
     min-height: 485px;
 
     @media (--mobile-viewport) {
-      padding: 85px 0 295px;
+      padding: 75px 0 285px;
     }
 
     @media (--tablet-viewport) {
       margin-left: auto;
-      padding-top: 80px;
+      padding-top: 75px;
+      padding-bottom: 15px;
       width: 50%;
     }
 
     @media (--desktop-viewport) {
       flex-direction: row;
+
+      justify-content: space-between;
     }
   }
 
@@ -74,12 +90,13 @@
     margin-bottom: 30px;
 
     @media (--tablet-viewport) {
-      margin-bottom: 38px;
+      margin-bottom: 28px;
       text-align: left;
     }
 
     @media (--desktop-viewport) {
-      padding: 0 30px 0;
+      padding: 20px 0 0;
+      width: 300px;
       text-align: center;
     }
   }
@@ -180,15 +197,27 @@
     margin-bottom: 10px;
     color: $color-title;
     font-size: 18px;
-    line-height: $line-height-large;
+    line-height: $line-height-primary;
+
+    @media (--tablet-viewport) {
+      margin-bottom: 5px;
+      line-height: $line-height-large;
+    }
 
     @media (--desktop-viewport) {
-      margin-top: 55px;
+      margin-top: 60px;
       margin-bottom: 22px;
+      padding: 0 30px;
       font-size: 30px;
     }
     &--bottom {
       @media (--tablet-viewport) {
+        font-size: 30px;
+      }
+
+      @media (--desktop-viewport) {
+        margin-top: 70px;
+        padding: 0;
         font-size: 30px;
       }
     }
@@ -201,7 +230,14 @@
   }
 
   &__text {
-
+    @media (--desktop-viewport) {
+      padding: 0 30px;
+    }
+    &--bottom {
+      @media (--desktop-viewport) {
+        padding: 0;
+      }
+    }
   }
 
   &__footer-wrapper {
@@ -224,7 +260,7 @@
     }
 
     @media (--desktop-viewport) {
-     padding-bottom: 65px;
+     padding-bottom: 60px;
     line-height: $line-height-primary;
     }
   }

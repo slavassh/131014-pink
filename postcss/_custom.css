@@ -14,7 +14,9 @@ $green-dark:                    #1c9b5e;
 $color-page:                    white;
 $color-page-alpha-min:          color($color-page a(15%));
 $color-page-alpha-medium:       color($color-page a(30%));
+$color-page-alpha-max:          color($color-page a(70%));
 $color-title:                   black;
+$color-title-alpha-min:         color($color-title a(15%));
 $color-bg-menu:                 color($color-title a(30%));
 $color-primary:                 $blue;
 $color-primary-alpha-medium:    color($color-primary a(30%));
@@ -22,6 +24,7 @@ $color-primary-alpha-max:       color($color-primary a(60%));
 $color-primary-alpha-min:       color($color-primary a(15%));
 $color-secondary:               $gray;
 $color-brand:                   $pink;
+$color-brand-alpha-medium:      color($color-brand a(30%));
 $color-bg-apps:                 $blue-darken;
 $color-border:                  $gray-darken;
 $color-button:                  $green;
@@ -35,6 +38,7 @@ $font:                         'Open Sans', Arial, 'Helvetica Neue', Helvetica, 
 $line-height-primary:           30px;
 $line-height-secondary:         24px;
 $line-height-large:             36px;
+
 
 
 $width-gutter-mobile:           20px;
@@ -58,13 +62,6 @@ $width-desktop-content:         940px;
 @custom-media --desktop-viewport (min-width: 1200px);
 @custom-media --retina (min-resolution: 144dpi), (min-resolution: 1.5dppx);
 
-
-@define-mixin mobile-plus $property, $mobile-value, $value {
-  $(property): $(mobile-value);
-  @media (--tablet-viewport) {
-    $(property): $(value);
-  }
-}
 
 @define-mixin clearfix {
     &::after {

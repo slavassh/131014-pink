@@ -1,4 +1,7 @@
 .user-photos {
+  @media (--desktop-viewport) {
+    margin-top: 10px;
+  }
   &__items {
     display: flex;
     flex-direction: row;
@@ -14,8 +17,8 @@
   }
 
   &__item {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     box-sizing: border-box;
     margin-bottom: 20px;
     background-color: $color-secondary;
@@ -42,6 +45,7 @@
 
   &__panorama-wrapper {
     position: relative;
+    display: block;
   }
 
   &__panorama {
@@ -54,11 +58,12 @@
 
   &__caption {
     position: absolute;
-    padding: 10px 20px;
+    padding: 12px 22px;
     background-color: $color-brand;
     color: $color-page;
     text-align: center;
     text-transform: uppercase;
+    font-size: 12px;
     line-height: 1;
 
     @media (--mobile-viewport) {
@@ -88,15 +93,14 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 20px 17px 25px;
-    width: 100%;
-    height: 100%;
+    padding: 18px 17px 25px;
     line-height: $line-height-secondary;
 
+    justify-content: flex-start;
     align-items: stretch;
     @media (--tablet-viewport-plus) {
-      padding: 24px 28px 28px;
-      min-height: 155px; /* как сделать все блоки одинаковой высоты? */
+      padding: 24px 28px 22px;
+      min-height: 155px;
     }
     &--panorama {
       min-height: auto;
@@ -127,6 +131,7 @@
   &__date {
     text-transform: uppercase;
     font-weight: 300;
+    font-size: 12px;
   }
 
   &__comment {
@@ -134,10 +139,12 @@
 
     @media (--tablet-viewport-plus) {
       margin-bottom: 20px;
+      min-height: 50px;
     }
     &--panorama {
       @media (--tablet-viewport-plus) {
         margin-bottom: 0;
+        min-height: auto;
 
         order: 3;
       }
@@ -163,27 +170,24 @@
         order: 2;
       }
     }
-
   }
 
   &__like-icon {
     width: 13px;
-    height: 12px;
+    height: 13px;
     background-image: svg-load('../img/icon-heart.svg', fill=$color-brand);
     background-position: 50% 50%;
-    background-size: 13px 12px;
+    background-size: 13px 13px;
     background-repeat: no-repeat;
   }
 
   &__like-text {
-    margin: 0 20px;
-
     @media (--mobile-viewport) {
       margin: 0 0 0 20px;
     }
 
     @media (--tablet-viewport-plus) {
-      margin: 0 15px 0 0;
+      margin: 0 20px 0 0;
     }
   }
 }

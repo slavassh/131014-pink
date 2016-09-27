@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
 
     @media (--mobile-viewport) {
-      margin: 100px auto 0;
+      margin: 105px auto 0;
       height: 286px;
       background-image: url(../img/iphone-hand-mobile@1x.png);
 
@@ -41,7 +41,7 @@
     @media (--desktop-viewport) {
       height: 645px;
       background-image: url(../img/iphone-hand-desktop@1x.png);
-      background-position: 50% 100%;
+      background-position: 59% 100%;
 
       @media (--retina) {
         background-image: url(../img/iphone-hand-desktop@2x.png);
@@ -60,11 +60,13 @@
 
     @media (--tablet-viewport) {
       font-size: 40px;
+      line-height: 48px;
     }
 
     @media (--desktop-viewport) {
       margin-bottom: 50px;
       font-size: 50px;
+      line-height: 62px;
     }
 
   }
@@ -74,16 +76,16 @@
     z-index: 1;
 
     @media (--mobile-viewport) {
-      padding: 30px 0 35px;
+      padding: 30px 0;
       background-color: $color-bg-apps;
     }
 
     @media (--tablet-viewport) {
-      padding: 90px 0 110px;
+      padding: 100px 0 110px;
     }
 
     @media (--desktop-viewport) {
-      padding: 115px 0 120px;
+      padding: 105px 0 125px;
     }
   }
 
@@ -97,19 +99,31 @@
   }
 
   &__download {
-    border-color: $color-page;
     color: $color-page;
+
+    @media (--desktop-viewport) {
+      font-size: 21px;
+    }
+    &:hover {
+      border-color: $color-page;
+      background-color: $color-page;
+      color: $color-brand;
+    }
+
+    &:active {
+      color: $color-brand-alpha-medium;
+    }
   }
 
   &__logos {
     display: flex;
     margin-bottom: 28px;
-    max-width: 67%;
+    max-width: 205px;
 
     align-items: center;
     justify-content: space-between;
     @media (--mobile-viewport) {
-      margin: 30px auto 25px;
+      margin: 30px auto 20px;
     }
 
     @media (--tablet-viewport) {
@@ -117,17 +131,18 @@
     }
 
     @media (--desktop-viewport) {
-      margin: 60px auto 50px;
+      margin: 64px auto 50px;
     }
-  }
-
-  &__link {
-
   }
 
   &__description {
     margin: 0px;
     color: $color-page;
+    font-weight: 300;
     line-height: $line-height-secondary;
+
+    @media (--tablet-viewport-plus) {
+      font-size: 18px;
+    }
   }
 }
